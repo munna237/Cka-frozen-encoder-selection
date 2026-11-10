@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Evaluating Centered Kernel Alignment for Frozen-Encoder Selection in Logit-Level Fusion: A Pre-Specified Multi-Domain Study (code and records)"
+type: software
+authors:
+  - family-names: Munna
+    given-names: Mohammad Mehedi Hasan
+    affiliation: North South University
+  - family-names: Kabir
+    given-names: Acramul Haque
+    affiliation: North South University
+  - family-names: Tulona
+    given-names: Reefka Fabliha
+    affiliation: East West University
+  - family-names: Antu
+    given-names: Nahid Hossain
+    affiliation: North South University
+  - family-names: Ul Mulk
+    given-names: Md Mansur
+    affiliation: North South University
+repository-code: "https://github.com/<user>/cka-frozen-encoder-selection"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Evaluating Centered Kernel Alignment for Frozen-Encoder Selection in Logit-Level Fusion: A Pre-Specified Multi-Domain Study"
+  authors:
+    - family-names: Munna
+      given-names: Mohammad Mehedi Hasan
+    - family-names: Kabir
+      given-names: Acramul Haque
+    - family-names: Tulona
+      given-names: Reefka Fabliha
+    - family-names: Antu
+      given-names: Nahid Hossain
+    - family-names: Ul Mulk
+      given-names: Md Mansur
+  journal: "IEEE Access"
+  status: submitted
+  year: 2026
