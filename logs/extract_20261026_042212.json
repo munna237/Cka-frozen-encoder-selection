@@ -1,0 +1,142 @@
+[
+ {
+  "dataset": "bracs",
+  "encoder": "hibou_b",
+  "status": "SKIPPED: ImportError: cannot import name 'get_aligned_output_features_output_indices' from 'transformers.utils.backbone_utils' (/usr/local/lib/python3.13/dist-packages/transformers/utils/backbone_utils.py)"
+ },
+ {
+  "dataset": "sicapv2",
+  "encoder": "hibou_b",
+  "status": "SKIPPED: ImportError: cannot import name 'get_aligned_output_features_output_indices' from 'transformers.utils.backbone_utils' (/usr/local/lib/python3.13/dist-packages/transformers/utils/backbone_utils.py)"
+ },
+ {
+  "dataset": "mhist",
+  "encoder": "hibou_b",
+  "status": "SKIPPED: ImportError: cannot import name 'get_aligned_output_features_output_indices' from 'transformers.utils.backbone_utils' (/usr/local/lib/python3.13/dist-packages/transformers/utils/backbone_utils.py)"
+ },
+ {
+  "dataset": "crc_val_7k",
+  "encoder": "hibou_b",
+  "status": "SKIPPED: ImportError: cannot import name 'get_aligned_output_features_output_indices' from 'transformers.utils.backbone_utils' (/usr/local/lib/python3.13/dist-packages/transformers/utils/backbone_utils.py)"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "uni",
+  "status": "ok  dim=1024  eff_rank=48 (5%)  1.8 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "phikon_v2",
+  "status": "ok  dim=1024  eff_rank=29 (3%)  1.8 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "ctranspath",
+  "status": "ok  dim=768  eff_rank=16 (2%)  1.4 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "resnet50_in1k",
+  "status": "ok  dim=2048  eff_rank=17 (1%)  0.3 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "phikon",
+  "status": "ok  dim=768  eff_rank=19 (2%)  0.6 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "uni2_h",
+  "status": "ok  dim=1536  eff_rank=51 (3%)  4.5 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "virchow2",
+  "status": "ok  dim=2560  eff_rank=19 (1%)  4.4 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "h_optimus_0",
+  "status": "ok  dim=1536  eff_rank=32 (2%)  7.3 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "prov_gigapath",
+  "status": "ok  dim=1536  eff_rank=51 (3%)  5.4 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "hibou_b",
+  "status": "SKIPPED: ImportError: cannot import name 'get_aligned_output_features_output_indices' from 'transformers.utils.backbone_utils' (/usr/local/lib/python3.13/dist-packages/transformers/utils/backbone_utils.py)"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "lunit_vits16",
+  "status": "ok  dim=384  eff_rank=12 (3%)  0.2 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "kaiko_vitb16",
+  "status": "ok  dim=768  eff_rank=16 (2%)  0.6 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "uni",
+  "status": "ok  dim=1024  eff_rank=189 (18%)  1.7 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "phikon_v2",
+  "status": "ok  dim=1024  eff_rank=87 (9%)  1.7 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "ctranspath",
+  "status": "ok  dim=768  eff_rank=36 (5%)  1.1 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "resnet50_in1k",
+  "status": "ok  dim=2048  eff_rank=43 (2%)  0.3 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "phikon",
+  "status": "ok  dim=768  eff_rank=55 (7%)  0.5 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "uni2_h",
+  "status": "ok  dim=1536  eff_rank=239 (16%)  4.4 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "virchow2",
+  "status": "ok  dim=2560  eff_rank=65 (3%)  4.4 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "h_optimus_0",
+  "status": "ok  dim=1536  eff_rank=171 (11%)  7.1 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "prov_gigapath",
+  "status": "ok  dim=1536  eff_rank=235 (15%)  5.2 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "hibou_b",
+  "status": "SKIPPED: ImportError: cannot import name 'get_aligned_output_features_output_indices' from 'transformers.utils.backbone_utils' (/usr/local/lib/python3.13/dist-packages/transformers/utils/backbone_utils.py)"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "lunit_vits16",
+  "status": "ok  dim=384  eff_rank=35 (9%)  0.2 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "kaiko_vitb16",
+  "status": "ok  dim=768  eff_rank=75 (10%)  0.5 min"
+ }
+]

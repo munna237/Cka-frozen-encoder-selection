@@ -1,0 +1,32 @@
+[
+ {
+  "dataset": "bracs",
+  "encoder": "hibou_b",
+  "status": "ok  dim=768  eff_rank=80 (10%)  0.8 min"
+ },
+ {
+  "dataset": "sicapv2",
+  "encoder": "hibou_b",
+  "status": "ok  dim=768  eff_rank=69 (9%)  0.8 min"
+ },
+ {
+  "dataset": "mhist",
+  "encoder": "hibou_b",
+  "status": "ok  dim=768  eff_rank=47 (6%)  0.4 min"
+ },
+ {
+  "dataset": "crc_val_7k",
+  "encoder": "hibou_b",
+  "status": "ok  dim=768  eff_rank=44 (6%)  0.6 min"
+ },
+ {
+  "dataset": "nct_crc_100k",
+  "encoder": "hibou_b",
+  "status": "ok  dim=768  eff_rank=34 (4%)  1.2 min"
+ },
+ {
+  "dataset": "pcam",
+  "encoder": "hibou_b",
+  "status": "ok  dim=768  eff_rank=101 (13%)  1.2 min"
+ }
+]

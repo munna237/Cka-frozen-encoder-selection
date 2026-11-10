@@ -1,0 +1,52 @@
+[
+ {
+  "dataset": "gtsrb",
+  "encoder": "dinov2_l",
+  "status": "ok  dim=1024  eff_rank=145 (14%)  2.3 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "eva02_clip",
+  "status": "ok  dim=1024  eff_rank=33 (3%)  4.0 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "swin_l",
+  "status": "ok  dim=1536  eff_rank=110 (7%)  1.9 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "convnext_l",
+  "status": "ok  dim=1536  eff_rank=119 (8%)  1.5 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "resnet50",
+  "status": "ok  dim=2048  eff_rank=104 (5%)  0.3 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "vit_mae",
+  "status": "ok  dim=768  eff_rank=3 (0%)  0.6 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "clip_b32",
+  "status": "ok  dim=768  eff_rank=47 (6%)  0.3 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "siglip_b16",
+  "status": "ok  dim=768  eff_rank=38 (5%)  0.6 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "dinov2_b",
+  "status": "ok  dim=768  eff_rank=115 (15%)  0.8 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": "openclip_h14",
+  "status": "ok  dim=1280  eff_rank=55 (4%)  4.0 min"
+ }
+]

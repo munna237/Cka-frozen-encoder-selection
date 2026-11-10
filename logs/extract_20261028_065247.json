@@ -1,0 +1,357 @@
+[
+ {
+  "dataset": "dtd",
+  "encoder": "dinov2_l",
+  "status": "ok  dim=1024  eff_rank=298 (29%)  0.5 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "eva02_clip",
+  "status": "ok  dim=1024  eff_rank=178 (17%)  0.6 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "swin_l",
+  "status": "ok  dim=1536  eff_rank=420 (27%)  0.6 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "convnext_l",
+  "status": "ok  dim=1536  eff_rank=442 (29%)  0.3 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "resnet50",
+  "status": "ok  dim=2048  eff_rank=293 (14%)  0.1 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "vit_mae",
+  "status": "ok  dim=768  eff_rank=3 (0%)  0.1 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "clip_b32",
+  "status": "ok  dim=768  eff_rank=151 (20%)  0.1 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "siglip_b16",
+  "status": "ok  dim=768  eff_rank=151 (20%)  0.1 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "dinov2_b",
+  "status": "ok  dim=768  eff_rank=244 (32%)  0.2 min"
+ },
+ {
+  "dataset": "dtd",
+  "encoder": "openclip_h14",
+  "status": "ok  dim=1280  eff_rank=250 (20%)  0.7 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "dinov2_l",
+  "status": "ok  dim=1024  eff_rank=37 (4%)  0.5 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "eva02_clip",
+  "status": "ok  dim=1024  eff_rank=92 (9%)  0.7 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "swin_l",
+  "status": "ok  dim=1536  eff_rank=170 (11%)  0.3 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "convnext_l",
+  "status": "ok  dim=1536  eff_rank=144 (9%)  0.3 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "resnet50",
+  "status": "ok  dim=2048  eff_rank=84 (4%)  0.1 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "vit_mae",
+  "status": "ok  dim=768  eff_rank=4 (0%)  0.1 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "clip_b32",
+  "status": "ok  dim=768  eff_rank=95 (12%)  0.1 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "siglip_b16",
+  "status": "ok  dim=768  eff_rank=121 (16%)  0.1 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "dinov2_b",
+  "status": "ok  dim=768  eff_rank=37 (5%)  0.2 min"
+ },
+ {
+  "dataset": "aircraft",
+  "encoder": "openclip_h14",
+  "status": "ok  dim=1280  eff_rank=152 (12%)  0.8 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "dinov2_l",
+  "status": "ok  dim=1024  eff_rank=63 (6%)  2.2 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "eva02_clip",
+  "status": "ok  dim=1024  eff_rank=24 (2%)  3.8 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "swin_l",
+  "status": "ok  dim=1536  eff_rank=68 (4%)  1.7 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "convnext_l",
+  "status": "ok  dim=1536  eff_rank=80 (5%)  1.3 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "resnet50",
+  "status": "ok  dim=2048  eff_rank=64 (3%)  0.3 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "vit_mae",
+  "status": "ok  dim=768  eff_rank=2 (0%)  0.5 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "clip_b32",
+  "status": "ok  dim=768  eff_rank=29 (4%)  0.2 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "siglip_b16",
+  "status": "ok  dim=768  eff_rank=23 (3%)  0.5 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "dinov2_b",
+  "status": "ok  dim=768  eff_rank=57 (7%)  0.7 min"
+ },
+ {
+  "dataset": "eurosat",
+  "encoder": "openclip_h14",
+  "status": "ok  dim=1280  eff_rank=36 (3%)  3.8 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "dinov2_l",
+  "status": "ok  dim=1024  eff_rank=136 (13%)  0.5 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "eva02_clip",
+  "status": "ok  dim=1024  eff_rank=76 (7%)  0.8 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "swin_l",
+  "status": "ok  dim=1536  eff_rank=288 (19%)  0.4 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "convnext_l",
+  "status": "ok  dim=1536  eff_rank=270 (18%)  0.3 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "resnet50",
+  "status": "ok  dim=2048  eff_rank=197 (10%)  0.1 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "vit_mae",
+  "status": "ok  dim=768  eff_rank=4 (1%)  0.1 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "clip_b32",
+  "status": "ok  dim=768  eff_rank=112 (15%)  0.1 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "siglip_b16",
+  "status": "ok  dim=768  eff_rank=88 (12%)  0.1 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "dinov2_b",
+  "status": "ok  dim=768  eff_rank=119 (16%)  0.2 min"
+ },
+ {
+  "dataset": "pets",
+  "encoder": "openclip_h14",
+  "status": "ok  dim=1280  eff_rank=127 (10%)  0.8 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "dinov2_l",
+  "status": "ok  dim=1024  eff_rank=130 (13%)  2.2 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "eva02_clip",
+  "status": "ok  dim=1024  eff_rank=78 (8%)  3.9 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "swin_l",
+  "status": "ok  dim=1536  eff_rank=312 (20%)  1.7 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "convnext_l",
+  "status": "ok  dim=1536  eff_rank=285 (19%)  1.3 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "resnet50",
+  "status": "ok  dim=2048  eff_rank=201 (10%)  0.3 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "vit_mae",
+  "status": "ok  dim=768  eff_rank=3 (0%)  0.5 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "clip_b32",
+  "status": "ok  dim=768  eff_rank=122 (16%)  0.2 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "siglip_b16",
+  "status": "ok  dim=768  eff_rank=108 (14%)  0.5 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "dinov2_b",
+  "status": "ok  dim=768  eff_rank=115 (15%)  0.7 min"
+ },
+ {
+  "dataset": "food101",
+  "encoder": "openclip_h14",
+  "status": "ok  dim=1280  eff_rank=148 (12%)  3.8 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "dinov2_l",
+  "status": "ok  dim=1024  eff_rank=470 (46%)  2.2 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "eva02_clip",
+  "status": "ok  dim=1024  eff_rank=182 (18%)  3.9 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "swin_l",
+  "status": "ok  dim=1536  eff_rank=484 (32%)  1.7 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "convnext_l",
+  "status": "ok  dim=1536  eff_rank=454 (30%)  1.3 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "resnet50",
+  "status": "ok  dim=2048  eff_rank=271 (13%)  0.3 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "vit_mae",
+  "status": "ok  dim=768  eff_rank=3 (0%)  0.5 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "clip_b32",
+  "status": "ok  dim=768  eff_rank=150 (20%)  0.2 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "siglip_b16",
+  "status": "ok  dim=768  eff_rank=161 (21%)  0.5 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "dinov2_b",
+  "status": "ok  dim=768  eff_rank=383 (50%)  0.7 min"
+ },
+ {
+  "dataset": "cifar100",
+  "encoder": "openclip_h14",
+  "status": "ok  dim=1280  eff_rank=255 (20%)  3.8 min"
+ },
+ {
+  "dataset": "gtsrb",
+  "encoder": null,
+  "status": "manifest failed: <urlopen error [Errno 110] Connection timed out>"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "dinov2_l",
+  "status": "ok  dim=1024  eff_rank=577 (56%)  2.2 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "eva02_clip",
+  "status": "ok  dim=1024  eff_rank=225 (22%)  4.0 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "swin_l",
+  "status": "ok  dim=1536  eff_rank=614 (40%)  1.8 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "convnext_l",
+  "status": "ok  dim=1536  eff_rank=596 (39%)  1.4 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "resnet50",
+  "status": "ok  dim=2048  eff_rank=357 (17%)  0.3 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "vit_mae",
+  "status": "ok  dim=768  eff_rank=3 (0%)  0.6 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "clip_b32",
+  "status": "ok  dim=768  eff_rank=223 (29%)  0.2 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "siglip_b16",
+  "status": "ok  dim=768  eff_rank=196 (26%)  0.6 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "dinov2_b",
+  "status": "ok  dim=768  eff_rank=449 (58%)  0.7 min"
+ },
+ {
+  "dataset": "country211",
+  "encoder": "openclip_h14",
+  "status": "ok  dim=1280  eff_rank=306 (24%)  4.0 min"
+ }
+]
