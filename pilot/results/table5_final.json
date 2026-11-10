@@ -1,0 +1,33 @@
+{
+  "description": "Table 5 fusion baselines on BRACS, reimplementations.",
+  "protocol": "per-fold, inner-CV hyperparameters, 3 seeds, 5 outer folds",
+  "best_single": {
+    "params": 0,
+    "acc": 75.26
+  },
+  "equal_ensemble": {
+    "params": 0,
+    "acc": 77.95
+  },
+  "concat_mlp": {
+    "params": 5575,
+    "acc": 77.67,
+    "sd": 0.96
+  },
+  "moe": {
+    "params": 157611,
+    "acc": 71.32,
+    "sd": 1.13
+  },
+  "cross_attention": {
+    "params": 530951,
+    "acc": 77.11,
+    "sd": 0.81
+  },
+  "class_conditional": {
+    "params": 31,
+    "acc": 78.53,
+    "sd": 0.54,
+    "note": "78.53 here vs 78.81 elsewhere: this table stops on a held-out slice of the training partition for comparability with the baselines."
+  }
+}

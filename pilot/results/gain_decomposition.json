@@ -1,0 +1,35 @@
+{
+ "description": "Gain decomposition on the class-conditional fusion (Section 4.3), against the per-dataset best single teacher.",
+ "note": "The best single teacher is Phikon-v2 on BRACS and UNI on SICAPv2 and MHIST.",
+ "per_dataset": {
+  "bracs": {
+   "best_single": 75.26,
+   "equal_ensemble": 77.95,
+   "ours": 78.81,
+   "selection_pp": 2.7,
+   "fusion_pp": 0.86,
+   "total_pp": 3.55
+  },
+  "sicapv2": {
+   "best_single": 89.97,
+   "equal_ensemble": 91.95,
+   "ours": 93.11,
+   "selection_pp": 1.98,
+   "fusion_pp": 1.16,
+   "total_pp": 3.14
+  },
+  "mhist": {
+   "best_single": 84.3,
+   "equal_ensemble": 86.23,
+   "ours": 86.52,
+   "selection_pp": 1.94,
+   "fusion_pp": 0.29,
+   "total_pp": 2.22
+  }
+ },
+ "pooled": {
+  "selection_pp": 2.2,
+  "fusion_pp": 0.77,
+  "total_pp": 2.97
+ }
+}

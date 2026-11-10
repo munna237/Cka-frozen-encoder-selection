@@ -1,0 +1,7 @@
+comparison,cka_gap,diff_pp,domain
+bracs,0.259,0.78,pathology
+sicapv2,0.049,0.19,pathology
+mhist,0.012,-0.22,pathology
+dtd,0.464,0.48,general-vision
+aircraft,0.176,1.26,general-vision
+eurosat,0.572,0.02,general-vision

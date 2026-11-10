@@ -1,0 +1,136 @@
+{
+ "description": "General-vision replication with a single fixed base per benchmark (Section 6).",
+ "design": "base = anchor + median-CKA pool member, fixed before candidate selection; parameter-free logit averaging",
+ "competence_matched": {
+  "dtd": {
+   "pair": "resnet50 vs vit_mae",
+   "cka_gap": 0.464,
+   "comp_gap": 4.1,
+   "diff_pp": 0.48
+  },
+  "aircraft": {
+   "pair": "resnet50 vs vit_mae",
+   "cka_gap": 0.176,
+   "comp_gap": 1.32,
+   "diff_pp": 1.26
+  },
+  "eurosat": {
+   "pair": "swin_l vs vit_mae",
+   "cka_gap": 0.572,
+   "comp_gap": 0.89,
+   "diff_pp": 0.02
+  },
+  "pooled_dataset_level": {
+   "mean_pp": 0.587,
+   "ci": [
+    -0.97,
+    2.14
+   ],
+   "p": 0.246
+  },
+  "pooled_naive_15fold": {
+   "mean_pp": 0.587,
+   "wins": "11/15",
+   "p": 0.0316
+  },
+  "note": "effect decreases as the CKA gap grows (rho = -1.0 over three benchmarks)"
+ },
+ "competence_unmatched": {
+  "dtd": {
+   "pair": "convnext_l vs vit_mae",
+   "cka_gap": 0.588,
+   "comp_gap": 17.45,
+   "diff_pp": 2.45
+  },
+  "aircraft": {
+   "pair": "eva02_clip vs resnet50",
+   "cka_gap": 0.195,
+   "comp_gap": 30.92,
+   "diff_pp": 6.72
+  },
+  "pooled_dataset_level": {
+   "mean_pp": 4.583
+  },
+  "pooled_naive_10fold": {
+   "mean_pp": 4.583,
+   "wins": "10/10",
+   "p": 0.0003
+  }
+ },
+ "per_encoder_marginal_utility": {
+  "note": "Marginal utility of each candidate over the fixed base, parameter-free logit averaging. These are the values behind the 'delta high' and 'delta low' columns of Table 4.",
+  "dtd": {
+   "base": "dinov2_l+eva02_clip",
+   "base_acc": 83.94,
+   "swin_l": {
+    "cka": 0.655,
+    "acc": 80.0,
+    "marg": 0.9
+   },
+   "convnext_l": {
+    "cka": 0.642,
+    "acc": 80.69,
+    "marg": 1.65
+   },
+   "resnet50": {
+    "cka": 0.518,
+    "acc": 67.34,
+    "marg": -0.32
+   },
+   "vit_mae": {
+    "cka": 0.054,
+    "acc": 63.24,
+    "marg": -0.8
+   }
+  },
+  "aircraft": {
+   "base": "dinov2_l+swin_l",
+   "base_acc": 72.5,
+   "eva02_clip": {
+    "cka": 0.462,
+    "acc": 67.07,
+    "marg": 3.99
+   },
+   "convnext_l": {
+    "cka": 0.409,
+    "acc": 55.01,
+    "marg": -1.77
+   },
+   "resnet50": {
+    "cka": 0.267,
+    "acc": 36.14,
+    "marg": -2.73
+   },
+   "vit_mae": {
+    "cka": 0.091,
+    "acc": 37.46,
+    "marg": -3.99
+   }
+  },
+  "eurosat": {
+   "base": "dinov2_l+eva02_clip",
+   "base_acc": 98.36,
+   "swin_l": {
+    "cka": 0.776,
+    "acc": 97.26,
+    "marg": 0.27
+   },
+   "convnext_l": {
+    "cka": 0.763,
+    "acc": 97.37,
+    "marg": 0.27
+   },
+   "resnet50": {
+    "cka": 0.712,
+    "acc": 95.23,
+    "marg": 0.17
+   },
+   "vit_mae": {
+    "cka": 0.203,
+    "acc": 96.36,
+    "marg": 0.25
+   }
+  }
+ },
+ "caveat": "Per-fold arrays for this fixed-base run are not shipped: the run requires the general-vision feature caches, which are several GB and are not in this archive. The fold arrays in general_vision_results.json belong to the SUPERSEDED per-comparison-base run and must not be used for Section 6."
+}

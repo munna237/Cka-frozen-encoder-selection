@@ -1,0 +1,115 @@
+{
+ "description": "Robustness of the pathology null (Section 4.2 and Appendix I).",
+ "outcome_variable": "marginal fusion utility of the higher-CKA minus the lower-CKA candidate, per fold",
+ "estimate_pp": 0.25,
+ "inferential_models": {
+  "paired_t_15folds_pooled": {
+   "estimate_pp": 0.25,
+   "ci": [
+    -0.27,
+    0.77
+   ],
+   "p": 0.32,
+   "note": "treats folds as independent; overstates precision"
+  },
+  "cluster_robust_by_dataset": {
+   "estimate_pp": 0.25,
+   "ci": [
+    -0.32,
+    0.82
+   ],
+   "p": 0.39,
+   "note": "Primary figure reported in the paper. IMPORTANT: with G = 3 clusters the normal reference is anti-conservative. Under the conventional t(G-1) = t(2) reference the same standard error gives 95% CI [-1.00, +1.50], p = 0.48 -- which coincides with the dataset-means row below. Both are reported so the choice is visible.",
+   "cluster_robust_se": 0.2902,
+   "reference_distribution": "normal (z = 1.96)"
+  },
+  "mixed_effects_random_intercept": {
+   "estimate_pp": 0.25,
+   "ci": [
+    -0.36,
+    0.86
+   ],
+   "p": 0.42
+  },
+  "dataset_means_n3": {
+   "estimate_pp": 0.25,
+   "p": 0.48
+  },
+  "cluster_robust_by_dataset_t_G_minus_1": {
+   "estimate_pp": 0.25,
+   "ci": [
+    -1.0,
+    1.5
+   ],
+   "p": 0.48,
+   "reference_distribution": "t(G-1) = t(2)",
+   "note": "Conservative small-G reference. Recommended as primary for a 3-cluster design."
+  }
+ },
+ "equivalence_test": {
+  "margin_pp": 1.0,
+  "tost_p_15folds": 0.0042,
+  "tost_p_dataset_level_n3": 0.061,
+  "conclusion": "Equivalence within +/-1 pp is established when folds are treated as independent but NOT at the dataset level (n=3). The paper states the weaker claim: the evidence is consistent with equivalence but does not establish it at n=3.",
+  "caveat": "The +/-1 pp equivalence margin is narrower than the t(2) cluster-robust interval ([-1.00, +1.50]), so equivalence within +/-1 pp is not supported under the conservative reference distribution. Statements of the form 'consistent with equivalence within +/-1 point' should be read against the fold-independent test only."
+ },
+ "dose_response": {
+  "note": "Uses the FIXED-BASE general-vision values (general_vision_fixedbase.json). An earlier version of this file reported +0.278, computed on the superseded per-comparison-base results.",
+  "comparisons": [
+   {
+    "name": "bracs",
+    "cka_gap": 0.259,
+    "diff_pp": 0.78
+   },
+   {
+    "name": "sicapv2",
+    "cka_gap": 0.049,
+    "diff_pp": 0.19
+   },
+   {
+    "name": "mhist",
+    "cka_gap": 0.012,
+    "diff_pp": -0.22
+   },
+   {
+    "name": "dtd",
+    "cka_gap": 0.464,
+    "diff_pp": 0.48
+   },
+   {
+    "name": "aircraft",
+    "cka_gap": 0.176,
+    "diff_pp": 1.26
+   },
+   {
+    "name": "eurosat",
+    "cka_gap": 0.572,
+    "diff_pp": 0.02
+   }
+  ],
+  "ols_slope_pp_per_unit_cka": 0.094,
+  "se": 1.203,
+  "p": 0.941,
+  "spearman_rho": 0.2,
+  "spearman_p": 0.704,
+  "n": 6
+ },
+ "parameter_free_fusion": {
+  "note": "The null does not depend on the class-conditional fusion rule.",
+  "logit_average": {
+   "mean_pp": -0.248,
+   "wins": "4/15",
+   "p": 0.296
+  },
+  "probability_average": {
+   "mean_pp": -0.09,
+   "wins": "9/15",
+   "p": 0.632
+  },
+  "class_conditional": {
+   "mean_pp": 0.25,
+   "wins": "8/15",
+   "p": 0.325
+  }
+ }
+}

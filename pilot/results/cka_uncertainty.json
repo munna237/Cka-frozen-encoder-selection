@@ -1,0 +1,99 @@
+{
+  "description": "Linear CKA: full-sample values (as reported in the paper) and subsampling uncertainty over 50 draws of 2000 rows.",
+  "bracs": {
+    "uni|phikon_v2": {
+      "full": 0.8275,
+      "sub_mean": 0.8284,
+      "sd": 0.0038
+    },
+    "uni|ctranspath": {
+      "full": 0.5685,
+      "sub_mean": 0.5717,
+      "sd": 0.0031
+    },
+    "uni|resnet50_imagenet": {
+      "full": 0.441,
+      "sub_mean": 0.4449,
+      "sd": 0.0039
+    },
+    "phikon_v2|ctranspath": {
+      "full": 0.5202,
+      "sub_mean": 0.5229,
+      "sd": 0.0033
+    },
+    "phikon_v2|resnet50_imagenet": {
+      "full": 0.4169,
+      "sub_mean": 0.4202,
+      "sd": 0.0043
+    },
+    "ctranspath|resnet50_imagenet": {
+      "full": 0.4558,
+      "sub_mean": 0.4594,
+      "sd": 0.0037
+    }
+  },
+  "sicapv2": {
+    "uni|phikon_v2": {
+      "full": 0.6896,
+      "sub_mean": 0.6932,
+      "sd": 0.0058
+    },
+    "uni|ctranspath": {
+      "full": 0.7387,
+      "sub_mean": 0.7412,
+      "sd": 0.0044
+    },
+    "uni|resnet50_imagenet": {
+      "full": 0.4597,
+      "sub_mean": 0.4678,
+      "sd": 0.0056
+    },
+    "phikon_v2|ctranspath": {
+      "full": 0.7297,
+      "sub_mean": 0.7313,
+      "sd": 0.0045
+    },
+    "phikon_v2|resnet50_imagenet": {
+      "full": 0.4796,
+      "sub_mean": 0.4863,
+      "sd": 0.0058
+    },
+    "ctranspath|resnet50_imagenet": {
+      "full": 0.5726,
+      "sub_mean": 0.5785,
+      "sd": 0.005
+    }
+  },
+  "mhist": {
+    "uni|phikon_v2": {
+      "full": 0.6907,
+      "sub_mean": 0.6925,
+      "sd": 0.0031
+    },
+    "uni|ctranspath": {
+      "full": 0.6788,
+      "sub_mean": 0.6803,
+      "sd": 0.0032
+    },
+    "uni|resnet50_imagenet": {
+      "full": 0.5054,
+      "sub_mean": 0.5068,
+      "sd": 0.0052
+    },
+    "phikon_v2|ctranspath": {
+      "full": 0.5989,
+      "sub_mean": 0.6009,
+      "sd": 0.0043
+    },
+    "phikon_v2|resnet50_imagenet": {
+      "full": 0.4502,
+      "sub_mean": 0.4524,
+      "sd": 0.0047
+    },
+    "ctranspath|resnet50_imagenet": {
+      "full": 0.5248,
+      "sub_mean": 0.5266,
+      "sd": 0.0047
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "description": "BRACS cross-institutional held-out evaluation (Section 4.4), computed from logits/bracs_heldout/.",
+ "n_test": 570,
+ "individual_accuracy": {
+  "uni": 62.11,
+  "phikon_v2": 58.77,
+  "ctranspath": 41.75,
+  "resnet50_imagenet": 50.88
+ },
+ "best_single": {
+  "teacher": "uni",
+  "acc": 62.11,
+  "ece": 0.1034
+ },
+ "class_conditional_fusion": {
+  "acc": 57.37,
+  "ece": 0.1992,
+  "gain_vs_best_single_pp": -4.74
+ },
+ "parameter_free": {
+  "logit_average": {
+   "acc": 61.23,
+   "ece": 0.0611
+  },
+  "probability_average": {
+   "acc": 62.46
+  }
+ },
+ "conclusion": "Neither the accuracy gain nor the calibration behaviour survives cross-institutional shift. Fusion parameters are fitted on the in-distribution logits and applied to the held-out institutions.",
+ "correction_note": "Earlier drafts reported 63.68% / +1.58 pp / ECE 0.160 for this experiment, taken from a stored result file rather than recomputed from the released test logits. Those values are superseded by the figures above, which are reproducible from this archive."
+}
