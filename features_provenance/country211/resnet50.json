@@ -1,0 +1,42 @@
+{
+ "dataset": "country211",
+ "encoder": "resnet50",
+ "manifest_hash": "057374b87f5f3c83d56b40383ec8b4ae7894a113ce7c0eb34c53a100947e1294",
+ "shape": [
+  20000,
+  2048
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "resnet50",
+  "kind": "timm",
+  "id": "resnet50.a1_in1k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 23508032,
+  "weight_checksum": "68e757034f79406b"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 2048,
+  "finite": true,
+  "mean_norm": 6.400303945542964,
+  "eff_rank": 357.3847162549207,
+  "eff_rank_frac": 0.174504255983848,
+  "dead_dims_frac": 0.00048828125
+ },
+ "minutes": 0.3,
+ "saved": "2026-10-28 06:46:43"
+}

@@ -1,0 +1,42 @@
+{
+ "dataset": "dtd",
+ "encoder": "swin_l",
+ "manifest_hash": "3f76bbbdeabc5bd52cf9a7f62ebe6740e9f04c8d8d63a36162b43268c3a3e84a",
+ "shape": [
+  1880,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "swin_l",
+  "kind": "timm",
+  "id": "swin_large_patch4_window7_224.ms_in22k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 194995476,
+  "weight_checksum": "8b1aec0ddff05465"
+ },
+ "stats": {
+  "n": 1880,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 19.254736931230852,
+  "eff_rank": 420.0320383047121,
+  "eff_rank_frac": 0.27345835827129694,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.6,
+ "saved": "2026-10-28 04:24:20"
+}

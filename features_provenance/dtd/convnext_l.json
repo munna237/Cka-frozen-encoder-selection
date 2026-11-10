@@ -1,0 +1,42 @@
+{
+ "dataset": "dtd",
+ "encoder": "convnext_l",
+ "manifest_hash": "3f76bbbdeabc5bd52cf9a7f62ebe6740e9f04c8d8d63a36162b43268c3a3e84a",
+ "shape": [
+  1880,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "convnext_l",
+  "kind": "timm",
+  "id": "convnext_large.fb_in22k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 196230336,
+  "weight_checksum": "a56c5b1ef1e73ae2"
+ },
+ "stats": {
+  "n": 1880,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 16.685627390094908,
+  "eff_rank": 442.0857171587966,
+  "eff_rank_frac": 0.28781622210859154,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.3,
+ "saved": "2026-10-28 04:24:37"
+}

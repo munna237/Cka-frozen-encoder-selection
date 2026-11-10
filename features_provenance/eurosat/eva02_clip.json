@@ -1,0 +1,42 @@
+{
+ "dataset": "eurosat",
+ "encoder": "eva02_clip",
+ "manifest_hash": "8db18209e1e5899e0a4b5e6e88be0fe947823e8519ef24903435107f182ef541",
+ "shape": [
+  20000,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "eva02_clip",
+  "kind": "timm",
+  "id": "eva02_large_patch14_clip_224.merged2b",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 303317952,
+  "weight_checksum": "c0ca5a90579a1733"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 32.56368899308745,
+  "eff_rank": 23.839358148929204,
+  "eff_rank_frac": 0.023280623192313676,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 3.8,
+ "saved": "2026-10-28 04:39:12"
+}

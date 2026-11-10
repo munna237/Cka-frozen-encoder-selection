@@ -1,0 +1,42 @@
+{
+ "dataset": "country211",
+ "encoder": "vit_mae",
+ "manifest_hash": "057374b87f5f3c83d56b40383ec8b4ae7894a113ce7c0eb34c53a100947e1294",
+ "shape": [
+  20000,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "vit_mae",
+  "kind": "timm",
+  "id": "vit_base_patch16_224.mae",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 85798656,
+  "weight_checksum": "a5e098f6c27e415e"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 16.893719664021514,
+  "eff_rank": 3.289472395631091,
+  "eff_rank_frac": 0.004283167181811316,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.6,
+ "saved": "2026-10-28 06:47:17"
+}

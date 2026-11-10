@@ -1,0 +1,42 @@
+{
+ "dataset": "dtd",
+ "encoder": "eva02_clip",
+ "manifest_hash": "3f76bbbdeabc5bd52cf9a7f62ebe6740e9f04c8d8d63a36162b43268c3a3e84a",
+ "shape": [
+  1880,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "eva02_clip",
+  "kind": "timm",
+  "id": "eva02_large_patch14_clip_224.merged2b",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 303317952,
+  "weight_checksum": "c0ca5a90579a1733"
+ },
+ "stats": {
+  "n": 1880,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 33.26881713156475,
+  "eff_rank": 177.88408432705208,
+  "eff_rank_frac": 0.1737149261006368,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.6,
+ "saved": "2026-10-28 04:23:45"
+}

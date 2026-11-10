@@ -1,0 +1,42 @@
+{
+ "dataset": "eurosat",
+ "encoder": "openclip_h14",
+ "manifest_hash": "8db18209e1e5899e0a4b5e6e88be0fe947823e8519ef24903435107f182ef541",
+ "shape": [
+  20000,
+  1280
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "openclip_h14",
+  "kind": "timm",
+  "id": "vit_huge_patch14_clip_224.laion2b",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 630766080,
+  "weight_checksum": "5d5048b584120137"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 1280,
+  "finite": true,
+  "mean_norm": 38.409591861048234,
+  "eff_rank": 36.407342907896734,
+  "eff_rank_frac": 0.028443236646794323,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 3.8,
+ "saved": "2026-10-28 04:48:19"
+}

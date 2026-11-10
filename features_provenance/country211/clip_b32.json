@@ -1,0 +1,42 @@
+{
+ "dataset": "country211",
+ "encoder": "clip_b32",
+ "manifest_hash": "057374b87f5f3c83d56b40383ec8b4ae7894a113ce7c0eb34c53a100947e1294",
+ "shape": [
+  20000,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "clip_b32",
+  "kind": "timm",
+  "id": "vit_base_patch32_clip_224.openai",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 87456000,
+  "weight_checksum": "627d30671912db87"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 27.130073155575577,
+  "eff_rank": 223.31257377837844,
+  "eff_rank_frac": 0.2907715804405969,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.2,
+ "saved": "2026-10-28 06:47:30"
+}

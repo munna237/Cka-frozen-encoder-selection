@@ -1,0 +1,42 @@
+{
+ "dataset": "eurosat",
+ "encoder": "resnet50",
+ "manifest_hash": "8db18209e1e5899e0a4b5e6e88be0fe947823e8519ef24903435107f182ef541",
+ "shape": [
+  20000,
+  2048
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "resnet50",
+  "kind": "timm",
+  "id": "resnet50.a1_in1k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 23508032,
+  "weight_checksum": "68e757034f79406b"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 2048,
+  "finite": true,
+  "mean_norm": 5.379254932920408,
+  "eff_rank": 64.13770869554956,
+  "eff_rank_frac": 0.03131724057399881,
+  "dead_dims_frac": 0.001953125
+ },
+ "minutes": 0.3,
+ "saved": "2026-10-28 04:42:33"
+}
