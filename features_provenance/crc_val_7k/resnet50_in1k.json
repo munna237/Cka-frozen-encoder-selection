@@ -1,0 +1,42 @@
+{
+ "dataset": "crc_val_7k",
+ "encoder": "resnet50_in1k",
+ "manifest_hash": "dc7332f23da9b57a0d1dd3d0dbb83e65e8e2c71c16ba367f75bb495ca4b0aa4a",
+ "shape": [
+  7180,
+  2048
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "resnet50_in1k",
+  "kind": "timm",
+  "id": "resnet50.tv_in1k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 23508032,
+  "weight_checksum": "2125d202facb68e0"
+ },
+ "stats": {
+  "n": 7180,
+  "dim": 2048,
+  "finite": true,
+  "mean_norm": 23.358565970365472,
+  "eff_rank": 27.598625195966726,
+  "eff_rank_frac": 0.013475891208968128,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.1,
+ "saved": "2026-10-25 15:20:46"
+}

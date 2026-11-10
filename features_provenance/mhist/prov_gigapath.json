@@ -1,0 +1,42 @@
+{
+ "dataset": "mhist",
+ "encoder": "prov_gigapath",
+ "manifest_hash": "84fd5a589042aeb3b214e9603865a4e0c8e2e4dd3502f55c0302c35f14f32630",
+ "shape": [
+  3152,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "prov_gigapath",
+  "kind": "timm",
+  "id": "hf-hub:prov-gigapath/prov-gigapath",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 1134953984,
+  "weight_checksum": "e4da1654f12cdc72"
+ },
+ "stats": {
+  "n": 3152,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 35.39090356579056,
+  "eff_rank": 75.92878413824715,
+  "eff_rank_frac": 0.04943280217333799,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 1.1,
+ "saved": "2026-10-25 15:13:18"
+}

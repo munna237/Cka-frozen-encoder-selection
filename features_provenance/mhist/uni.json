@@ -1,0 +1,42 @@
+{
+ "dataset": "mhist",
+ "encoder": "uni",
+ "manifest_hash": "84fd5a589042aeb3b214e9603865a4e0c8e2e4dd3502f55c0302c35f14f32630",
+ "shape": [
+  3152,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "uni",
+  "kind": "timm",
+  "id": "hf-hub:MahmoodLab/uni",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 303350784,
+  "weight_checksum": "6f4d8399ad9f37c3"
+ },
+ "stats": {
+  "n": 3152,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 39.793712931482524,
+  "eff_rank": 82.74708901487284,
+  "eff_rank_frac": 0.08080770411608676,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.4,
+ "saved": "2026-10-25 15:08:33"
+}

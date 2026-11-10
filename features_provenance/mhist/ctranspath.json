@@ -1,0 +1,46 @@
+{
+ "dataset": "mhist",
+ "encoder": "ctranspath",
+ "manifest_hash": "84fd5a589042aeb3b214e9603865a4e0c8e2e4dd3502f55c0302c35f14f32630",
+ "shape": [
+  3152,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "ctranspath",
+  "kind": "ctranspath",
+  "id": "<DRIVE>/HetFuseKD/model_weights/ctranspath.pth",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "avg (timm 0.5.4 head)",
+  "load_report": {
+   "timm": "0.5.4",
+   "torch": "2.11.0+cu130",
+   "ckpt_entries": 200,
+   "missing": [],
+   "unexpected": [],
+   "patch_embed_tensors_in_ckpt": 16
+  }
+ },
+ "stats": {
+  "n": 3152,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 3.4901922996074966,
+  "eff_rank": 40.4661687733323,
+  "eff_rank_frac": 0.05269032392360976,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.2,
+ "saved": "2026-10-25 15:09:03"
+}

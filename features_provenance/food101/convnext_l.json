@@ -1,0 +1,42 @@
+{
+ "dataset": "food101",
+ "encoder": "convnext_l",
+ "manifest_hash": "bc10a834c528ce91456bfa4a9050f56721ee86ebc2f1354fcafc2c185ed3f8bc",
+ "shape": [
+  20000,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "convnext_l",
+  "kind": "timm",
+  "id": "convnext_large.fb_in22k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 196230336,
+  "weight_checksum": "a56c5b1ef1e73ae2"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 16.248886810434417,
+  "eff_rank": 284.86531952594527,
+  "eff_rank_frac": 0.18545919239970396,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 1.3,
+ "saved": "2026-10-28 05:07:41"
+}

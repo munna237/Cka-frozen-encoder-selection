@@ -1,0 +1,42 @@
+{
+ "dataset": "gtsrb",
+ "encoder": "siglip_b16",
+ "manifest_hash": "895b895afa09a6632d53d38c2f2e143839ef08b52d748efa8d5c4bc132b8d4a6",
+ "shape": [
+  20000,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "siglip_b16",
+  "kind": "timm",
+  "id": "vit_base_patch16_siglip_224.webli",
+  "mean": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "std": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 92884224,
+  "weight_checksum": "c0b3d825e4818f5b"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 15.129201433673176,
+  "eff_rank": 37.65802150928027,
+  "eff_rank_frac": 0.049033882173542015,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.6,
+ "saved": "2026-10-29 00:35:23"
+}

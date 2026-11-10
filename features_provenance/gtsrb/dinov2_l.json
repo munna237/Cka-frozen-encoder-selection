@@ -1,0 +1,43 @@
+{
+ "dataset": "gtsrb",
+ "encoder": "dinov2_l",
+ "manifest_hash": "895b895afa09a6632d53d38c2f2e143839ef08b52d748efa8d5c4bc132b8d4a6",
+ "shape": [
+  20000,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "dinov2_l",
+  "kind": "timm",
+  "id": "vit_large_patch14_dinov2.lvd142m",
+  "resized_from": 518,
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 303227904,
+  "weight_checksum": "34dc350e23eb825f"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 44.02087046999588,
+  "eff_rank": 144.8090720039212,
+  "eff_rank_frac": 0.14141510937882928,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 2.3,
+ "saved": "2026-10-29 00:26:15"
+}

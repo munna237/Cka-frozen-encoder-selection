@@ -1,0 +1,42 @@
+{
+ "dataset": "food101",
+ "encoder": "vit_mae",
+ "manifest_hash": "bc10a834c528ce91456bfa4a9050f56721ee86ebc2f1354fcafc2c185ed3f8bc",
+ "shape": [
+  20000,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "vit_mae",
+  "kind": "timm",
+  "id": "vit_base_patch16_224.mae",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 85798656,
+  "weight_checksum": "a5e098f6c27e415e"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 17.316095576572973,
+  "eff_rank": 2.909980708085391,
+  "eff_rank_frac": 0.0037890373803195197,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.5,
+ "saved": "2026-10-28 05:08:30"
+}

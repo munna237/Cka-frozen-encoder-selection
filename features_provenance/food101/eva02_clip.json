@@ -1,0 +1,42 @@
+{
+ "dataset": "food101",
+ "encoder": "eva02_clip",
+ "manifest_hash": "bc10a834c528ce91456bfa4a9050f56721ee86ebc2f1354fcafc2c185ed3f8bc",
+ "shape": [
+  20000,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "eva02_clip",
+  "kind": "timm",
+  "id": "eva02_large_patch14_clip_224.merged2b",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 303317952,
+  "weight_checksum": "c0ca5a90579a1733"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 32.17904142157248,
+  "eff_rank": 77.50851629248433,
+  "eff_rank_frac": 0.07569191044187923,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 3.9,
+ "saved": "2026-10-28 05:04:37"
+}

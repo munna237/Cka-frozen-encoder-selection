@@ -1,0 +1,42 @@
+{
+ "dataset": "mhist",
+ "encoder": "h_optimus_0",
+ "manifest_hash": "84fd5a589042aeb3b214e9603865a4e0c8e2e4dd3502f55c0302c35f14f32630",
+ "shape": [
+  3152,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "h_optimus_0",
+  "kind": "timm",
+  "id": "hf-hub:bioptimus/H-optimus-0",
+  "mean": [
+   0.707223,
+   0.578729,
+   0.703617
+  ],
+  "std": [
+   0.211883,
+   0.230117,
+   0.177517
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 5,
+  "n_params": 1134774272,
+  "weight_checksum": "15e9beb9dd68443d"
+ },
+ "stats": {
+  "n": 3152,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 31.717971183069,
+  "eff_rank": 70.64907016409938,
+  "eff_rank_frac": 0.04599548838808554,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 1.4,
+ "saved": "2026-10-25 15:12:13"
+}

@@ -1,0 +1,42 @@
+{
+ "dataset": "cifar100",
+ "encoder": "openclip_h14",
+ "manifest_hash": "065c3b560049551265f04e7b512db761b6d5f6cce648b4681f8f11ec3714ffd1",
+ "shape": [
+  20000,
+  1280
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "openclip_h14",
+  "kind": "timm",
+  "id": "vit_huge_patch14_clip_224.laion2b",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 630766080,
+  "weight_checksum": "5d5048b584120137"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 1280,
+  "finite": true,
+  "mean_norm": 38.61187681456404,
+  "eff_rank": 255.2897445445919,
+  "eff_rank_frac": 0.19944511292546244,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 3.8,
+ "saved": "2026-10-28 06:01:59"
+}
