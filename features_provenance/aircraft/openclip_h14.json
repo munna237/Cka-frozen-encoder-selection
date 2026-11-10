@@ -1,0 +1,42 @@
+{
+ "dataset": "aircraft",
+ "encoder": "openclip_h14",
+ "manifest_hash": "10f60a4b1d78f79c87d58f5e899f2ae19f83bac0fa9f77bc7d379295603d9b78",
+ "shape": [
+  3334,
+  1280
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "openclip_h14",
+  "kind": "timm",
+  "id": "vit_huge_patch14_clip_224.laion2b",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 630766080,
+  "weight_checksum": "5d5048b584120137"
+ },
+ "stats": {
+  "n": 3334,
+  "dim": 1280,
+  "finite": true,
+  "mean_norm": 38.72232392415332,
+  "eff_rank": 152.08441297735885,
+  "eff_rank_frac": 0.1188159476385616,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.8,
+ "saved": "2026-10-28 04:32:34"
+}

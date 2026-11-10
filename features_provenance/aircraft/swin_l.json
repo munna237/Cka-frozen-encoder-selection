@@ -1,0 +1,42 @@
+{
+ "dataset": "aircraft",
+ "encoder": "swin_l",
+ "manifest_hash": "10f60a4b1d78f79c87d58f5e899f2ae19f83bac0fa9f77bc7d379295603d9b78",
+ "shape": [
+  3334,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "swin_l",
+  "kind": "timm",
+  "id": "swin_large_patch4_window7_224.ms_in22k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 194995476,
+  "weight_checksum": "8b1aec0ddff05465"
+ },
+ "stats": {
+  "n": 3334,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 16.69526771429243,
+  "eff_rank": 169.5413969977158,
+  "eff_rank_frac": 0.11037851367038788,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.3,
+ "saved": "2026-10-28 04:30:59"
+}

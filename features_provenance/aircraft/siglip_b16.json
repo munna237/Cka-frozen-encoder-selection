@@ -1,0 +1,42 @@
+{
+ "dataset": "aircraft",
+ "encoder": "siglip_b16",
+ "manifest_hash": "10f60a4b1d78f79c87d58f5e899f2ae19f83bac0fa9f77bc7d379295603d9b78",
+ "shape": [
+  3334,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "siglip_b16",
+  "kind": "timm",
+  "id": "vit_base_patch16_siglip_224.webli",
+  "mean": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "std": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 92884224,
+  "weight_checksum": "c0b3d825e4818f5b"
+ },
+ "stats": {
+  "n": 3334,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 15.508893554587807,
+  "eff_rank": 120.70088055916669,
+  "eff_rank_frac": 0.1571626048947483,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.1,
+ "saved": "2026-10-28 04:31:38"
+}

@@ -1,0 +1,42 @@
+{
+ "dataset": "aircraft",
+ "encoder": "convnext_l",
+ "manifest_hash": "10f60a4b1d78f79c87d58f5e899f2ae19f83bac0fa9f77bc7d379295603d9b78",
+ "shape": [
+  3334,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "convnext_l",
+  "kind": "timm",
+  "id": "convnext_large.fb_in22k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 196230336,
+  "weight_checksum": "a56c5b1ef1e73ae2"
+ },
+ "stats": {
+  "n": 3334,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 14.698483329615776,
+  "eff_rank": 143.99642384979987,
+  "eff_rank_frac": 0.09374767177721345,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.3,
+ "saved": "2026-10-28 04:31:16"
+}

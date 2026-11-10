@@ -1,0 +1,42 @@
+{
+ "dataset": "aircraft",
+ "encoder": "clip_b32",
+ "manifest_hash": "10f60a4b1d78f79c87d58f5e899f2ae19f83bac0fa9f77bc7d379295603d9b78",
+ "shape": [
+  3334,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "clip_b32",
+  "kind": "timm",
+  "id": "vit_base_patch32_clip_224.openai",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 87456000,
+  "weight_checksum": "627d30671912db87"
+ },
+ "stats": {
+  "n": 3334,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 26.191387740287375,
+  "eff_rank": 94.56635609129299,
+  "eff_rank_frac": 0.12313327616053775,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.1,
+ "saved": "2026-10-28 04:31:32"
+}
