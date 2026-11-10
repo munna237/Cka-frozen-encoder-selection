@@ -1,0 +1,10 @@
+# Verification gate (code/verify_v3.py) and the analysis: CPU only.
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+statsmodels>=0.14
+pandas>=2.0
+matplotlib>=3.8
+requests>=2.31          # fetch_features.py / export_zenodo.py
+
+# Re-running probes (notebooks 04, 07, 08) or extracting features: see requirements-extract.txt
