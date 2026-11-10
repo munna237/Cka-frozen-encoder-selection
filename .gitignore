@@ -1,0 +1,11 @@
+# local runs and downloads (features live on Zenodo, not in git)
+TMLR_v3/
+zenodo_download/
+zenodo_export/
+*.part
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
