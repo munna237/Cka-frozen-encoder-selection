@@ -1,0 +1,25 @@
+{
+ "dataset": "trec_coarse",
+ "encoder": "mpnet_base",
+ "manifest_hash": "08594b881ce47928e518d597a6611047425f95ccb7e9a31dd40cd0e06f9cb235",
+ "shape": [
+  5452,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "mpnet_base",
+  "kind": "st",
+  "id": "sentence-transformers/all-mpnet-base-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 5452,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.999999999978392,
+  "eff_rank": 228.561951982731,
+  "eff_rank_frac": 0.2976067083108476,
+  "dead_dims_frac": 0.0026041666666666665
+ }
+}

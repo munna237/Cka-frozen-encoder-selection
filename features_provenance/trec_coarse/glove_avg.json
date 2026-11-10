@@ -1,0 +1,25 @@
+{
+ "dataset": "trec_coarse",
+ "encoder": "glove_avg",
+ "manifest_hash": "08594b881ce47928e518d597a6611047425f95ccb7e9a31dd40cd0e06f9cb235",
+ "shape": [
+  5452,
+  300
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "glove_avg",
+  "kind": "st",
+  "id": "sentence-transformers/average_word_embeddings_glove.6B.300d",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 5452,
+  "dim": 300,
+  "finite": true,
+  "mean_norm": 4.255183995660506,
+  "eff_rank": 143.1229050113185,
+  "eff_rank_frac": 0.4770763500377283,
+  "dead_dims_frac": 0.0
+ }
+}

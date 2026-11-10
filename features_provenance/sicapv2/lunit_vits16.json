@@ -1,0 +1,42 @@
+{
+ "dataset": "sicapv2",
+ "encoder": "lunit_vits16",
+ "manifest_hash": "3ea71b302d38f1c0122b619be9e26799817a67e9c418ee620c9eff985a2bbf3b",
+ "shape": [
+  12081,
+  384
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "lunit_vits16",
+  "kind": "timm",
+  "id": "hf-hub:1aurent/vit_small_patch16_224.lunit_dino",
+  "mean": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "std": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 21665664,
+  "weight_checksum": "b74878d7db2d88b5"
+ },
+ "stats": {
+  "n": 12081,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 44.924511930151645,
+  "eff_rank": 34.716186238711,
+  "eff_rank_frac": 0.09040673499664324,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.1,
+ "saved": "2026-10-25 15:01:26"
+}

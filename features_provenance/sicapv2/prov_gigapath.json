@@ -1,0 +1,42 @@
+{
+ "dataset": "sicapv2",
+ "encoder": "prov_gigapath",
+ "manifest_hash": "3ea71b302d38f1c0122b619be9e26799817a67e9c418ee620c9eff985a2bbf3b",
+ "shape": [
+  12081,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "prov_gigapath",
+  "kind": "timm",
+  "id": "hf-hub:prov-gigapath/prov-gigapath",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 1134953984,
+  "weight_checksum": "e4da1654f12cdc72"
+ },
+ "stats": {
+  "n": 12081,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 35.50036809626769,
+  "eff_rank": 90.71361839228867,
+  "eff_rank_frac": 0.0590583453074796,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 3.4,
+ "saved": "2026-10-25 15:01:18"
+}

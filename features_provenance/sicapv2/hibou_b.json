@@ -1,0 +1,57 @@
+{
+ "dataset": "sicapv2",
+ "encoder": "hibou_b",
+ "manifest_hash": "3ea71b302d38f1c0122b619be9e26799817a67e9c418ee620c9eff985a2bbf3b",
+ "shape": [
+  12081,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "hibou_b",
+  "kind": "hf-isolated",
+  "id": "histai/hibou-b",
+  "mean": [
+   0.7068,
+   0.5755,
+   0.722
+  ],
+  "std": [
+   0.195,
+   0.2316,
+   0.1816
+  ],
+  "pool": "pooler",
+  "n_params": 85741056,
+  "load_report": {
+   "transformers": "4.46.3",
+   "torch": "2.11.0+cu130",
+   "model": "histai/hibou-b",
+   "class": "Dinov2ModelWithRegisters",
+   "n_params": 85741056,
+   "mean": [
+    0.7068,
+    0.5755,
+    0.722
+   ],
+   "std": [
+    0.195,
+    0.2316,
+    0.1816
+   ],
+   "pool": "pooler"
+  }
+ },
+ "stats": {
+  "n": 12081,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 37.35110493639387,
+  "eff_rank": 69.172289560123,
+  "eff_rank_frac": 0.09006808536474349,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.8,
+ "saved": "2026-10-28 01:45:15"
+}

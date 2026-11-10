@@ -1,0 +1,25 @@
+{
+ "dataset": "trec_coarse",
+ "encoder": "e5_base",
+ "manifest_hash": "08594b881ce47928e518d597a6611047425f95ccb7e9a31dd40cd0e06f9cb235",
+ "shape": [
+  5452,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "e5_base",
+  "kind": "st",
+  "id": "intfloat/e5-base-v2",
+  "prefix": "query: "
+ },
+ "stats": {
+  "n": 5452,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.000000000002681,
+  "eff_rank": 300.4416938339674,
+  "eff_rank_frac": 0.39120012217964506,
+  "dead_dims_frac": 0.0
+ }
+}

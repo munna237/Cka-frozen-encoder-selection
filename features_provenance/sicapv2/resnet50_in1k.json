@@ -1,0 +1,42 @@
+{
+ "dataset": "sicapv2",
+ "encoder": "resnet50_in1k",
+ "manifest_hash": "3ea71b302d38f1c0122b619be9e26799817a67e9c418ee620c9eff985a2bbf3b",
+ "shape": [
+  12081,
+  2048
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "resnet50_in1k",
+  "kind": "timm",
+  "id": "resnet50.tv_in1k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 23508032,
+  "weight_checksum": "2125d202facb68e0"
+ },
+ "stats": {
+  "n": 12081,
+  "dim": 2048,
+  "finite": true,
+  "mean_norm": 22.369903913316694,
+  "eff_rank": 70.80701991515267,
+  "eff_rank_frac": 0.03457374019294564,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.2,
+ "saved": "2026-10-25 14:47:39"
+}

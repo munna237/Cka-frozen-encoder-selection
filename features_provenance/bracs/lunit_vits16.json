@@ -1,0 +1,42 @@
+{
+ "dataset": "bracs",
+ "encoder": "lunit_vits16",
+ "manifest_hash": "31e36885efeead2f8dd3c63273d16c9c5b88ce798b868fd45a4c1287abb2db4c",
+ "shape": [
+  3969,
+  384
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "lunit_vits16",
+  "kind": "timm",
+  "id": "hf-hub:1aurent/vit_small_patch16_224.lunit_dino",
+  "mean": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "std": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 21665664,
+  "weight_checksum": "b74878d7db2d88b5"
+ },
+ "stats": {
+  "n": 3969,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 44.15121704874785,
+  "eff_rank": 41.21378034702514,
+  "eff_rank_frac": 0.10732755298704465,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.1,
+ "saved": "2026-10-25 14:24:30"
+}

@@ -1,0 +1,25 @@
+{
+ "dataset": "trec_coarse",
+ "encoder": "gte_base",
+ "manifest_hash": "08594b881ce47928e518d597a6611047425f95ccb7e9a31dd40cd0e06f9cb235",
+ "shape": [
+  5452,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "gte_base",
+  "kind": "st",
+  "id": "thenlper/gte-base",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 5452,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.0000043436155712,
+  "eff_rank": 282.2664591294359,
+  "eff_rank_frac": 0.36753445199145296,
+  "dead_dims_frac": 0.0
+ }
+}

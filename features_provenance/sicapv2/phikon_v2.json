@@ -1,0 +1,41 @@
+{
+ "dataset": "sicapv2",
+ "encoder": "phikon_v2",
+ "manifest_hash": "3ea71b302d38f1c0122b619be9e26799817a67e9c418ee620c9eff985a2bbf3b",
+ "shape": [
+  12081,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "phikon_v2",
+  "kind": "hf",
+  "id": "owkin/phikon-v2",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "cls",
+  "transformers_version": "5.20.2",
+  "n_params": 303351808,
+  "weight_checksum": "08ca0a8e38ecc614"
+ },
+ "stats": {
+  "n": 12081,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 9.048373234792003,
+  "eff_rank": 65.94053629583405,
+  "eff_rank_frac": 0.06439505497640044,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 1.0,
+ "saved": "2026-10-25 14:46:44"
+}

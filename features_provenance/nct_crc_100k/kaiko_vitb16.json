@@ -1,0 +1,42 @@
+{
+ "dataset": "nct_crc_100k",
+ "encoder": "kaiko_vitb16",
+ "manifest_hash": "85b6b5b1003d05058a754ab452ffe6d93e90f63b11f79f42b936760b528263b3",
+ "shape": [
+  20000,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "kaiko_vitb16",
+  "kind": "timm",
+  "id": "hf-hub:1aurent/vit_base_patch16_224.kaiko_ai_towards_large_pathology_fms",
+  "mean": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "std": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 85798656,
+  "weight_checksum": "38da19e50dfd95a6"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 64.67301580235882,
+  "eff_rank": 15.761018075829588,
+  "eff_rank_frac": 0.02052215895290311,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.6,
+ "saved": "2026-10-26 03:49:58"
+}

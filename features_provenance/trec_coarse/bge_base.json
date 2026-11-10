@@ -1,0 +1,25 @@
+{
+ "dataset": "trec_coarse",
+ "encoder": "bge_base",
+ "manifest_hash": "08594b881ce47928e518d597a6611047425f95ccb7e9a31dd40cd0e06f9cb235",
+ "shape": [
+  5452,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "bge_base",
+  "kind": "st",
+  "id": "BAAI/bge-base-en-v1.5",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 5452,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.000000000545468,
+  "eff_rank": 264.5240216699356,
+  "eff_rank_frac": 0.34443231988272865,
+  "dead_dims_frac": 0.0
+ }
+}

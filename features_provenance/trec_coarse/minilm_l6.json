@@ -1,0 +1,25 @@
+{
+ "dataset": "trec_coarse",
+ "encoder": "minilm_l6",
+ "manifest_hash": "08594b881ce47928e518d597a6611047425f95ccb7e9a31dd40cd0e06f9cb235",
+ "shape": [
+  5452,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l6",
+  "kind": "st",
+  "id": "sentence-transformers/all-MiniLM-L6-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 5452,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 1.000000000121711,
+  "eff_rank": 193.90724752955154,
+  "eff_rank_frac": 0.5049667904415405,
+  "dead_dims_frac": 0.0078125
+ }
+}

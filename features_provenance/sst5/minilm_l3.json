@@ -1,0 +1,25 @@
+{
+ "dataset": "sst5",
+ "encoder": "minilm_l3",
+ "manifest_hash": "45b10557b2a5965fa5c4bbdb11b04dfdd952ba923603dc727442f5cf0be18943",
+ "shape": [
+  8544,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l3",
+  "kind": "st",
+  "id": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 8544,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 3.747211879420979,
+  "eff_rank": 151.69739298364803,
+  "eff_rank_frac": 0.3950452942282501,
+  "dead_dims_frac": 0.0
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "dataset": "trec_coarse",
+ "encoder": "minilm_l3",
+ "manifest_hash": "08594b881ce47928e518d597a6611047425f95ccb7e9a31dd40cd0e06f9cb235",
+ "shape": [
+  5452,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l3",
+  "kind": "st",
+  "id": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 5452,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 4.676277034574842,
+  "eff_rank": 143.8683676187604,
+  "eff_rank_frac": 0.3746572073405219,
+  "dead_dims_frac": 0.0
+ }
+}

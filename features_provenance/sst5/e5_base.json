@@ -1,0 +1,25 @@
+{
+ "dataset": "sst5",
+ "encoder": "e5_base",
+ "manifest_hash": "45b10557b2a5965fa5c4bbdb11b04dfdd952ba923603dc727442f5cf0be18943",
+ "shape": [
+  8544,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "e5_base",
+  "kind": "st",
+  "id": "intfloat/e5-base-v2",
+  "prefix": "query: "
+ },
+ "stats": {
+  "n": 8544,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.0000000000167535,
+  "eff_rank": 237.02544884673526,
+  "eff_rank_frac": 0.3086268865191865,
+  "dead_dims_frac": 0.0
+ }
+}

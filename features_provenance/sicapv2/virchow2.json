@@ -1,0 +1,42 @@
+{
+ "dataset": "sicapv2",
+ "encoder": "virchow2",
+ "manifest_hash": "3ea71b302d38f1c0122b619be9e26799817a67e9c418ee620c9eff985a2bbf3b",
+ "shape": [
+  12081,
+  2560
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "virchow2",
+  "kind": "timm",
+  "id": "hf-hub:paige-ai/Virchow2",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "cls+meanpatch",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 5,
+  "n_params": 631239424,
+  "weight_checksum": "72b6bb6855b4c5bb"
+ },
+ "stats": {
+  "n": 12081,
+  "dim": 2560,
+  "finite": true,
+  "mean_norm": 47.551045930053775,
+  "eff_rank": 14.232822000476455,
+  "eff_rank_frac": 0.005559696093936115,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 2.8,
+ "saved": "2026-10-25 14:53:29"
+}

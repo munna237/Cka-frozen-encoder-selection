@@ -1,0 +1,41 @@
+{
+ "dataset": "nct_crc_100k",
+ "encoder": "phikon",
+ "manifest_hash": "85b6b5b1003d05058a754ab452ffe6d93e90f63b11f79f42b936760b528263b3",
+ "shape": [
+  20000,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "phikon",
+  "kind": "hf",
+  "id": "owkin/phikon",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "cls",
+  "transformers_version": "5.20.2",
+  "n_params": 86389248,
+  "weight_checksum": "321fb23a339ab9bb"
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 47.90799708186799,
+  "eff_rank": 18.93425446610907,
+  "eff_rank_frac": 0.024653977169412852,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.6,
+ "saved": "2026-10-26 03:27:29"
+}

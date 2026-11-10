@@ -1,0 +1,25 @@
+{
+ "dataset": "sst5",
+ "encoder": "bge_small",
+ "manifest_hash": "45b10557b2a5965fa5c4bbdb11b04dfdd952ba923603dc727442f5cf0be18943",
+ "shape": [
+  8544,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "bge_small",
+  "kind": "st",
+  "id": "BAAI/bge-small-en-v1.5",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 8544,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 0.9999999995259874,
+  "eff_rank": 180.10860886907375,
+  "eff_rank_frac": 0.46903283559654624,
+  "dead_dims_frac": 0.0
+ }
+}

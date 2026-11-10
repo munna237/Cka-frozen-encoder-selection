@@ -1,0 +1,42 @@
+{
+ "dataset": "sicapv2",
+ "encoder": "uni2_h",
+ "manifest_hash": "3ea71b302d38f1c0122b619be9e26799817a67e9c418ee620c9eff985a2bbf3b",
+ "shape": [
+  12081,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "uni2_h",
+  "kind": "timm",
+  "id": "hf-hub:MahmoodLab/UNI2-h",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 9,
+  "n_params": 681394176,
+  "weight_checksum": "eaf7243bbb2c53d0"
+ },
+ "stats": {
+  "n": 12081,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 18.40053161358871,
+  "eff_rank": 115.31786094513052,
+  "eff_rank_frac": 0.07507673238615269,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 2.7,
+ "saved": "2026-10-25 14:50:44"
+}
