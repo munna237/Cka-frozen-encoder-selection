@@ -1,0 +1,9 @@
+variant,preprocessing,cka_with_v2,note
+torchvision IMAGENET1K_V1 (v3),Resize224+Crop224 (v3),0.7403669382592354,
+torchvision IMAGENET1K_V1 (v3),Resize256+Crop224,0.737839700839501,
+torchvision IMAGENET1K_V2,Resize224+Crop224 (v3),0.9999948213901969,
+torchvision IMAGENET1K_V2,Resize256+Crop224,0.8939509417816752,
+timm a1_in1k,Resize224+Crop224 (v3),0.7513940456205769,
+timm a1_in1k,Resize256+Crop224,0.7036453235971369,
+timm fb_swsl_ig1b_ft_in1k,Resize224+Crop224 (v3),0.7646266097195172,
+timm fb_swsl_ig1b_ft_in1k,Resize256+Crop224,0.7559989432375026,

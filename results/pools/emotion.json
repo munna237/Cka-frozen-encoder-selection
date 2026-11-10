@@ -1,0 +1,1699 @@
+{
+  "pool": "emotion",
+  "n_members": 9,
+  "n_inputs": 16000,
+  "k_folds": 5,
+  "seed": 0,
+  "n_cap_cka": 10000,
+  "n_cap_analysis": null,
+  "grouped_folds": false,
+  "probe_backend": "torch",
+  "anchor": "bge_base",
+  "base": [
+    "bge_base",
+    "mpnet_base"
+  ],
+  "indiv_acc": {
+    "bge_base": 72.5375,
+    "bge_small": 71.6375,
+    "distilroberta": 67.21875,
+    "e5_base": 71.18124999999999,
+    "glove_avg": 70.1875,
+    "gte_base": 71.525,
+    "minilm_l3": 69.4125,
+    "minilm_l6": 68.15625,
+    "mpnet_base": 66.0875
+  },
+  "cka_with_anchor": {
+    "bge_base": 0.0,
+    "bge_small": 0.8261943771954486,
+    "distilroberta": 0.6380259049643402,
+    "e5_base": 0.7756098023927379,
+    "glove_avg": 0.3010867193561301,
+    "gte_base": 0.9159457546231902,
+    "minilm_l3": 0.5134828372913759,
+    "minilm_l6": 0.5863057334810519,
+    "mpnet_base": 0.6133037861105016
+  },
+  "cka_sd_with_anchor": {
+    "bge_small": 0.0015194198188513617,
+    "distilroberta": 0.00215847528250035,
+    "e5_base": 0.002050374608766818,
+    "glove_avg": 0.004095520034712968,
+    "gte_base": 0.0005787265856990402,
+    "minilm_l3": 0.00348843618967514,
+    "minilm_l6": 0.003058189124707142,
+    "mpnet_base": 0.002769507154443823
+  },
+  "cka_tolerance_used": 0.007391973655416259,
+  "cka_sd_fallback_used": false,
+  "cka_sd_median": 0.0024639912184720864,
+  "oracle_acc": 96.31875,
+  "base_fold_acc": {
+    "mean_logits": [
+      61.65625,
+      62.4375,
+      62.375,
+      61.8125,
+      61.59375
+    ],
+    "mean_probs": [
+      73.90625,
+      74.75,
+      74.25,
+      74.375,
+      74.40625
+    ],
+    "class_conditional": [
+      75.03125,
+      75.21875,
+      75.4375,
+      74.5,
+      74.8125
+    ]
+  },
+  "utility_per_fold": {
+    "mean_logits": {
+      "bge_small": [
+        2.71875,
+        2.90625,
+        3.75,
+        3.875,
+        3.34375
+      ],
+      "distilroberta": [
+        2.0,
+        0.90625,
+        1.3125,
+        1.875,
+        1.25
+      ],
+      "e5_base": [
+        2.46875,
+        2.59375,
+        2.5625,
+        2.9375,
+        3.5
+      ],
+      "glove_avg": [
+        4.5,
+        3.5,
+        4.21875,
+        3.71875,
+        3.40625
+      ],
+      "gte_base": [
+        0.4375,
+        0.34375,
+        1.3125,
+        1.218750000000007,
+        0.78125
+      ],
+      "minilm_l3": [
+        4.0,
+        3.78125,
+        3.5,
+        4.40625,
+        3.875
+      ],
+      "minilm_l6": [
+        2.65625,
+        2.53125,
+        2.53125,
+        2.6875,
+        2.875
+      ]
+    },
+    "mean_probs": {
+      "bge_small": [
+        2.875,
+        1.8125,
+        2.65625,
+        2.5625,
+        1.9375
+      ],
+      "distilroberta": [
+        1.5,
+        0.59375,
+        1.4375,
+        1.46875,
+        0.375
+      ],
+      "e5_base": [
+        3.0,
+        0.71875,
+        1.96875,
+        2.3125,
+        2.25
+      ],
+      "glove_avg": [
+        3.9375,
+        2.40625,
+        2.59375,
+        3.0,
+        2.21875
+      ],
+      "gte_base": [
+        1.75,
+        0.625,
+        0.625,
+        1.0625,
+        0.34375
+      ],
+      "minilm_l3": [
+        3.375,
+        1.78125,
+        2.53125,
+        3.3125,
+        2.09375
+      ],
+      "minilm_l6": [
+        2.65625,
+        1.28125,
+        1.25,
+        1.90625,
+        1.375
+      ]
+    },
+    "class_conditional": {
+      "bge_small": [
+        2.375,
+        2.15625,
+        2.125,
+        2.71875,
+        1.71875
+      ],
+      "distilroberta": [
+        0.84375,
+        1.21875,
+        1.59375,
+        1.375,
+        1.0625
+      ],
+      "e5_base": [
+        2.34375,
+        1.03125,
+        1.84375,
+        2.78125,
+        2.3125
+      ],
+      "glove_avg": [
+        3.8125,
+        3.375,
+        3.125,
+        4.09375,
+        2.8125
+      ],
+      "gte_base": [
+        0.625,
+        0.0625,
+        0.625,
+        1.03125,
+        0.375
+      ],
+      "minilm_l3": [
+        2.96875,
+        2.0625,
+        2.84375,
+        3.1875,
+        2.40625
+      ],
+      "minilm_l6": [
+        1.875,
+        1.3125,
+        1.28125,
+        1.40625,
+        1.03125
+      ]
+    }
+  },
+  "pair_specs_summary": {
+    "unmatched": 10,
+    "cka_gap_too_small": 7,
+    "matched": 4,
+    "total": 21,
+    "matched_cka_gap_min": 0.21239611793524582,
+    "matched_cka_gap_max": 0.6148590352670601,
+    "matched_cka_gap_median": 0.4998153704379632
+  },
+  "pairs": [
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "bge_small",
+      "low": "distilroberta",
+      "cka_high": 0.8261943771954486,
+      "cka_low": 0.6380259049643402,
+      "cka_gap": 0.18816847223110844,
+      "acc_high": 71.6375,
+      "acc_low": 67.21875,
+      "comp_gap": 4.418750000000003,
+      "category": "unmatched",
+      "cka_sd_high": 0.0015194198188513617,
+      "cka_sd_low": 0.00215847528250035,
+      "fold_diffs_mean_logits": [
+        0.71875,
+        2.0,
+        2.4375,
+        2.0,
+        2.09375
+      ],
+      "diff_mean_logits": 1.85,
+      "fold_diffs_mean_probs": [
+        1.375,
+        1.21875,
+        1.21875,
+        1.09375,
+        1.5625
+      ],
+      "diff_mean_probs": 1.29375,
+      "fold_diffs_class_conditional": [
+        1.53125,
+        0.9375,
+        0.53125,
+        1.34375,
+        0.65625
+      ],
+      "diff_class_conditional": 1.0,
+      "fold_diffs": [
+        0.71875,
+        2.0,
+        2.4375,
+        2.0,
+        2.09375
+      ],
+      "diff": 1.85,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "bge_small",
+      "low": "e5_base",
+      "cka_high": 0.8261943771954486,
+      "cka_low": 0.7756098023927379,
+      "cka_gap": 0.050584574802710724,
+      "acc_high": 71.6375,
+      "acc_low": 71.18124999999999,
+      "comp_gap": 0.45625000000001137,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0015194198188513617,
+      "cka_sd_low": 0.002050374608766818,
+      "fold_diffs_mean_logits": [
+        0.25,
+        0.3125,
+        1.1875,
+        0.9375,
+        -0.15625
+      ],
+      "diff_mean_logits": 0.50625,
+      "fold_diffs_mean_probs": [
+        -0.125,
+        1.09375,
+        0.6875,
+        0.25,
+        -0.3125
+      ],
+      "diff_mean_probs": 0.31875,
+      "fold_diffs_class_conditional": [
+        0.03125,
+        1.125,
+        0.28125,
+        -0.0625,
+        -0.59375
+      ],
+      "diff_class_conditional": 0.15625,
+      "fold_diffs": [
+        0.25,
+        0.3125,
+        1.1875,
+        0.9375,
+        -0.15625
+      ],
+      "diff": 0.50625,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "bge_small",
+      "low": "glove_avg",
+      "cka_high": 0.8261943771954486,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.5251076578393186,
+      "acc_high": 71.6375,
+      "acc_low": 70.1875,
+      "comp_gap": 1.4500000000000028,
+      "category": "matched",
+      "cka_sd_high": 0.0015194198188513617,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -1.78125,
+        -0.59375,
+        -0.46875,
+        0.15625,
+        -0.0625
+      ],
+      "diff_mean_logits": -0.55,
+      "fold_diffs_mean_probs": [
+        -1.0625,
+        -0.59375,
+        0.0625,
+        -0.4375,
+        -0.28125
+      ],
+      "diff_mean_probs": -0.4625,
+      "fold_diffs_class_conditional": [
+        -1.4375,
+        -1.21875,
+        -1.0,
+        -1.375,
+        -1.09375
+      ],
+      "diff_class_conditional": -1.225,
+      "fold_diffs": [
+        -1.78125,
+        -0.59375,
+        -0.46875,
+        0.15625,
+        -0.0625
+      ],
+      "diff": -0.55,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "gte_base",
+      "low": "bge_small",
+      "cka_high": 0.9159457546231902,
+      "cka_low": 0.8261943771954486,
+      "cka_gap": 0.08975137742774153,
+      "acc_high": 71.525,
+      "acc_low": 71.6375,
+      "comp_gap": 0.11249999999999716,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0005787265856990402,
+      "cka_sd_low": 0.0015194198188513617,
+      "fold_diffs_mean_logits": [
+        -2.28125,
+        -2.5625,
+        -2.4375,
+        -2.656249999999993,
+        -2.5625
+      ],
+      "diff_mean_logits": -2.4999999999999987,
+      "fold_diffs_mean_probs": [
+        -1.125,
+        -1.1875,
+        -2.03125,
+        -1.5,
+        -1.59375
+      ],
+      "diff_mean_probs": -1.4875,
+      "fold_diffs_class_conditional": [
+        -1.75,
+        -2.09375,
+        -1.5,
+        -1.6875,
+        -1.34375
+      ],
+      "diff_class_conditional": -1.675,
+      "fold_diffs": [
+        -2.28125,
+        -2.5625,
+        -2.4375,
+        -2.656249999999993,
+        -2.5625
+      ],
+      "diff": -2.4999999999999987,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "bge_small",
+      "low": "minilm_l3",
+      "cka_high": 0.8261943771954486,
+      "cka_low": 0.5134828372913759,
+      "cka_gap": 0.31271153990407274,
+      "acc_high": 71.6375,
+      "acc_low": 69.4125,
+      "comp_gap": 2.2250000000000085,
+      "category": "unmatched",
+      "cka_sd_high": 0.0015194198188513617,
+      "cka_sd_low": 0.00348843618967514,
+      "fold_diffs_mean_logits": [
+        -1.28125,
+        -0.875,
+        0.25,
+        -0.53125,
+        -0.53125
+      ],
+      "diff_mean_logits": -0.59375,
+      "fold_diffs_mean_probs": [
+        -0.5,
+        0.03125,
+        0.125,
+        -0.75,
+        -0.15625
+      ],
+      "diff_mean_probs": -0.25,
+      "fold_diffs_class_conditional": [
+        -0.59375,
+        0.09375,
+        -0.71875,
+        -0.46875,
+        -0.6875
+      ],
+      "diff_class_conditional": -0.475,
+      "fold_diffs": [
+        -1.28125,
+        -0.875,
+        0.25,
+        -0.53125,
+        -0.53125
+      ],
+      "diff": -0.59375,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "bge_small",
+      "low": "minilm_l6",
+      "cka_high": 0.8261943771954486,
+      "cka_low": 0.5863057334810519,
+      "cka_gap": 0.23988864371439678,
+      "acc_high": 71.6375,
+      "acc_low": 68.15625,
+      "comp_gap": 3.481250000000003,
+      "category": "unmatched",
+      "cka_sd_high": 0.0015194198188513617,
+      "cka_sd_low": 0.003058189124707142,
+      "fold_diffs_mean_logits": [
+        0.0625,
+        0.375,
+        1.21875,
+        1.1875,
+        0.46875
+      ],
+      "diff_mean_logits": 0.6625,
+      "fold_diffs_mean_probs": [
+        0.21875,
+        0.53125,
+        1.40625,
+        0.65625,
+        0.5625
+      ],
+      "diff_mean_probs": 0.675,
+      "fold_diffs_class_conditional": [
+        0.5,
+        0.84375,
+        0.84375,
+        1.3125,
+        0.6875
+      ],
+      "diff_class_conditional": 0.8375,
+      "fold_diffs": [
+        0.0625,
+        0.375,
+        1.21875,
+        1.1875,
+        0.46875
+      ],
+      "diff": 0.6625,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "e5_base",
+      "low": "distilroberta",
+      "cka_high": 0.7756098023927379,
+      "cka_low": 0.6380259049643402,
+      "cka_gap": 0.13758389742839772,
+      "acc_high": 71.18124999999999,
+      "acc_low": 67.21875,
+      "comp_gap": 3.9624999999999915,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.002050374608766818,
+      "cka_sd_low": 0.00215847528250035,
+      "fold_diffs_mean_logits": [
+        0.46875,
+        1.6875,
+        1.25,
+        1.0625,
+        2.25
+      ],
+      "diff_mean_logits": 1.34375,
+      "fold_diffs_mean_probs": [
+        1.5,
+        0.125,
+        0.53125,
+        0.84375,
+        1.875
+      ],
+      "diff_mean_probs": 0.975,
+      "fold_diffs_class_conditional": [
+        1.5,
+        -0.1875,
+        0.25,
+        1.40625,
+        1.25
+      ],
+      "diff_class_conditional": 0.84375,
+      "fold_diffs": [
+        0.46875,
+        1.6875,
+        1.25,
+        1.0625,
+        2.25
+      ],
+      "diff": 1.34375,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "distilroberta",
+      "low": "glove_avg",
+      "cka_high": 0.6380259049643402,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.3369391856082101,
+      "acc_high": 67.21875,
+      "acc_low": 70.1875,
+      "comp_gap": 2.96875,
+      "category": "unmatched",
+      "cka_sd_high": 0.00215847528250035,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -2.5,
+        -2.59375,
+        -2.90625,
+        -1.84375,
+        -2.15625
+      ],
+      "diff_mean_logits": -2.4,
+      "fold_diffs_mean_probs": [
+        -2.4375,
+        -1.8125,
+        -1.15625,
+        -1.53125,
+        -1.84375
+      ],
+      "diff_mean_probs": -1.75625,
+      "fold_diffs_class_conditional": [
+        -2.96875,
+        -2.15625,
+        -1.53125,
+        -2.71875,
+        -1.75
+      ],
+      "diff_class_conditional": -2.225,
+      "fold_diffs": [
+        -2.5,
+        -2.59375,
+        -2.90625,
+        -1.84375,
+        -2.15625
+      ],
+      "diff": -2.4,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "gte_base",
+      "low": "distilroberta",
+      "cka_high": 0.9159457546231902,
+      "cka_low": 0.6380259049643402,
+      "cka_gap": 0.27791984965884997,
+      "acc_high": 71.525,
+      "acc_low": 67.21875,
+      "comp_gap": 4.306250000000006,
+      "category": "unmatched",
+      "cka_sd_high": 0.0005787265856990402,
+      "cka_sd_low": 0.00215847528250035,
+      "fold_diffs_mean_logits": [
+        -1.5625,
+        -0.5625,
+        0.0,
+        -0.6562499999999929,
+        -0.46875
+      ],
+      "diff_mean_logits": -0.6499999999999986,
+      "fold_diffs_mean_probs": [
+        0.25,
+        0.03125,
+        -0.8125,
+        -0.40625,
+        -0.03125
+      ],
+      "diff_mean_probs": -0.19375,
+      "fold_diffs_class_conditional": [
+        -0.21875,
+        -1.15625,
+        -0.96875,
+        -0.34375,
+        -0.6875
+      ],
+      "diff_class_conditional": -0.675,
+      "fold_diffs": [
+        -1.5625,
+        -0.5625,
+        0.0,
+        -0.6562499999999929,
+        -0.46875
+      ],
+      "diff": -0.6499999999999986,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "distilroberta",
+      "low": "minilm_l3",
+      "cka_high": 0.6380259049643402,
+      "cka_low": 0.5134828372913759,
+      "cka_gap": 0.1245430676729643,
+      "acc_high": 67.21875,
+      "acc_low": 69.4125,
+      "comp_gap": 2.1937499999999943,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.00215847528250035,
+      "cka_sd_low": 0.00348843618967514,
+      "fold_diffs_mean_logits": [
+        -2.0,
+        -2.875,
+        -2.1875,
+        -2.53125,
+        -2.625
+      ],
+      "diff_mean_logits": -2.44375,
+      "fold_diffs_mean_probs": [
+        -1.875,
+        -1.1875,
+        -1.09375,
+        -1.84375,
+        -1.71875
+      ],
+      "diff_mean_probs": -1.54375,
+      "fold_diffs_class_conditional": [
+        -2.125,
+        -0.84375,
+        -1.25,
+        -1.8125,
+        -1.34375
+      ],
+      "diff_class_conditional": -1.475,
+      "fold_diffs": [
+        -2.0,
+        -2.875,
+        -2.1875,
+        -2.53125,
+        -2.625
+      ],
+      "diff": -2.44375,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "distilroberta",
+      "low": "minilm_l6",
+      "cka_high": 0.6380259049643402,
+      "cka_low": 0.5863057334810519,
+      "cka_gap": 0.051720171483288335,
+      "acc_high": 67.21875,
+      "acc_low": 68.15625,
+      "comp_gap": 0.9375,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.00215847528250035,
+      "cka_sd_low": 0.003058189124707142,
+      "fold_diffs_mean_logits": [
+        -0.65625,
+        -1.625,
+        -1.21875,
+        -0.8125,
+        -1.625
+      ],
+      "diff_mean_logits": -1.1875,
+      "fold_diffs_mean_probs": [
+        -1.15625,
+        -0.6875,
+        0.1875,
+        -0.4375,
+        -1.0
+      ],
+      "diff_mean_probs": -0.61875,
+      "fold_diffs_class_conditional": [
+        -1.03125,
+        -0.09375,
+        0.3125,
+        -0.03125,
+        0.03125
+      ],
+      "diff_class_conditional": -0.1625,
+      "fold_diffs": [
+        -0.65625,
+        -1.625,
+        -1.21875,
+        -0.8125,
+        -1.625
+      ],
+      "diff": -1.1875,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "e5_base",
+      "low": "glove_avg",
+      "cka_high": 0.7756098023927379,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.47452308303660784,
+      "acc_high": 71.18124999999999,
+      "acc_low": 70.1875,
+      "comp_gap": 0.9937499999999915,
+      "category": "matched",
+      "cka_sd_high": 0.002050374608766818,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -2.03125,
+        -0.90625,
+        -1.65625,
+        -0.78125,
+        0.09375
+      ],
+      "diff_mean_logits": -1.05625,
+      "fold_diffs_mean_probs": [
+        -0.9375,
+        -1.6875,
+        -0.625,
+        -0.6875,
+        0.03125
+      ],
+      "diff_mean_probs": -0.78125,
+      "fold_diffs_class_conditional": [
+        -1.46875,
+        -2.34375,
+        -1.28125,
+        -1.3125,
+        -0.5
+      ],
+      "diff_class_conditional": -1.38125,
+      "fold_diffs": [
+        -2.03125,
+        -0.90625,
+        -1.65625,
+        -0.78125,
+        0.09375
+      ],
+      "diff": -1.05625,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "gte_base",
+      "low": "e5_base",
+      "cka_high": 0.9159457546231902,
+      "cka_low": 0.7756098023927379,
+      "cka_gap": 0.14033595223045225,
+      "acc_high": 71.525,
+      "acc_low": 71.18124999999999,
+      "comp_gap": 0.3437500000000142,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0005787265856990402,
+      "cka_sd_low": 0.002050374608766818,
+      "fold_diffs_mean_logits": [
+        -2.03125,
+        -2.25,
+        -1.25,
+        -1.718749999999993,
+        -2.71875
+      ],
+      "diff_mean_logits": -1.9937499999999986,
+      "fold_diffs_mean_probs": [
+        -1.25,
+        -0.09375,
+        -1.34375,
+        -1.25,
+        -1.90625
+      ],
+      "diff_mean_probs": -1.16875,
+      "fold_diffs_class_conditional": [
+        -1.71875,
+        -0.96875,
+        -1.21875,
+        -1.75,
+        -1.9375
+      ],
+      "diff_class_conditional": -1.51875,
+      "fold_diffs": [
+        -2.03125,
+        -2.25,
+        -1.25,
+        -1.718749999999993,
+        -2.71875
+      ],
+      "diff": -1.9937499999999986,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "e5_base",
+      "low": "minilm_l3",
+      "cka_high": 0.7756098023927379,
+      "cka_low": 0.5134828372913759,
+      "cka_gap": 0.262126965101362,
+      "acc_high": 71.18124999999999,
+      "acc_low": 69.4125,
+      "comp_gap": 1.7687499999999972,
+      "category": "unmatched",
+      "cka_sd_high": 0.002050374608766818,
+      "cka_sd_low": 0.00348843618967514,
+      "fold_diffs_mean_logits": [
+        -1.53125,
+        -1.1875,
+        -0.9375,
+        -1.46875,
+        -0.375
+      ],
+      "diff_mean_logits": -1.1,
+      "fold_diffs_mean_probs": [
+        -0.375,
+        -1.0625,
+        -0.5625,
+        -1.0,
+        0.15625
+      ],
+      "diff_mean_probs": -0.56875,
+      "fold_diffs_class_conditional": [
+        -0.625,
+        -1.03125,
+        -1.0,
+        -0.40625,
+        -0.09375
+      ],
+      "diff_class_conditional": -0.63125,
+      "fold_diffs": [
+        -1.53125,
+        -1.1875,
+        -0.9375,
+        -1.46875,
+        -0.375
+      ],
+      "diff": -1.1,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "e5_base",
+      "low": "minilm_l6",
+      "cka_high": 0.7756098023927379,
+      "cka_low": 0.5863057334810519,
+      "cka_gap": 0.18930406891168605,
+      "acc_high": 71.18124999999999,
+      "acc_low": 68.15625,
+      "comp_gap": 3.0249999999999915,
+      "category": "unmatched",
+      "cka_sd_high": 0.002050374608766818,
+      "cka_sd_low": 0.003058189124707142,
+      "fold_diffs_mean_logits": [
+        -0.1875,
+        0.0625,
+        0.03125,
+        0.25,
+        0.625
+      ],
+      "diff_mean_logits": 0.15625,
+      "fold_diffs_mean_probs": [
+        0.34375,
+        -0.5625,
+        0.71875,
+        0.40625,
+        0.875
+      ],
+      "diff_mean_probs": 0.35625,
+      "fold_diffs_class_conditional": [
+        0.46875,
+        -0.28125,
+        0.5625,
+        1.375,
+        1.28125
+      ],
+      "diff_class_conditional": 0.68125,
+      "fold_diffs": [
+        -0.1875,
+        0.0625,
+        0.03125,
+        0.25,
+        0.625
+      ],
+      "diff": 0.15625,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "gte_base",
+      "low": "glove_avg",
+      "cka_high": 0.9159457546231902,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.6148590352670601,
+      "acc_high": 71.525,
+      "acc_low": 70.1875,
+      "comp_gap": 1.3375000000000057,
+      "category": "matched",
+      "cka_sd_high": 0.0005787265856990402,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -4.0625,
+        -3.15625,
+        -2.90625,
+        -2.499999999999993,
+        -2.625
+      ],
+      "diff_mean_logits": -3.0499999999999985,
+      "fold_diffs_mean_probs": [
+        -2.1875,
+        -1.78125,
+        -1.96875,
+        -1.9375,
+        -1.875
+      ],
+      "diff_mean_probs": -1.95,
+      "fold_diffs_class_conditional": [
+        -3.1875,
+        -3.3125,
+        -2.5,
+        -3.0625,
+        -2.4375
+      ],
+      "diff_class_conditional": -2.9,
+      "fold_diffs": [
+        -4.0625,
+        -3.15625,
+        -2.90625,
+        -2.499999999999993,
+        -2.625
+      ],
+      "diff": -3.0499999999999985,
+      "fusion_rule": "mean_logits",
+      "primary": true
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "minilm_l3",
+      "low": "glove_avg",
+      "cka_high": 0.5134828372913759,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.21239611793524582,
+      "acc_high": 69.4125,
+      "acc_low": 70.1875,
+      "comp_gap": 0.7750000000000057,
+      "category": "matched",
+      "cka_sd_high": 0.00348843618967514,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -0.5,
+        0.28125,
+        -0.71875,
+        0.6875,
+        0.46875
+      ],
+      "diff_mean_logits": 0.04375,
+      "fold_diffs_mean_probs": [
+        -0.5625,
+        -0.625,
+        -0.0625,
+        0.3125,
+        -0.125
+      ],
+      "diff_mean_probs": -0.2125,
+      "fold_diffs_class_conditional": [
+        -0.84375,
+        -1.3125,
+        -0.28125,
+        -0.90625,
+        -0.40625
+      ],
+      "diff_class_conditional": -0.75,
+      "fold_diffs": [
+        -0.5,
+        0.28125,
+        -0.71875,
+        0.6875,
+        0.46875
+      ],
+      "diff": 0.04375,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "minilm_l6",
+      "low": "glove_avg",
+      "cka_high": 0.5863057334810519,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.2852190141249218,
+      "acc_high": 68.15625,
+      "acc_low": 70.1875,
+      "comp_gap": 2.03125,
+      "category": "unmatched",
+      "cka_sd_high": 0.003058189124707142,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -1.84375,
+        -0.96875,
+        -1.6875,
+        -1.03125,
+        -0.53125
+      ],
+      "diff_mean_logits": -1.2125,
+      "fold_diffs_mean_probs": [
+        -1.28125,
+        -1.125,
+        -1.34375,
+        -1.09375,
+        -0.84375
+      ],
+      "diff_mean_probs": -1.1375,
+      "fold_diffs_class_conditional": [
+        -1.9375,
+        -2.0625,
+        -1.84375,
+        -2.6875,
+        -1.78125
+      ],
+      "diff_class_conditional": -2.0625,
+      "fold_diffs": [
+        -1.84375,
+        -0.96875,
+        -1.6875,
+        -1.03125,
+        -0.53125
+      ],
+      "diff": -1.2125,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "gte_base",
+      "low": "minilm_l3",
+      "cka_high": 0.9159457546231902,
+      "cka_low": 0.5134828372913759,
+      "cka_gap": 0.4024629173318143,
+      "acc_high": 71.525,
+      "acc_low": 69.4125,
+      "comp_gap": 2.1125000000000114,
+      "category": "unmatched",
+      "cka_sd_high": 0.0005787265856990402,
+      "cka_sd_low": 0.00348843618967514,
+      "fold_diffs_mean_logits": [
+        -3.5625,
+        -3.4375,
+        -2.1875,
+        -3.187499999999993,
+        -3.09375
+      ],
+      "diff_mean_logits": -3.0937499999999987,
+      "fold_diffs_mean_probs": [
+        -1.625,
+        -1.15625,
+        -1.90625,
+        -2.25,
+        -1.75
+      ],
+      "diff_mean_probs": -1.7375,
+      "fold_diffs_class_conditional": [
+        -2.34375,
+        -2.0,
+        -2.21875,
+        -2.15625,
+        -2.03125
+      ],
+      "diff_class_conditional": -2.15,
+      "fold_diffs": [
+        -3.5625,
+        -3.4375,
+        -2.1875,
+        -3.187499999999993,
+        -3.09375
+      ],
+      "diff": -3.0937499999999987,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "gte_base",
+      "low": "minilm_l6",
+      "cka_high": 0.9159457546231902,
+      "cka_low": 0.5863057334810519,
+      "cka_gap": 0.3296400211421383,
+      "acc_high": 71.525,
+      "acc_low": 68.15625,
+      "comp_gap": 3.3687500000000057,
+      "category": "unmatched",
+      "cka_sd_high": 0.0005787265856990402,
+      "cka_sd_low": 0.003058189124707142,
+      "fold_diffs_mean_logits": [
+        -2.21875,
+        -2.1875,
+        -1.21875,
+        -1.468749999999993,
+        -2.09375
+      ],
+      "diff_mean_logits": -1.8374999999999986,
+      "fold_diffs_mean_probs": [
+        -0.90625,
+        -0.65625,
+        -0.625,
+        -0.84375,
+        -1.03125
+      ],
+      "diff_mean_probs": -0.8125,
+      "fold_diffs_class_conditional": [
+        -1.25,
+        -1.25,
+        -0.65625,
+        -0.375,
+        -0.65625
+      ],
+      "diff_class_conditional": -0.8375,
+      "fold_diffs": [
+        -2.21875,
+        -2.1875,
+        -1.21875,
+        -1.468749999999993,
+        -2.09375
+      ],
+      "diff": -1.8374999999999986,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "minilm_l6",
+      "low": "minilm_l3",
+      "cka_high": 0.5863057334810519,
+      "cka_low": 0.5134828372913759,
+      "cka_gap": 0.07282289618967597,
+      "acc_high": 68.15625,
+      "acc_low": 69.4125,
+      "comp_gap": 1.2562499999999943,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.003058189124707142,
+      "cka_sd_low": 0.00348843618967514,
+      "fold_diffs_mean_logits": [
+        -1.34375,
+        -1.25,
+        -0.96875,
+        -1.71875,
+        -1.0
+      ],
+      "diff_mean_logits": -1.25625,
+      "fold_diffs_mean_probs": [
+        -0.71875,
+        -0.5,
+        -1.28125,
+        -1.40625,
+        -0.71875
+      ],
+      "diff_mean_probs": -0.925,
+      "fold_diffs_class_conditional": [
+        -1.09375,
+        -0.75,
+        -1.5625,
+        -1.78125,
+        -1.375
+      ],
+      "diff_class_conditional": -1.3125,
+      "fold_diffs": [
+        -1.34375,
+        -1.25,
+        -0.96875,
+        -1.71875,
+        -1.0
+      ],
+      "diff": -1.25625,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    }
+  ],
+  "matched_pairs": [
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "bge_small",
+      "low": "glove_avg",
+      "cka_high": 0.8261943771954486,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.5251076578393186,
+      "acc_high": 71.6375,
+      "acc_low": 70.1875,
+      "comp_gap": 1.4500000000000028,
+      "category": "matched",
+      "cka_sd_high": 0.0015194198188513617,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -1.78125,
+        -0.59375,
+        -0.46875,
+        0.15625,
+        -0.0625
+      ],
+      "diff_mean_logits": -0.55,
+      "fold_diffs_mean_probs": [
+        -1.0625,
+        -0.59375,
+        0.0625,
+        -0.4375,
+        -0.28125
+      ],
+      "diff_mean_probs": -0.4625,
+      "fold_diffs_class_conditional": [
+        -1.4375,
+        -1.21875,
+        -1.0,
+        -1.375,
+        -1.09375
+      ],
+      "diff_class_conditional": -1.225,
+      "fold_diffs": [
+        -1.78125,
+        -0.59375,
+        -0.46875,
+        0.15625,
+        -0.0625
+      ],
+      "diff": -0.55,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "e5_base",
+      "low": "glove_avg",
+      "cka_high": 0.7756098023927379,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.47452308303660784,
+      "acc_high": 71.18124999999999,
+      "acc_low": 70.1875,
+      "comp_gap": 0.9937499999999915,
+      "category": "matched",
+      "cka_sd_high": 0.002050374608766818,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -2.03125,
+        -0.90625,
+        -1.65625,
+        -0.78125,
+        0.09375
+      ],
+      "diff_mean_logits": -1.05625,
+      "fold_diffs_mean_probs": [
+        -0.9375,
+        -1.6875,
+        -0.625,
+        -0.6875,
+        0.03125
+      ],
+      "diff_mean_probs": -0.78125,
+      "fold_diffs_class_conditional": [
+        -1.46875,
+        -2.34375,
+        -1.28125,
+        -1.3125,
+        -0.5
+      ],
+      "diff_class_conditional": -1.38125,
+      "fold_diffs": [
+        -2.03125,
+        -0.90625,
+        -1.65625,
+        -0.78125,
+        0.09375
+      ],
+      "diff": -1.05625,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "gte_base",
+      "low": "glove_avg",
+      "cka_high": 0.9159457546231902,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.6148590352670601,
+      "acc_high": 71.525,
+      "acc_low": 70.1875,
+      "comp_gap": 1.3375000000000057,
+      "category": "matched",
+      "cka_sd_high": 0.0005787265856990402,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -4.0625,
+        -3.15625,
+        -2.90625,
+        -2.499999999999993,
+        -2.625
+      ],
+      "diff_mean_logits": -3.0499999999999985,
+      "fold_diffs_mean_probs": [
+        -2.1875,
+        -1.78125,
+        -1.96875,
+        -1.9375,
+        -1.875
+      ],
+      "diff_mean_probs": -1.95,
+      "fold_diffs_class_conditional": [
+        -3.1875,
+        -3.3125,
+        -2.5,
+        -3.0625,
+        -2.4375
+      ],
+      "diff_class_conditional": -2.9,
+      "fold_diffs": [
+        -4.0625,
+        -3.15625,
+        -2.90625,
+        -2.499999999999993,
+        -2.625
+      ],
+      "diff": -3.0499999999999985,
+      "fusion_rule": "mean_logits",
+      "primary": true
+    },
+    {
+      "pool": "emotion",
+      "anchor": "bge_base",
+      "base": [
+        "bge_base",
+        "mpnet_base"
+      ],
+      "high": "minilm_l3",
+      "low": "glove_avg",
+      "cka_high": 0.5134828372913759,
+      "cka_low": 0.3010867193561301,
+      "cka_gap": 0.21239611793524582,
+      "acc_high": 69.4125,
+      "acc_low": 70.1875,
+      "comp_gap": 0.7750000000000057,
+      "category": "matched",
+      "cka_sd_high": 0.00348843618967514,
+      "cka_sd_low": 0.004095520034712968,
+      "fold_diffs_mean_logits": [
+        -0.5,
+        0.28125,
+        -0.71875,
+        0.6875,
+        0.46875
+      ],
+      "diff_mean_logits": 0.04375,
+      "fold_diffs_mean_probs": [
+        -0.5625,
+        -0.625,
+        -0.0625,
+        0.3125,
+        -0.125
+      ],
+      "diff_mean_probs": -0.2125,
+      "fold_diffs_class_conditional": [
+        -0.84375,
+        -1.3125,
+        -0.28125,
+        -0.90625,
+        -0.40625
+      ],
+      "diff_class_conditional": -0.75,
+      "fold_diffs": [
+        -0.5,
+        0.28125,
+        -0.71875,
+        0.6875,
+        0.46875
+      ],
+      "diff": 0.04375,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    }
+  ],
+  "candidates": [
+    {
+      "pool": "emotion",
+      "name": "bge_small",
+      "cka": 0.8261943771954486,
+      "indiv_acc": 71.6375,
+      "disagreement": 0.4083125,
+      "headroom_contrib": 5.175,
+      "utility": 3.31875,
+      "utility_per_fold": [
+        2.71875,
+        2.90625,
+        3.75,
+        3.875,
+        3.34375
+      ]
+    },
+    {
+      "pool": "emotion",
+      "name": "distilroberta",
+      "cka": 0.6380259049643402,
+      "indiv_acc": 67.21875,
+      "disagreement": 0.420125,
+      "headroom_contrib": 4.5375,
+      "utility": 1.46875,
+      "utility_per_fold": [
+        2.0,
+        0.90625,
+        1.3125,
+        1.875,
+        1.25
+      ]
+    },
+    {
+      "pool": "emotion",
+      "name": "e5_base",
+      "cka": 0.7756098023927379,
+      "indiv_acc": 71.18124999999999,
+      "disagreement": 0.3999375,
+      "headroom_contrib": 5.2375,
+      "utility": 2.8125,
+      "utility_per_fold": [
+        2.46875,
+        2.59375,
+        2.5625,
+        2.9375,
+        3.5
+      ]
+    },
+    {
+      "pool": "emotion",
+      "name": "glove_avg",
+      "cka": 0.3010867193561301,
+      "indiv_acc": 70.1875,
+      "disagreement": 0.4511875,
+      "headroom_contrib": 6.70625,
+      "utility": 3.86875,
+      "utility_per_fold": [
+        4.5,
+        3.5,
+        4.21875,
+        3.71875,
+        3.40625
+      ]
+    },
+    {
+      "pool": "emotion",
+      "name": "gte_base",
+      "cka": 0.9159457546231902,
+      "indiv_acc": 71.525,
+      "disagreement": 0.363625,
+      "headroom_contrib": 3.5687499999999996,
+      "utility": 0.8187500000000014,
+      "utility_per_fold": [
+        0.4375,
+        0.34375,
+        1.3125,
+        1.218750000000007,
+        0.78125
+      ]
+    },
+    {
+      "pool": "emotion",
+      "name": "minilm_l3",
+      "cka": 0.5134828372913759,
+      "indiv_acc": 69.4125,
+      "disagreement": 0.4504375,
+      "headroom_contrib": 6.125,
+      "utility": 3.9125,
+      "utility_per_fold": [
+        4.0,
+        3.78125,
+        3.5,
+        4.40625,
+        3.875
+      ]
+    },
+    {
+      "pool": "emotion",
+      "name": "minilm_l6",
+      "cka": 0.5863057334810519,
+      "indiv_acc": 68.15625,
+      "disagreement": 0.4333125,
+      "headroom_contrib": 5.075,
+      "utility": 2.65625,
+      "utility_per_fold": [
+        2.65625,
+        2.53125,
+        2.53125,
+        2.6875,
+        2.875
+      ]
+    }
+  ],
+  "primary_fusion_rule": "mean_logits",
+  "fusion_rules": [
+    "mean_logits",
+    "mean_probs",
+    "class_conditional"
+  ],
+  "wall_seconds": 86.8,
+  "domain": "text",
+  "feature_key": "873133fac466c4db",
+  "missing_encoders": [],
+  "manifest_hash": "a938a564a1b92ee7e4728c6311c145dbdf0ea61043e41378172fc9187baa82ac",
+  "prereg": {
+    "registered_utc": "2026-10-25T13:57:01+00:00",
+    "registration_hash": "ab54c50ceb8ef727088cb6a06af5fd582ea4453d7c53776cd55b4678ab698310",
+    "deviations": [],
+    "deviation_note": null
+  }
+}

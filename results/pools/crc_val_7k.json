@@ -1,0 +1,3568 @@
+{
+  "pool": "crc_val_7k",
+  "n_members": 12,
+  "n_inputs": 7180,
+  "k_folds": 5,
+  "seed": 0,
+  "n_cap_cka": 10000,
+  "n_cap_analysis": null,
+  "grouped_folds": false,
+  "probe_backend": "torch",
+  "anchor": "prov_gigapath",
+  "base": [
+    "prov_gigapath",
+    "phikon"
+  ],
+  "indiv_acc": {
+    "ctranspath": 99.86072423398329,
+    "h_optimus_0": 99.97214484679667,
+    "hibou_b": 99.91643454038997,
+    "kaiko_vitb16": 99.9025069637883,
+    "lunit_vits16": 99.81894150417827,
+    "phikon": 99.9025069637883,
+    "phikon_v2": 99.91643454038997,
+    "prov_gigapath": 99.98607242339833,
+    "resnet50_in1k": 98.50974930362118,
+    "uni": 99.94428969359332,
+    "uni2_h": 99.97214484679667,
+    "virchow2": 99.91643454038997
+  },
+  "cka_with_anchor": {
+    "ctranspath": 0.8519668725619166,
+    "h_optimus_0": 0.9413281284920534,
+    "hibou_b": 0.8920007717331104,
+    "kaiko_vitb16": 0.9120323257443406,
+    "lunit_vits16": 0.8259843208004588,
+    "phikon": 0.9085356096574632,
+    "phikon_v2": 0.9199244209697346,
+    "prov_gigapath": 0.0,
+    "resnet50_in1k": 0.7401503709593819,
+    "uni": 0.937723640480582,
+    "uni2_h": 0.916263816923409,
+    "virchow2": 0.6925624012684615
+  },
+  "cka_sd_with_anchor": {
+    "ctranspath": 0.001834233777939661,
+    "h_optimus_0": 0.0007935519592377602,
+    "hibou_b": 0.0017009767189004395,
+    "kaiko_vitb16": 0.0014225323462694634,
+    "lunit_vits16": 0.0025493767047865276,
+    "phikon": 0.0016380667443451277,
+    "phikon_v2": 0.0013588622394835274,
+    "resnet50_in1k": 0.003332393633079982,
+    "uni": 0.0010456155318221535,
+    "uni2_h": 0.0018005307050608225,
+    "virchow2": 0.0057895114596946805
+  },
+  "cka_tolerance_used": 0.005102930156701319,
+  "cka_sd_fallback_used": false,
+  "cka_sd_median": 0.0017009767189004395,
+  "oracle_acc": 100.0,
+  "base_fold_acc": {
+    "mean_logits": [
+      100.0,
+      99.79108635097494,
+      99.93036211699165,
+      99.86072423398329,
+      99.86072423398329
+    ],
+    "mean_probs": [
+      100.0,
+      99.93036211699165,
+      100.0,
+      99.93036211699165,
+      99.86072423398329
+    ],
+    "class_conditional": [
+      100.0,
+      99.86072423398329,
+      100.0,
+      99.93036211699165,
+      99.79108635097494
+    ]
+  },
+  "utility_per_fold": {
+    "mean_logits": {
+      "ctranspath": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "h_optimus_0": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0
+      ],
+      "hibou_b": [
+        0.0,
+        0.0,
+        -0.1392757660167092,
+        0.0,
+        -0.0696378830083546
+      ],
+      "kaiko_vitb16": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "lunit_vits16": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "phikon_v2": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "resnet50_in1k": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "uni": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0
+      ],
+      "uni2_h": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0
+      ],
+      "virchow2": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ]
+    },
+    "mean_probs": {
+      "ctranspath": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "h_optimus_0": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "hibou_b": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kaiko_vitb16": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lunit_vits16": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phikon_v2": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "resnet50_in1k": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uni": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "uni2_h": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "virchow2": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ]
+    },
+    "class_conditional": {
+      "ctranspath": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "h_optimus_0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "hibou_b": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "kaiko_vitb16": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lunit_vits16": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "phikon_v2": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "resnet50_in1k": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uni": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "uni2_h": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "virchow2": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1392757660167092
+      ]
+    }
+  },
+  "pair_specs_summary": {
+    "cka_gap_too_small": 29,
+    "matched": 13,
+    "no_separation": 3,
+    "total": 45,
+    "matched_cka_gap_min": 0.15185040077372858,
+    "matched_cka_gap_max": 0.24876572722359191,
+    "matched_cka_gap_median": 0.19943837046464896
+  },
+  "pairs": [
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "ctranspath",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.8519668725619166,
+      "cka_gap": 0.08936125593013677,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.86072423398329,
+      "comp_gap": 0.1114206128133759,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.001834233777939661,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "hibou_b",
+      "low": "ctranspath",
+      "cka_high": 0.8920007717331104,
+      "cka_low": 0.8519668725619166,
+      "cka_gap": 0.04003389917119382,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.86072423398329,
+      "comp_gap": 0.05571030640668084,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0017009767189004395,
+      "cka_sd_low": 0.001834233777939661,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "kaiko_vitb16",
+      "low": "ctranspath",
+      "cka_high": 0.9120323257443406,
+      "cka_low": 0.8519668725619166,
+      "cka_gap": 0.060065453182423956,
+      "acc_high": 99.9025069637883,
+      "acc_low": 99.86072423398329,
+      "comp_gap": 0.04178272980500708,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0014225323462694634,
+      "cka_sd_low": 0.001834233777939661,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "ctranspath",
+      "low": "lunit_vits16",
+      "cka_high": 0.8519668725619166,
+      "cka_low": 0.8259843208004588,
+      "cka_gap": 0.025982551761457806,
+      "acc_high": 99.86072423398329,
+      "acc_low": 99.81894150417827,
+      "comp_gap": 0.04178272980502129,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.001834233777939661,
+      "cka_sd_low": 0.0025493767047865276,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.1392757660167092,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": -0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        -0.1392757660167092,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff": -0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "ctranspath",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.8519668725619166,
+      "cka_gap": 0.06795754840781798,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.86072423398329,
+      "comp_gap": 0.05571030640668084,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.001834233777939661,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": -0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.04178272980501276,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "ctranspath",
+      "low": "resnet50_in1k",
+      "cka_high": 0.8519668725619166,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.11181650160253476,
+      "acc_high": 99.86072423398329,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.3509749303621135,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.001834233777939661,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "ctranspath",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.8519668725619166,
+      "cka_gap": 0.08575676791866538,
+      "acc_high": 99.94428969359332,
+      "acc_low": 99.86072423398329,
+      "comp_gap": 0.08356545961002837,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.001834233777939661,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.04178272980501276,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni2_h",
+      "low": "ctranspath",
+      "cka_high": 0.916263816923409,
+      "cka_low": 0.8519668725619166,
+      "cka_gap": 0.06429694436149236,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.86072423398329,
+      "comp_gap": 0.1114206128133759,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0018005307050608225,
+      "cka_sd_low": 0.001834233777939661,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "ctranspath",
+      "low": "virchow2",
+      "cka_high": 0.8519668725619166,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.15940447129345514,
+      "acc_high": 99.86072423398329,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.05571030640668084,
+      "category": "matched",
+      "cka_sd_high": 0.001834233777939661,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        -0.1392757660167092,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": -0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        -0.1392757660167092,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff": -0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "hibou_b",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.8920007717331104,
+      "cka_gap": 0.04932735675894295,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.055710306406695054,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.0017009767189004395,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.1392757660167092,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.1392757660167092,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "kaiko_vitb16",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.9120323257443406,
+      "cka_gap": 0.029295802747712818,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.9025069637883,
+      "comp_gap": 0.06963788300836882,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.0014225323462694634,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "lunit_vits16",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.8259843208004588,
+      "cka_gap": 0.11534380769159458,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.81894150417827,
+      "comp_gap": 0.1532033426183972,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.0025493767047865276,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "phikon_v2",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.9199244209697346,
+      "cka_gap": 0.021403707522318793,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.055710306406695054,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.0013588622394835274,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.1392757660167092,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.04178272980501276,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1392757660167092
+      ],
+      "diff_class_conditional": 0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "resnet50_in1k",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.20117775753267153,
+      "acc_high": 99.97214484679667,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4623955431754894,
+      "category": "matched",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "uni",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.937723640480582,
+      "cka_gap": 0.003604488011471396,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.94428969359332,
+      "comp_gap": 0.027855153203347527,
+      "category": "no_separation",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.0010456155318221535,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1392757660167092
+      ],
+      "diff_class_conditional": 0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "uni2_h",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.916263816923409,
+      "cka_gap": 0.025064311568644415,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.97214484679667,
+      "comp_gap": 0.0,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.0018005307050608225,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "virchow2",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.24876572722359191,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.055710306406695054,
+      "category": "matched",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.1392757660167092,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": true
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "kaiko_vitb16",
+      "low": "hibou_b",
+      "cka_high": 0.9120323257443406,
+      "cka_low": 0.8920007717331104,
+      "cka_gap": 0.020031554011230135,
+      "acc_high": 99.9025069637883,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.013927576601673763,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0014225323462694634,
+      "cka_sd_low": 0.0017009767189004395,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        0.1392757660167092,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        0.1392757660167092,
+        0.0,
+        0.0
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "hibou_b",
+      "low": "lunit_vits16",
+      "cka_high": 0.8920007717331104,
+      "cka_low": 0.8259843208004588,
+      "cka_gap": 0.06601645093265163,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.81894150417827,
+      "comp_gap": 0.09749303621170213,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0017009767189004395,
+      "cka_sd_low": 0.0025493767047865276,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": -0.04178272980501276,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff": -0.04178272980501276,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "hibou_b",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.8920007717331104,
+      "cka_gap": 0.02792364923662416,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.0,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.0017009767189004395,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.1392757660167092,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.04178272980501276,
+      "fold_diffs_mean_probs": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.1392757660167092,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff": 0.04178272980501276,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "hibou_b",
+      "low": "resnet50_in1k",
+      "cka_high": 0.8920007717331104,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.15185040077372858,
+      "acc_high": 99.91643454038997,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4066852367687943,
+      "category": "matched",
+      "cka_sd_high": 0.0017009767189004395,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "hibou_b",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.8920007717331104,
+      "cka_gap": 0.04572286874747156,
+      "acc_high": 99.94428969359332,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.027855153203347527,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.0017009767189004395,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.1392757660167092,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.1392757660167092,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni2_h",
+      "low": "hibou_b",
+      "cka_high": 0.916263816923409,
+      "cka_low": 0.8920007717331104,
+      "cka_gap": 0.024263045190298538,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.055710306406695054,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0018005307050608225,
+      "cka_sd_low": 0.0017009767189004395,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.04178272980501276,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.04178272980501276,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "hibou_b",
+      "low": "virchow2",
+      "cka_high": 0.8920007717331104,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.19943837046464896,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.0,
+      "category": "matched",
+      "cka_sd_high": 0.0017009767189004395,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.20891364902506382,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": -0.04178272980501276,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.20891364902506382,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff": -0.04178272980501276,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "kaiko_vitb16",
+      "low": "lunit_vits16",
+      "cka_high": 0.9120323257443406,
+      "cka_low": 0.8259843208004588,
+      "cka_gap": 0.08604800494388176,
+      "acc_high": 99.9025069637883,
+      "acc_low": 99.81894150417827,
+      "comp_gap": 0.08356545961002837,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0014225323462694634,
+      "cka_sd_low": 0.0025493767047865276,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.1392757660167092,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": -0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": 0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.1392757660167092,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff": -0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "kaiko_vitb16",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.9120323257443406,
+      "cka_gap": 0.007892095225394025,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.9025069637883,
+      "comp_gap": 0.013927576601673763,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.0014225323462694634,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "kaiko_vitb16",
+      "low": "resnet50_in1k",
+      "cka_high": 0.9120323257443406,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.1718819547849587,
+      "acc_high": 99.9025069637883,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.3927576601671205,
+      "category": "matched",
+      "cka_sd_high": 0.0014225323462694634,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "kaiko_vitb16",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.9120323257443406,
+      "cka_gap": 0.025691314736241422,
+      "acc_high": 99.94428969359332,
+      "acc_low": 99.9025069637883,
+      "comp_gap": 0.04178272980502129,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.0014225323462694634,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni2_h",
+      "low": "kaiko_vitb16",
+      "cka_high": 0.916263816923409,
+      "cka_low": 0.9120323257443406,
+      "cka_gap": 0.004231491179068403,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.9025069637883,
+      "comp_gap": 0.06963788300836882,
+      "category": "no_separation",
+      "cka_sd_high": 0.0018005307050608225,
+      "cka_sd_low": 0.0014225323462694634,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "kaiko_vitb16",
+      "low": "virchow2",
+      "cka_high": 0.9120323257443406,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.2194699244758791,
+      "acc_high": 99.9025069637883,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.013927576601673763,
+      "category": "matched",
+      "cka_sd_high": 0.0014225323462694634,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": -0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff": -0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "lunit_vits16",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.8259843208004588,
+      "cka_gap": 0.09394010016927579,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.81894150417827,
+      "comp_gap": 0.09749303621170213,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.0025493767047865276,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "lunit_vits16",
+      "low": "resnet50_in1k",
+      "cka_high": 0.8259843208004588,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.08583394984107695,
+      "acc_high": 99.81894150417827,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.3091922005570922,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0025493767047865276,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.1392757660167092,
+        -0.0696378830083546,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.1392757660167092,
+        -0.0696378830083546,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "lunit_vits16",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.8259843208004588,
+      "cka_gap": 0.11173931968012318,
+      "acc_high": 99.94428969359332,
+      "acc_low": 99.81894150417827,
+      "comp_gap": 0.12534818941504966,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.0025493767047865276,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni2_h",
+      "low": "lunit_vits16",
+      "cka_high": 0.916263816923409,
+      "cka_low": 0.8259843208004588,
+      "cka_gap": 0.09027949612295016,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.81894150417827,
+      "comp_gap": 0.1532033426183972,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0018005307050608225,
+      "cka_sd_low": 0.0025493767047865276,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "lunit_vits16",
+      "low": "virchow2",
+      "cka_high": 0.8259843208004588,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.13342191953199734,
+      "acc_high": 99.81894150417827,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.09749303621170213,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0025493767047865276,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "resnet50_in1k",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.17977405001035274,
+      "acc_high": 99.91643454038997,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4066852367687943,
+      "category": "matched",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "phikon_v2",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.9199244209697346,
+      "cka_gap": 0.017799219510847397,
+      "acc_high": 99.94428969359332,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.027855153203347527,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.0013588622394835274,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "uni2_h",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.916263816923409,
+      "cka_gap": 0.0036606040463256218,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.97214484679667,
+      "comp_gap": 0.055710306406695054,
+      "category": "no_separation",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.0018005307050608225,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": -0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "virchow2",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.22736201970127312,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.0,
+      "category": "matched",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.20891364902506382
+      ],
+      "diff_class_conditional": -0.04178272980501276,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "resnet50_in1k",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.19757326952120013,
+      "acc_high": 99.94428969359332,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4345403899721418,
+      "category": "matched",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni2_h",
+      "low": "resnet50_in1k",
+      "cka_high": 0.916263816923409,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.17611344596402712,
+      "acc_high": 99.97214484679667,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4623955431754894,
+      "category": "matched",
+      "cka_sd_high": 0.0018005307050608225,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "resnet50_in1k",
+      "low": "virchow2",
+      "cka_high": 0.7401503709593819,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.047587969690920384,
+      "acc_high": 98.50974930362118,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 1.4066852367687943,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.003332393633079982,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": -0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff": -0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "uni2_h",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.916263816923409,
+      "cka_gap": 0.02145982355717302,
+      "acc_high": 99.94428969359332,
+      "acc_low": 99.97214484679667,
+      "comp_gap": 0.027855153203347527,
+      "category": "cka_gap_too_small",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.0018005307050608225,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "virchow2",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.24516123921212052,
+      "acc_high": 99.94428969359332,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.027855153203347527,
+      "category": "matched",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.20891364902506382
+      ],
+      "diff_class_conditional": -0.04178272980501276,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni2_h",
+      "low": "virchow2",
+      "cka_high": 0.916263816923409,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.2237014156549475,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.055710306406695054,
+      "category": "matched",
+      "cka_sd_high": 0.0018005307050608225,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.1392757660167092,
+        0.1392757660167092,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.1392757660167092,
+        0.1392757660167092,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    }
+  ],
+  "matched_pairs": [
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "ctranspath",
+      "low": "virchow2",
+      "cka_high": 0.8519668725619166,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.15940447129345514,
+      "acc_high": 99.86072423398329,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.05571030640668084,
+      "category": "matched",
+      "cka_sd_high": 0.001834233777939661,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        -0.1392757660167092,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": -0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        -0.1392757660167092,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff": -0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "resnet50_in1k",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.20117775753267153,
+      "acc_high": 99.97214484679667,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4623955431754894,
+      "category": "matched",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "h_optimus_0",
+      "low": "virchow2",
+      "cka_high": 0.9413281284920534,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.24876572722359191,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.055710306406695054,
+      "category": "matched",
+      "cka_sd_high": 0.0007935519592377602,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.1392757660167092,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.027855153203341844,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": true
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "hibou_b",
+      "low": "resnet50_in1k",
+      "cka_high": 0.8920007717331104,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.15185040077372858,
+      "acc_high": 99.91643454038997,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4066852367687943,
+      "category": "matched",
+      "cka_sd_high": 0.0017009767189004395,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        -0.1392757660167092,
+        0.0,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "hibou_b",
+      "low": "virchow2",
+      "cka_high": 0.8920007717331104,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.19943837046464896,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.0,
+      "category": "matched",
+      "cka_sd_high": 0.0017009767189004395,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.20891364902506382,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": -0.04178272980501276,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.20891364902506382,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff": -0.04178272980501276,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "kaiko_vitb16",
+      "low": "resnet50_in1k",
+      "cka_high": 0.9120323257443406,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.1718819547849587,
+      "acc_high": 99.9025069637883,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.3927576601671205,
+      "category": "matched",
+      "cka_sd_high": 0.0014225323462694634,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "kaiko_vitb16",
+      "low": "virchow2",
+      "cka_high": 0.9120323257443406,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.2194699244758791,
+      "acc_high": 99.9025069637883,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.013927576601673763,
+      "category": "matched",
+      "cka_sd_high": 0.0014225323462694634,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff_mean_logits": -0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": 0.0,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        -0.1392757660167092
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        -0.0696378830083546
+      ],
+      "diff": -0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "resnet50_in1k",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.17977405001035274,
+      "acc_high": 99.91643454038997,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4066852367687943,
+      "category": "matched",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "phikon_v2",
+      "low": "virchow2",
+      "cka_high": 0.9199244209697346,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.22736201970127312,
+      "acc_high": 99.91643454038997,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.0,
+      "category": "matched",
+      "cka_sd_high": 0.0013588622394835274,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_mean_probs": -0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.20891364902506382
+      ],
+      "diff_class_conditional": -0.04178272980501276,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "resnet50_in1k",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.19757326952120013,
+      "acc_high": 99.94428969359332,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4345403899721418,
+      "category": "matched",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.027855153203341844,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni2_h",
+      "low": "resnet50_in1k",
+      "cka_high": 0.916263816923409,
+      "cka_low": 0.7401503709593819,
+      "cka_gap": 0.17611344596402712,
+      "acc_high": 99.97214484679667,
+      "acc_low": 98.50974930362118,
+      "comp_gap": 1.4623955431754894,
+      "category": "matched",
+      "cka_sd_high": 0.0018005307050608225,
+      "cka_sd_low": 0.003332393633079982,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff_mean_logits": 0.027855153203341844,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        0.0696378830083546
+      ],
+      "diff_class_conditional": 0.0,
+      "fold_diffs": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0696378830083546
+      ],
+      "diff": 0.027855153203341844,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni",
+      "low": "virchow2",
+      "cka_high": 0.937723640480582,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.24516123921212052,
+      "acc_high": 99.94428969359332,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.027855153203347527,
+      "category": "matched",
+      "cka_sd_high": 0.0010456155318221535,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff_mean_logits": -0.013927576601670922,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.20891364902506382
+      ],
+      "diff_class_conditional": -0.04178272980501276,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ],
+      "diff": -0.013927576601670922,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    },
+    {
+      "pool": "crc_val_7k",
+      "anchor": "prov_gigapath",
+      "base": [
+        "prov_gigapath",
+        "phikon"
+      ],
+      "high": "uni2_h",
+      "low": "virchow2",
+      "cka_high": 0.916263816923409,
+      "cka_low": 0.6925624012684615,
+      "cka_gap": 0.2237014156549475,
+      "acc_high": 99.97214484679667,
+      "acc_low": 99.91643454038997,
+      "comp_gap": 0.055710306406695054,
+      "category": "matched",
+      "cka_sd_high": 0.0018005307050608225,
+      "cka_sd_low": 0.0057895114596946805,
+      "fold_diffs_mean_logits": [
+        0.0,
+        0.0,
+        -0.1392757660167092,
+        0.1392757660167092,
+        0.0
+      ],
+      "diff_mean_logits": 0.0,
+      "fold_diffs_mean_probs": [
+        0.0,
+        0.0696378830083546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diff_mean_probs": 0.013927576601670922,
+      "fold_diffs_class_conditional": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ],
+      "diff_class_conditional": -0.013927576601670922,
+      "fold_diffs": [
+        0.0,
+        0.0,
+        -0.1392757660167092,
+        0.1392757660167092,
+        0.0
+      ],
+      "diff": 0.0,
+      "fusion_rule": "mean_logits",
+      "primary": false
+    }
+  ],
+  "candidates": [
+    {
+      "pool": "crc_val_7k",
+      "name": "ctranspath",
+      "cka": 0.8519668725619166,
+      "indiv_acc": 99.86072423398329,
+      "disagreement": 0.0020891364902506965,
+      "headroom_contrib": 0.0,
+      "utility": -0.027855153203341844,
+      "utility_per_fold": [
+        0.0,
+        -0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "h_optimus_0",
+      "cka": 0.9413281284920534,
+      "indiv_acc": 99.97214484679667,
+      "disagreement": 0.001392757660167131,
+      "headroom_contrib": 0.0,
+      "utility": -0.013927576601670922,
+      "utility_per_fold": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "hibou_b",
+      "cka": 0.8920007717331104,
+      "indiv_acc": 99.91643454038997,
+      "disagreement": 0.001392757660167131,
+      "headroom_contrib": 0.0,
+      "utility": -0.04178272980501276,
+      "utility_per_fold": [
+        0.0,
+        0.0,
+        -0.1392757660167092,
+        0.0,
+        -0.0696378830083546
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "kaiko_vitb16",
+      "cka": 0.9120323257443406,
+      "indiv_acc": 99.9025069637883,
+      "disagreement": 0.0012534818941504179,
+      "headroom_contrib": 0.0,
+      "utility": -0.027855153203341844,
+      "utility_per_fold": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "lunit_vits16",
+      "cka": 0.8259843208004588,
+      "indiv_acc": 99.81894150417827,
+      "disagreement": 0.0022284122562674096,
+      "headroom_contrib": 0.0,
+      "utility": 0.0,
+      "utility_per_fold": [
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "phikon_v2",
+      "cka": 0.9199244209697346,
+      "indiv_acc": 99.91643454038997,
+      "disagreement": 0.0008356545961002785,
+      "headroom_contrib": 0.0,
+      "utility": 0.0,
+      "utility_per_fold": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "resnet50_in1k",
+      "cka": 0.7401503709593819,
+      "indiv_acc": 98.50974930362118,
+      "disagreement": 0.015598885793871866,
+      "headroom_contrib": 0.0,
+      "utility": -0.027855153203341844,
+      "utility_per_fold": [
+        0.0,
+        -0.0696378830083546,
+        0.0,
+        0.0,
+        -0.0696378830083546
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "uni",
+      "cka": 0.937723640480582,
+      "indiv_acc": 99.94428969359332,
+      "disagreement": 0.0011142061281337048,
+      "headroom_contrib": 0.0,
+      "utility": -0.013927576601670922,
+      "utility_per_fold": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "uni2_h",
+      "cka": 0.916263816923409,
+      "indiv_acc": 99.97214484679667,
+      "disagreement": 0.0011142061281337048,
+      "headroom_contrib": 0.01392757660167131,
+      "utility": 0.0,
+      "utility_per_fold": [
+        0.0,
+        0.0,
+        -0.0696378830083546,
+        0.0696378830083546,
+        0.0
+      ]
+    },
+    {
+      "pool": "crc_val_7k",
+      "name": "virchow2",
+      "cka": 0.6925624012684615,
+      "indiv_acc": 99.91643454038997,
+      "disagreement": 0.0011142061281337048,
+      "headroom_contrib": 0.0,
+      "utility": 0.0,
+      "utility_per_fold": [
+        0.0,
+        0.0,
+        0.0696378830083546,
+        -0.0696378830083546,
+        0.0
+      ]
+    }
+  ],
+  "primary_fusion_rule": "mean_logits",
+  "fusion_rules": [
+    "mean_logits",
+    "mean_probs",
+    "class_conditional"
+  ],
+  "wall_seconds": 74.1,
+  "domain": "pathology",
+  "feature_key": "3f6bb9088f4c275c",
+  "missing_encoders": [],
+  "manifest_hash": "dc7332f23da9b57a0d1dd3d0dbb83e65e8e2c71c16ba367f75bb495ca4b0aa4a",
+  "prereg": {
+    "registered_utc": "2026-10-25T13:57:01+00:00",
+    "registration_hash": "ab54c50ceb8ef727088cb6a06af5fd582ea4453d7c53776cd55b4678ab698310",
+    "deviations": [],
+    "deviation_note": null
+  }
+}

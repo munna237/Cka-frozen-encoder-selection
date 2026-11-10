@@ -1,0 +1,2150 @@
+{
+  "prereg": {
+    "registered_utc": "2026-10-25T13:57:01+00:00",
+    "registration_hash": "ab54c50ceb8ef727088cb6a06af5fd582ea4453d7c53776cd55b4678ab698310",
+    "deviations": [],
+    "deviation_note": null
+  },
+  "generated": "2026-10-29 06:03:27",
+  "all": {
+    "n_matched_pairs_all": 65,
+    "n_matched_pairs_primary": 18,
+    "G_pools": 18,
+    "A_matched_null_all_pairs": {
+      "n_pairs": 65,
+      "G": 18,
+      "cluster_robust": {
+        "estimate_pp": -0.096478939338239,
+        "se": 0.10198506740772012,
+        "t": -0.9460104482995684,
+        "df": 17,
+        "p": 0.35739669852224254,
+        "ci_low": -0.3116486232614139,
+        "ci_high": 0.11869074458493589,
+        "n": 65,
+        "G": 18,
+        "reference": "t(G-1) = t(17)"
+      },
+      "mixed_effects": {
+        "estimate": -0.18601035074577832,
+        "se": 0.1317754254136851,
+        "t": -1.4115708612727487,
+        "df": 17,
+        "p": 0.17611747371616124,
+        "ci_low": -0.4640321960591655,
+        "ci_high": 0.09201149456760888,
+        "sigma2_between": 0.22543642970368222,
+        "sigma2_within": 0.19100944383252386,
+        "icc": 0.5413342862288744,
+        "G": 18,
+        "n": 65,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": -0.096478939338239,
+        "sd": 0.8174051644714813,
+        "n": 325,
+        "t": -2.1278294896223224,
+        "p_t": 0.0341058591185764,
+        "p_wilcoxon": 0.37417416302647843,
+        "wins": 133,
+        "losses": 138,
+        "ties": 54,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "A_matched_null_primary_only": {
+      "n_pairs": 18,
+      "G": 18,
+      "cluster_robust": {
+        "estimate_pp": -0.33780382227701117,
+        "se": 0.23617593805954276,
+        "t": -1.4303058349316127,
+        "df": 17,
+        "p": 0.17075266118561216,
+        "ci_low": -0.8360914955043989,
+        "ci_high": 0.16048385095037654,
+        "n": 18,
+        "G": 18,
+        "reference": "t(G-1) = t(17)"
+      },
+      "mixed_effects": {
+        "estimate": -0.3378038222770112,
+        "se": 2.0561094544263713e-09,
+        "t": -164292723.5949383,
+        "df": 17,
+        "p": 1.184777558410033e-130,
+        "ci_low": -0.337803826615023,
+        "ci_high": -0.33780381793899944,
+        "sigma2_between": 0.5020116634647449,
+        "sigma2_within": 0.5020116634647449,
+        "icc": 0.5,
+        "G": 18,
+        "n": 18,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": -0.3378038222770112,
+        "sd": 1.1443839802393903,
+        "n": 90,
+        "t": -2.800361152773099,
+        "p_t": 0.006260440089221768,
+        "p_wilcoxon": 0.1195963754827627,
+        "wins": 41,
+        "losses": 43,
+        "ties": 6,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "B_dose_response": {
+      "slope_pp_per_unit_cka": -1.4312722951080132,
+      "se": 1.2551119852277832,
+      "t": -1.140354256794273,
+      "df": 17,
+      "p": 0.26995055407644525,
+      "ci_low": -4.079327113466719,
+      "ci_high": 1.2167825232506926,
+      "mde_80pct_power": 3.514313558637793,
+      "cka_gap_range": [
+        0.15001407005234202,
+        0.6148590352670601
+      ],
+      "n_pairs": 65,
+      "G": 18,
+      "spearman": {
+        "rho": -0.05341609522696008,
+        "p": 0.6725870027848918,
+        "n": 65
+      },
+      "INTERPRETATION": "design still under-powered for a 1 pp/unit effect"
+    },
+    "C_equivalence": {
+      "margin_1.0": {
+        "estimate": -0.096478939338239,
+        "se": 0.10198506740772012,
+        "df": 17,
+        "margin": 1.0,
+        "p_lower": 4.4288843743684856e-08,
+        "p_upper": 2.6497990578390143e-09,
+        "p_tost": 4.4288843743684856e-08,
+        "equivalent": true,
+        "ci90_low": -0.273892848559928,
+        "ci90_high": 0.08093496988345003,
+        "G": 18,
+        "n": 65
+      },
+      "margin_0.5": {
+        "estimate": -0.096478939338239,
+        "se": 0.10198506740772012,
+        "df": 17,
+        "margin": 0.5,
+        "p_lower": 0.0005092527642758338,
+        "p_upper": 9.675025884591103e-06,
+        "p_tost": 0.0005092527642758338,
+        "equivalent": true,
+        "ci90_low": -0.273892848559928,
+        "ci90_high": 0.08093496988345003,
+        "G": 18,
+        "n": 65
+      },
+      "margin_0.25": {
+        "estimate": -0.096478939338239,
+        "se": 0.10198506740772012,
+        "df": 17,
+        "margin": 0.25,
+        "p_lower": 0.07529666016646813,
+        "p_upper": 0.0017136904595744169,
+        "p_tost": 0.07529666016646813,
+        "equivalent": false,
+        "ci90_low": -0.273892848559928,
+        "ci90_high": 0.08093496988345003,
+        "G": 18,
+        "n": 65
+      },
+      "largest_margin_cleared": 1.0,
+      "G": 18,
+      "NOTE": "equivalence established"
+    },
+    "D_selection_regret": {
+      "per_rule": {
+        "cka_diversity": {
+          "mean_regret_pp": 1.7565188699644936,
+          "median_regret_pp": 0.6848404255319209,
+          "p90_regret_pp": 4.586300116045383,
+          "max_regret_pp": 8.87839863851858,
+          "top1_agreement_with_oracle": 0.1,
+          "zero_regret_fraction": 0.15,
+          "n_pools": 20
+        },
+        "disagreement_with_base": {
+          "mean_regret_pp": 1.924318174907865,
+          "median_regret_pp": 0.9998404255319173,
+          "p90_regret_pp": 4.586300116045383,
+          "max_regret_pp": 9.05776841309075,
+          "top1_agreement_with_oracle": 0.05,
+          "zero_regret_fraction": 0.05,
+          "n_pools": 20
+        },
+        "competence": {
+          "mean_regret_pp": 0.2687720779430687,
+          "median_regret_pp": 0.006963788300835461,
+          "p90_regret_pp": 0.6959880757207901,
+          "max_regret_pp": 2.15973094533814,
+          "top1_agreement_with_oracle": 0.5,
+          "zero_regret_fraction": 0.5,
+          "n_pools": 20
+        },
+        "oracle_headroom": {
+          "mean_regret_pp": 0.2849799780017304,
+          "median_regret_pp": 0.07249999999999798,
+          "p90_regret_pp": 0.878537943589199,
+          "max_regret_pp": 1.5927119485750012,
+          "top1_agreement_with_oracle": 0.25,
+          "zero_regret_fraction": 0.3,
+          "n_pools": 20
+        }
+      },
+      "per_pool": {
+        "bracs": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 2.061101139722197,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "kaiko_vitb16"
+        },
+        "sicapv2": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 0.7036190991091942,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "hibou_b"
+        },
+        "mhist": {
+          "oracle_choice": "resnet50_in1k",
+          "oracle_utility": 1.6494352627474655,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "h_optimus_0",
+          "oracle_headroom": "resnet50_in1k"
+        },
+        "crc_val_7k": {
+          "oracle_choice": "lunit_vits16",
+          "oracle_utility": 0.0,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "h_optimus_0",
+          "oracle_headroom": "uni2_h"
+        },
+        "nct_crc_100k": {
+          "oracle_choice": "phikon",
+          "oracle_utility": 0.04500000000000455,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni",
+          "oracle_headroom": "ctranspath"
+        },
+        "pcam": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 1.7965495382870955,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "lunit_vits16"
+        },
+        "dtd": {
+          "oracle_choice": "siglip_b16",
+          "oracle_utility": 0.6914893617021335,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "siglip_b16",
+          "oracle_headroom": "convnext_l"
+        },
+        "aircraft": {
+          "oracle_choice": "openclip_h14",
+          "oracle_utility": 5.608907258082669,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "resnet50",
+          "competence": "dinov2_b",
+          "oracle_headroom": "eva02_clip"
+        },
+        "eurosat": {
+          "oracle_choice": "eva02_clip",
+          "oracle_utility": 0.44499999999999884,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "resnet50",
+          "competence": "eva02_clip",
+          "oracle_headroom": "dinov2_b"
+        },
+        "pets": {
+          "oracle_choice": "convnext_l",
+          "oracle_utility": 0.4891304347826093,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "dinov2_b",
+          "oracle_headroom": "clip_b32"
+        },
+        "food101": {
+          "oracle_choice": "openclip_h14",
+          "oracle_utility": 0.5400000000000006,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "openclip_h14",
+          "oracle_headroom": "siglip_b16"
+        },
+        "cifar100": {
+          "oracle_choice": "dinov2_l",
+          "oracle_utility": 0.8499999999999972,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "dinov2_l",
+          "oracle_headroom": "dinov2_l"
+        },
+        "gtsrb": {
+          "oracle_choice": "vit_mae",
+          "oracle_utility": 0.3200000000000017,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "dinov2_b",
+          "competence": "eva02_clip",
+          "oracle_headroom": "convnext_l"
+        },
+        "country211": {
+          "oracle_choice": "eva02_clip",
+          "oracle_utility": 4.514999999999999,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "eva02_clip",
+          "oracle_headroom": "eva02_clip"
+        },
+        "emotion": {
+          "oracle_choice": "minilm_l3",
+          "oracle_utility": 3.9125,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "glove_avg",
+          "competence": "bge_small",
+          "oracle_headroom": "glove_avg"
+        },
+        "ag_news": {
+          "oracle_choice": "e5_base",
+          "oracle_utility": 0.8199999999999988,
+          "cka_diversity": "minilm_l3",
+          "disagreement_with_base": "minilm_l3",
+          "competence": "e5_base",
+          "oracle_headroom": "e5_base"
+        },
+        "banking77": {
+          "oracle_choice": "minilm_l3",
+          "oracle_utility": 0.24014509757381858,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "glove_avg",
+          "competence": "e5_base",
+          "oracle_headroom": "mpnet_base"
+        },
+        "trec_coarse": {
+          "oracle_choice": "mpnet_base",
+          "oracle_utility": 0.568555066894271,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "glove_avg",
+          "competence": "mpnet_base",
+          "oracle_headroom": "bge_small"
+        },
+        "newsgroups20": {
+          "oracle_choice": "mpnet_base",
+          "oracle_utility": 2.741975581972068,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "minilm_l3",
+          "competence": "bge_base",
+          "oracle_headroom": "mpnet_base"
+        },
+        "sst5": {
+          "oracle_choice": "bge_base",
+          "oracle_utility": 1.9545785297015499,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "glove_avg",
+          "competence": "e5_base",
+          "oracle_headroom": "e5_base"
+        }
+      },
+      "skipped_pools": [],
+      "n_pools_scored": 20,
+      "HEADLINE": "following CKA diversity costs 1.76 pp on average vs. the oracle and picks the right teacher 10% of the time; prediction disagreement costs 1.92 pp and is right 5%"
+    },
+    "E_mechanism_on_real": {
+      "utility_on_disagreement_controlling_competence": {
+        "coef_pp_per_unit": 10.604782214396312,
+        "se": 5.746523286580999,
+        "t": 1.8454257792986035,
+        "p": 0.08061939271396486,
+        "df": 19,
+        "ci": [
+          -1.422829253634946,
+          22.63239368242757
+        ],
+        "term": "disagreement"
+      },
+      "competence_coef_in_that_model": {
+        "coef_pp_per_unit": 0.11364357136895947,
+        "se": 0.056289174516013125,
+        "t": 2.0189241065638686,
+        "p": 0.05783253591718998,
+        "df": 19,
+        "ci": [
+          -0.0041710248958405916,
+          0.23145816763375954
+        ],
+        "term": "indiv_acc"
+      },
+      "utility_on_cka_controlling_competence": {
+        "coef_pp_per_unit": 1.0566345039259062,
+        "se": 0.7035002403789633,
+        "t": 1.5019675094307225,
+        "p": 0.14954330141888472,
+        "df": 19,
+        "ci": [
+          -0.4158084214692592,
+          2.5290774293210716
+        ],
+        "term": "cka"
+      },
+      "joint_model": {
+        "cka": {
+          "coef_pp_per_unit": 1.9428166263687796,
+          "se": 0.9255360179371194,
+          "t": 2.0991258997127153,
+          "p": 0.04939983642098812,
+          "df": 19,
+          "ci": [
+            0.005647477605151163,
+            3.879985775132408
+          ],
+          "term": "cka"
+        },
+        "disagreement": {
+          "coef_pp_per_unit": 13.39974039613844,
+          "se": 5.728521292061409,
+          "t": 2.3391272743819274,
+          "p": 0.03040617674594926,
+          "df": 19,
+          "ci": [
+            1.4098075356640098,
+            25.389673256612873
+          ],
+          "term": "disagreement"
+        },
+        "indiv_acc": {
+          "coef_pp_per_unit": 0.1325200330106624,
+          "se": 0.055612313763538715,
+          "t": 2.382926083135691,
+          "p": 0.027772867952358896,
+          "df": 19,
+          "ci": [
+            0.016122122582276147,
+            0.24891794343904866
+          ],
+          "term": "indiv_acc"
+        }
+      },
+      "marginal_spearmans": {
+        "cka_vs_utility": {
+          "rho": 0.13558786222768818,
+          "p": 0.08154700387447167,
+          "n": 166
+        },
+        "disagreement_vs_utility": {
+          "rho": 0.04388113757195124,
+          "p": 0.5745471716605681,
+          "n": 166
+        },
+        "competence_vs_utility": {
+          "rho": -0.005256153878075178,
+          "p": 0.9464148851715461,
+          "n": 166
+        },
+        "cka_vs_disagreement": {
+          "rho": -0.534130253569766,
+          "p": 1.25393634995203e-13,
+          "n": 166
+        }
+      },
+      "n_candidates": 166,
+      "G": 20
+    },
+    "F_matched_band": {
+      "band": [
+        0.55,
+        0.75
+      ],
+      "n_in_band": 49,
+      "split": "relative",
+      "cut": 87.615,
+      "acc_thresholds": [
+        87.615,
+        87.615
+      ],
+      "mean_utility_weak_pp": 0.4726819883021705,
+      "mean_utility_strong_pp": 0.24109770522445437,
+      "n_weak": 24,
+      "n_strong": 24,
+      "mannwhitney": {
+        "U": 290.0,
+        "p": 0.9753257805563759,
+        "n_a": 24,
+        "n_b": 24
+      },
+      "NOTE": "thresholds must be declared before looking at utilities"
+    },
+    "pools": [
+      "bracs",
+      "sicapv2",
+      "mhist",
+      "crc_val_7k",
+      "nct_crc_100k",
+      "pcam",
+      "dtd",
+      "aircraft",
+      "eurosat",
+      "pets",
+      "food101",
+      "cifar100",
+      "gtsrb",
+      "country211",
+      "emotion",
+      "ag_news",
+      "banking77",
+      "trec_coarse",
+      "newsgroups20",
+      "sst5"
+    ]
+  },
+  "pathology": {
+    "n_matched_pairs_all": 35,
+    "n_matched_pairs_primary": 6,
+    "G_pools": 6,
+    "A_matched_null_all_pairs": {
+      "n_pairs": 35,
+      "G": 6,
+      "cluster_robust": {
+        "estimate_pp": 0.021843777668783843,
+        "se": 0.07604541935081736,
+        "t": 0.28724646211776145,
+        "df": 5,
+        "p": 0.7854475525913392,
+        "ci_low": -0.17363719599777355,
+        "ci_high": 0.21732475133534124,
+        "n": 35,
+        "G": 6,
+        "reference": "t(G-1) = t(5)"
+      },
+      "mixed_effects": {
+        "estimate": -0.09137051362854098,
+        "se": 0.14701071046784372,
+        "t": -0.6215228355659627,
+        "df": 5,
+        "p": 0.5614925391331174,
+        "ci_low": -0.4692735756011694,
+        "ci_high": 0.2865325483440874,
+        "sigma2_between": 0.11431908276927862,
+        "sigma2_within": 0.040485675602757495,
+        "icc": 0.7384726669353413,
+        "G": 6,
+        "n": 35,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": 0.021843777668783843,
+        "sd": 0.6444035526484747,
+        "n": 175,
+        "t": 0.4484239974179251,
+        "p_t": 0.6544051267786842,
+        "p_wilcoxon": 0.7428587718330093,
+        "wins": 65,
+        "losses": 60,
+        "ties": 50,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "A_matched_null_primary_only": {
+      "n_pairs": 6,
+      "G": 6,
+      "cluster_robust": {
+        "estimate_pp": -0.09146330550089395,
+        "se": 0.19801381148633532,
+        "t": -0.46190366628645857,
+        "df": 5,
+        "p": 0.663551410644533,
+        "ci_low": -0.6004740125127809,
+        "ci_high": 0.41754740151099295,
+        "n": 6,
+        "G": 6,
+        "reference": "t(G-1) = t(5)"
+      },
+      "mixed_effects": {
+        "estimate": -0.09146330550089393,
+        "se": 1.8473016065865238e-09,
+        "t": -49511842.12409225,
+        "df": 5,
+        "p": 6.379085709473325e-38,
+        "ci_low": -0.09146331024953389,
+        "ci_high": -0.09146330075225398,
+        "sigma2_between": 0.11762840861803783,
+        "sigma2_within": 0.11762840861803783,
+        "icc": 0.5,
+        "G": 6,
+        "n": 6,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": -0.09146330550089393,
+        "sd": 0.8022961313036906,
+        "n": 30,
+        "t": -0.6244142736351185,
+        "p_t": 0.5372374417646282,
+        "p_wilcoxon": 1.0,
+        "wins": 14,
+        "losses": 11,
+        "ties": 5,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "B_dose_response": {
+      "slope_pp_per_unit_cka": 0.10525974656821611,
+      "se": 0.5533281227930865,
+      "t": 0.1902302489829842,
+      "df": 5,
+      "p": 0.8566109289036745,
+      "ci_low": -1.3171154750304321,
+      "ci_high": 1.5276349681668644,
+      "mde_80pct_power": 1.5493187438206422,
+      "cka_gap_range": [
+        0.15185040077372858,
+        0.4743326661014081
+      ],
+      "n_pairs": 35,
+      "G": 6,
+      "spearman": {
+        "rho": 0.08199595960892161,
+        "p": 0.6395935329231985,
+        "n": 35
+      },
+      "INTERPRETATION": "design still under-powered for a 1 pp/unit effect"
+    },
+    "C_equivalence": {
+      "margin_1.0": {
+        "estimate": 0.021843777668783843,
+        "se": 0.07604541935081736,
+        "df": 5,
+        "margin": 1.0,
+        "p_lower": 2.0430798995852576e-05,
+        "p_upper": 2.5285847353377415e-05,
+        "p_tost": 2.5285847353377415e-05,
+        "equivalent": true,
+        "ci90_low": -0.1313914208935083,
+        "ci90_high": 0.175078976231076,
+        "G": 6,
+        "n": 35
+      },
+      "margin_0.5": {
+        "estimate": 0.021843777668783843,
+        "se": 0.07604541935081736,
+        "df": 5,
+        "margin": 0.5,
+        "p_lower": 0.0005021972850049052,
+        "p_upper": 0.0007477456713150534,
+        "p_tost": 0.0007477456713150534,
+        "equivalent": true,
+        "ci90_low": -0.1313914208935083,
+        "ci90_high": 0.175078976231076,
+        "G": 6,
+        "n": 35
+      },
+      "margin_0.25": {
+        "estimate": 0.021843777668783843,
+        "se": 0.07604541935081736,
+        "df": 5,
+        "margin": 0.25,
+        "p_lower": 0.007981575026413553,
+        "p_upper": 0.015045084877099964,
+        "p_tost": 0.015045084877099964,
+        "equivalent": true,
+        "ci90_low": -0.1313914208935083,
+        "ci90_high": 0.175078976231076,
+        "G": 6,
+        "n": 35
+      },
+      "largest_margin_cleared": 1.0,
+      "G": 6,
+      "NOTE": "equivalence established"
+    },
+    "D_selection_regret": {
+      "per_rule": {
+        "cka_diversity": {
+          "mean_regret_pp": 0.8808014515144982,
+          "median_regret_pp": 0.20793336272498522,
+          "p90_regret_pp": 2.4344709918185092,
+          "max_regret_pp": 2.7662461027803023,
+          "top1_agreement_with_oracle": 0.16666666666666666,
+          "zero_regret_fraction": 0.3333333333333333,
+          "n_pools": 6
+        },
+        "disagreement_with_base": {
+          "mean_regret_pp": 1.2074920520089882,
+          "median_regret_pp": 1.0988479404283615,
+          "p90_regret_pp": 2.509700638996932,
+          "max_regret_pp": 2.7662461027803023,
+          "top1_agreement_with_oracle": 0.16666666666666666,
+          "zero_regret_fraction": 0.16666666666666666,
+          "n_pools": 6
+        },
+        "competence": {
+          "mean_regret_pp": 0.06819593469946265,
+          "median_regret_pp": 0.006963788300835461,
+          "p90_regret_pp": 0.19762401579755248,
+          "max_regret_pp": 0.38024803159510157,
+          "top1_agreement_with_oracle": 0.5,
+          "zero_regret_fraction": 0.5,
+          "n_pools": 6
+        },
+        "oracle_headroom": {
+          "mean_regret_pp": 0.40782495825670967,
+          "median_regret_pp": 0.14126174569727398,
+          "p90_regret_pp": 1.082213129072855,
+          "max_regret_pp": 1.5927119485750012,
+          "top1_agreement_with_oracle": 0.16666666666666666,
+          "zero_regret_fraction": 0.3333333333333333,
+          "n_pools": 6
+        }
+      },
+      "per_pool": {
+        "bracs": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 2.061101139722197,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "kaiko_vitb16"
+        },
+        "sicapv2": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 0.7036190991091942,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "hibou_b"
+        },
+        "mhist": {
+          "oracle_choice": "resnet50_in1k",
+          "oracle_utility": 1.6494352627474655,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "h_optimus_0",
+          "oracle_headroom": "resnet50_in1k"
+        },
+        "crc_val_7k": {
+          "oracle_choice": "lunit_vits16",
+          "oracle_utility": 0.0,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "h_optimus_0",
+          "oracle_headroom": "uni2_h"
+        },
+        "nct_crc_100k": {
+          "oracle_choice": "phikon",
+          "oracle_utility": 0.04500000000000455,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni",
+          "oracle_headroom": "ctranspath"
+        },
+        "pcam": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 1.7965495382870955,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "lunit_vits16"
+        }
+      },
+      "skipped_pools": [],
+      "n_pools_scored": 6,
+      "HEADLINE": "following CKA diversity costs 0.88 pp on average vs. the oracle and picks the right teacher 17% of the time; prediction disagreement costs 1.21 pp and is right 17%"
+    },
+    "E_mechanism_on_real": {
+      "utility_on_disagreement_controlling_competence": {
+        "coef_pp_per_unit": -0.6100206798735037,
+        "se": 6.140978799031076,
+        "t": -0.09933606674716951,
+        "p": 0.9247312156955373,
+        "df": 5,
+        "ci": [
+          -16.395909233690496,
+          15.175867873943487
+        ],
+        "term": "disagreement"
+      },
+      "competence_coef_in_that_model": {
+        "coef_pp_per_unit": -0.021335953764683255,
+        "se": 0.0555047837818924,
+        "t": -0.3843984664191015,
+        "p": 0.7164886858435633,
+        "df": 5,
+        "ci": [
+          -0.16401554274533695,
+          0.12134363521597044
+        ],
+        "term": "indiv_acc"
+      },
+      "utility_on_cka_controlling_competence": {
+        "coef_pp_per_unit": 0.5757887908820165,
+        "se": 1.4432295094635081,
+        "t": 0.3989585766549733,
+        "p": 0.7063926585264337,
+        "df": 5,
+        "ci": [
+          -3.1341507707991854,
+          4.285728352563218
+        ],
+        "term": "cka"
+      },
+      "joint_model": {
+        "cka": {
+          "coef_pp_per_unit": 0.8910321246178441,
+          "se": 0.5396958924316222,
+          "t": 1.6509892647195479,
+          "p": 0.15965204239716543,
+          "df": 5,
+          "ci": [
+            -0.496300333234414,
+            2.278364582470102
+          ],
+          "term": "cka"
+        },
+        "disagreement": {
+          "coef_pp_per_unit": 1.4195617562768916,
+          "se": 6.125667287924783,
+          "t": 0.23173993779831983,
+          "p": 0.8259256058572514,
+          "df": 5,
+          "ci": [
+            -14.326967305214119,
+            17.166090817767902
+          ],
+          "term": "disagreement"
+        },
+        "indiv_acc": {
+          "coef_pp_per_unit": -0.014030973220573006,
+          "se": 0.05598918530191887,
+          "t": -0.25060148928604137,
+          "p": 0.8120942166017933,
+          "df": 5,
+          "ci": [
+            -0.15795575594976136,
+            0.12989380950861534
+          ],
+          "term": "indiv_acc"
+        }
+      },
+      "marginal_spearmans": {
+        "cka_vs_utility": {
+          "rho": -0.12672827343999488,
+          "p": 0.3346045064330816,
+          "n": 60
+        },
+        "disagreement_vs_utility": {
+          "rho": 0.24393396298505202,
+          "p": 0.06034854578061911,
+          "n": 60
+        },
+        "competence_vs_utility": {
+          "rho": -0.20428015761450913,
+          "p": 0.11743735941033887,
+          "n": 60
+        },
+        "cka_vs_disagreement": {
+          "rho": -0.8397593581740189,
+          "p": 5.101521744735565e-17,
+          "n": 60
+        }
+      },
+      "n_candidates": 60,
+      "G": 6
+    },
+    "F_matched_band": {
+      "band": [
+        0.55,
+        0.75
+      ],
+      "n_in_band": 8,
+      "split": "relative",
+      "cut": null,
+      "acc_thresholds": [
+        null,
+        null
+      ],
+      "mean_utility_weak_pp": NaN,
+      "mean_utility_strong_pp": NaN,
+      "n_weak": 0,
+      "n_strong": 0,
+      "mannwhitney": {
+        "U": NaN,
+        "p": NaN,
+        "n_a": 0,
+        "n_b": 0
+      },
+      "NOTE": "band too sparse (0 weak vs 0 strong); widen the band or add pools before quoting a p-value"
+    },
+    "pools": [
+      "bracs",
+      "sicapv2",
+      "mhist",
+      "crc_val_7k",
+      "nct_crc_100k",
+      "pcam"
+    ]
+  },
+  "vision": {
+    "n_matched_pairs_all": 23,
+    "n_matched_pairs_primary": 8,
+    "G_pools": 8,
+    "A_matched_null_all_pairs": {
+      "n_pairs": 23,
+      "G": 8,
+      "cluster_robust": {
+        "estimate_pp": -0.02480665560161783,
+        "se": 0.13916825017160905,
+        "t": -0.1782493892897886,
+        "df": 7,
+        "p": 0.8635760259462282,
+        "ci_low": -0.35388727500913625,
+        "ci_high": 0.3042739638059006,
+        "n": 23,
+        "G": 8,
+        "reference": "t(G-1) = t(7)"
+      },
+      "mixed_effects": {
+        "estimate": -0.025209397558468818,
+        "se": 0.18130530640541553,
+        "t": -0.1390439036687556,
+        "df": 7,
+        "p": 0.8933312000668597,
+        "ci_low": -0.453928322027175,
+        "ci_high": 0.4035095269102374,
+        "sigma2_between": 0.1961573798751681,
+        "sigma2_within": 0.15192625861840747,
+        "icc": 0.5635351914961911,
+        "G": 8,
+        "n": 23,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": -0.024806655601617832,
+        "sd": 0.7502175132495074,
+        "n": 115,
+        "t": -0.3545928213988962,
+        "p_t": 0.7235497540063893,
+        "p_wilcoxon": 0.4320846809968084,
+        "wins": 59,
+        "losses": 52,
+        "ties": 4,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "A_matched_null_primary_only": {
+      "n_pairs": 8,
+      "G": 8,
+      "cluster_robust": {
+        "estimate_pp": -0.07863484642813474,
+        "se": 0.32222438194384906,
+        "t": -0.24403754288785534,
+        "df": 7,
+        "p": 0.8141999208720352,
+        "ci_low": -0.8405744344270564,
+        "ci_high": 0.6833047415707868,
+        "n": 8,
+        "G": 8,
+        "reference": "t(G-1) = t(7)"
+      },
+      "mixed_effects": {
+        "estimate": -0.07863484642813479,
+        "se": NaN,
+        "t": NaN,
+        "df": 7,
+        "p": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "sigma2_between": 0.41531420927638213,
+        "sigma2_within": 0.41531420927638213,
+        "icc": 0.5,
+        "G": 8,
+        "n": 8,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": -0.07863484642813479,
+        "sd": 0.9915887901274083,
+        "n": 40,
+        "t": -0.5015490708371384,
+        "p_t": 0.6188043651241556,
+        "p_wilcoxon": 0.680572182617786,
+        "wins": 23,
+        "losses": 16,
+        "ties": 1,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "B_dose_response": {
+      "slope_pp_per_unit_cka": -0.7088448831647525,
+      "se": 1.029092217278391,
+      "t": -0.6888059896511637,
+      "df": 7,
+      "p": 0.5131205609448817,
+      "ci_low": -3.142261297266627,
+      "ci_high": 1.724571530937122,
+      "mde_80pct_power": 2.8814582083794944,
+      "cka_gap_range": [
+        0.15001407005234202,
+        0.6103041346821623
+      ],
+      "n_pairs": 23,
+      "G": 8,
+      "spearman": {
+        "rho": -0.07806324110671936,
+        "p": 0.7233078775886128,
+        "n": 23
+      },
+      "INTERPRETATION": "design still under-powered for a 1 pp/unit effect"
+    },
+    "C_equivalence": {
+      "margin_1.0": {
+        "estimate": -0.02480665560161783,
+        "se": 0.13916825017160905,
+        "df": 7,
+        "margin": 1.0,
+        "p_lower": 0.00010509400629758777,
+        "p_upper": 7.705203968218368e-05,
+        "p_tost": 0.00010509400629758777,
+        "equivalent": true,
+        "ci90_low": -0.2884718448805676,
+        "ci90_high": 0.23885853367733195,
+        "G": 8,
+        "n": 23
+      },
+      "margin_0.5": {
+        "estimate": -0.02480665560161783,
+        "se": 0.13916825017160905,
+        "df": 7,
+        "margin": 0.5,
+        "p_lower": 0.005609297157178778,
+        "p_upper": 0.003486799565769536,
+        "p_tost": 0.005609297157178778,
+        "equivalent": true,
+        "ci90_low": -0.2884718448805676,
+        "ci90_high": 0.23885853367733195,
+        "G": 8,
+        "n": 23
+      },
+      "margin_0.25": {
+        "estimate": -0.02480665560161783,
+        "se": 0.13916825017160905,
+        "df": 7,
+        "margin": 0.25,
+        "p_lower": 0.0748328941233255,
+        "p_upper": 0.044440890968055285,
+        "p_tost": 0.0748328941233255,
+        "equivalent": false,
+        "ci90_low": -0.2884718448805676,
+        "ci90_high": 0.23885853367733195,
+        "G": 8,
+        "n": 23
+      },
+      "largest_margin_cleared": 1.0,
+      "G": 8,
+      "NOTE": "equivalence established"
+    },
+    "D_selection_regret": {
+      "per_rule": {
+        "cka_diversity": {
+          "mean_regret_pp": 2.664759936197802,
+          "median_regret_pp": 0.9998404255319173,
+          "p90_regret_pp": 7.959019591555573,
+          "max_regret_pp": 8.87839863851858,
+          "top1_agreement_with_oracle": 0.125,
+          "zero_regret_fraction": 0.125,
+          "n_pools": 8
+        },
+        "disagreement_with_base": {
+          "mean_regret_pp": 2.7178061580193242,
+          "median_regret_pp": 0.9998404255319173,
+          "p90_regret_pp": 8.012830523927224,
+          "max_regret_pp": 9.05776841309075,
+          "top1_agreement_with_oracle": 0.0,
+          "zero_regret_fraction": 0.0,
+          "n_pools": 8
+        },
+        "competence": {
+          "mean_regret_pp": 0.3161620203411801,
+          "median_regret_pp": 0.0,
+          "p90_regret_pp": 0.8191149357753539,
+          "max_regret_pp": 2.15973094533814,
+          "top1_agreement_with_oracle": 0.625,
+          "zero_regret_fraction": 0.625,
+          "n_pools": 8
+        },
+        "oracle_headroom": {
+          "mean_regret_pp": 0.22163793666230053,
+          "median_regret_pp": 0.09749999999999658,
+          "p90_regret_pp": 0.6323223523373496,
+          "max_regret_pp": 0.8396252324288325,
+          "top1_agreement_with_oracle": 0.25,
+          "zero_regret_fraction": 0.25,
+          "n_pools": 8
+        }
+      },
+      "per_pool": {
+        "dtd": {
+          "oracle_choice": "siglip_b16",
+          "oracle_utility": 0.6914893617021335,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "siglip_b16",
+          "oracle_headroom": "convnext_l"
+        },
+        "aircraft": {
+          "oracle_choice": "openclip_h14",
+          "oracle_utility": 5.608907258082669,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "resnet50",
+          "competence": "dinov2_b",
+          "oracle_headroom": "eva02_clip"
+        },
+        "eurosat": {
+          "oracle_choice": "eva02_clip",
+          "oracle_utility": 0.44499999999999884,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "resnet50",
+          "competence": "eva02_clip",
+          "oracle_headroom": "dinov2_b"
+        },
+        "pets": {
+          "oracle_choice": "convnext_l",
+          "oracle_utility": 0.4891304347826093,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "dinov2_b",
+          "oracle_headroom": "clip_b32"
+        },
+        "food101": {
+          "oracle_choice": "openclip_h14",
+          "oracle_utility": 0.5400000000000006,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "openclip_h14",
+          "oracle_headroom": "siglip_b16"
+        },
+        "cifar100": {
+          "oracle_choice": "dinov2_l",
+          "oracle_utility": 0.8499999999999972,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "dinov2_l",
+          "oracle_headroom": "dinov2_l"
+        },
+        "gtsrb": {
+          "oracle_choice": "vit_mae",
+          "oracle_utility": 0.3200000000000017,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "dinov2_b",
+          "competence": "eva02_clip",
+          "oracle_headroom": "convnext_l"
+        },
+        "country211": {
+          "oracle_choice": "eva02_clip",
+          "oracle_utility": 4.514999999999999,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "eva02_clip",
+          "oracle_headroom": "eva02_clip"
+        }
+      },
+      "skipped_pools": [],
+      "n_pools_scored": 8,
+      "HEADLINE": "following CKA diversity costs 2.66 pp on average vs. the oracle and picks the right teacher 12% of the time; prediction disagreement costs 2.72 pp and is right 0%"
+    },
+    "E_mechanism_on_real": {
+      "utility_on_disagreement_controlling_competence": {
+        "coef_pp_per_unit": 35.33210478737586,
+        "se": 22.774952475748794,
+        "t": 1.5513580028321976,
+        "p": 0.16475422937180023,
+        "df": 7,
+        "ci": [
+          -18.522100165652866,
+          89.1863097404046
+        ],
+        "term": "disagreement"
+      },
+      "competence_coef_in_that_model": {
+        "coef_pp_per_unit": 0.35752844300029213,
+        "se": 0.21951126925276776,
+        "t": 1.6287475545895425,
+        "p": 0.1473902147544897,
+        "df": 7,
+        "ci": [
+          -0.161533227772716,
+          0.8765901137733003
+        ],
+        "term": "indiv_acc"
+      },
+      "utility_on_cka_controlling_competence": {
+        "coef_pp_per_unit": 2.1379238980873665,
+        "se": 0.9312251973094453,
+        "t": 2.2958183522786877,
+        "p": 0.05533101245948866,
+        "df": 7,
+        "ci": [
+          -0.06407378716482359,
+          4.339921583339557
+        ],
+        "term": "cka"
+      },
+      "joint_model": {
+        "cka": {
+          "coef_pp_per_unit": 3.4445300380849435,
+          "se": 1.5843027260464762,
+          "t": 2.174161529520651,
+          "p": 0.06620897428592211,
+          "df": 7,
+          "ci": [
+            -0.30175060978911317,
+            7.190810685959001
+          ],
+          "term": "cka"
+        },
+        "disagreement": {
+          "coef_pp_per_unit": 46.827681019475904,
+          "se": 22.800704699779008,
+          "t": 2.053782180685397,
+          "p": 0.07908764841117014,
+          "df": 7,
+          "ci": [
+            -7.087418267027118,
+            100.74278030597893
+          ],
+          "term": "disagreement"
+        },
+        "indiv_acc": {
+          "coef_pp_per_unit": 0.4560190075996653,
+          "se": 0.21480965493443163,
+          "t": 2.12289809663751,
+          "p": 0.07141522319662978,
+          "df": 7,
+          "ci": [
+            -0.05192511193456939,
+            0.9639631271339
+          ],
+          "term": "indiv_acc"
+        }
+      },
+      "marginal_spearmans": {
+        "cka_vs_utility": {
+          "rho": 0.5198090637824967,
+          "p": 1.0732212540792061e-05,
+          "n": 64
+        },
+        "disagreement_vs_utility": {
+          "rho": -0.48984077201895176,
+          "p": 3.9881423575089317e-05,
+          "n": 64
+        },
+        "competence_vs_utility": {
+          "rho": 0.5114985290917657,
+          "p": 1.5638263158314647e-05,
+          "n": 64
+        },
+        "cka_vs_disagreement": {
+          "rho": -0.43214285714285705,
+          "p": 0.00036271793784743733,
+          "n": 64
+        }
+      },
+      "n_candidates": 64,
+      "G": 8
+    },
+    "F_matched_band": {
+      "band": [
+        0.55,
+        0.75
+      ],
+      "n_in_band": 27,
+      "split": "relative",
+      "cut": 91.015,
+      "acc_thresholds": [
+        91.015,
+        91.015
+      ],
+      "mean_utility_weak_pp": -0.32488543371522055,
+      "mean_utility_strong_pp": 0.24578595317725732,
+      "n_weak": 13,
+      "n_strong": 13,
+      "mannwhitney": {
+        "U": 144.0,
+        "p": 0.002481066720811377,
+        "n_a": 13,
+        "n_b": 13
+      },
+      "NOTE": "thresholds must be declared before looking at utilities"
+    },
+    "pools": [
+      "dtd",
+      "aircraft",
+      "eurosat",
+      "pets",
+      "food101",
+      "cifar100",
+      "gtsrb",
+      "country211"
+    ]
+  },
+  "text": {
+    "n_matched_pairs_all": 7,
+    "n_matched_pairs_primary": 4,
+    "G_pools": 4,
+    "A_matched_null_all_pairs": {
+      "n_pairs": 7,
+      "G": 4,
+      "cluster_robust": {
+        "estimate_pp": -0.923587170936537,
+        "se": 0.2715291051804671,
+        "t": -3.401429730056713,
+        "df": 3,
+        "p": 0.04241673392788238,
+        "ci_low": -1.7877139684952565,
+        "ci_high": -0.05946037337781751,
+        "n": 7,
+        "G": 4,
+        "reference": "t(G-1) = t(3)"
+      },
+      "mixed_effects": {
+        "estimate": -0.9235861844090284,
+        "se": NaN,
+        "t": NaN,
+        "df": 3,
+        "p": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "sigma2_between": 3.1259696680241352e-06,
+        "sigma2_within": 1.2468394849355746,
+        "icc": 2.5071084679682175e-06,
+        "G": 4,
+        "n": 7,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": -0.9235871709365372,
+        "sd": 1.2494667510740423,
+        "n": 35,
+        "t": -4.373077863185192,
+        "p_t": 0.00010982576990307813,
+        "p_wilcoxon": 0.00030424142408476396,
+        "wins": 9,
+        "losses": 26,
+        "ties": 0,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "A_matched_null_primary_only": {
+      "n_pairs": 4,
+      "G": 4,
+      "cluster_robust": {
+        "estimate_pp": -1.2256525491389398,
+        "se": 0.7084702845460197,
+        "t": -1.7299985276366603,
+        "df": 3,
+        "p": 0.18206772147022557,
+        "ci_low": -3.4803211885961107,
+        "ci_high": 1.029016090318231,
+        "n": 4,
+        "G": 4,
+        "reference": "t(G-1) = t(3)"
+      },
+      "mixed_effects": {
+        "estimate": -1.22565254913894,
+        "se": 8.602163986055149e-09,
+        "t": -142481886.08422586,
+        "df": 3,
+        "p": 7.62415610238476e-25,
+        "ci_low": -1.2256525765148651,
+        "ci_high": -1.225652521763015,
+        "sigma2_between": 1.003860288169436,
+        "sigma2_within": 1.003860288169436,
+        "icc": 0.5,
+        "G": 4,
+        "n": 4,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": -1.22565254913894,
+        "sd": 1.4376437322426983,
+        "n": 20,
+        "t": -3.812686488599256,
+        "p_t": 0.001175242539951416,
+        "p_wilcoxon": 0.0023250579833984375,
+        "wins": 4,
+        "losses": 16,
+        "ties": 0,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "B_dose_response": {
+      "slope_pp_per_unit_cka": -3.9239944572126193,
+      "se": 1.1001169768643178,
+      "t": -3.566888376177275,
+      "df": 3,
+      "p": 0.03763522457584527,
+      "ci_low": -7.42505766561496,
+      "ci_high": -0.4229312488102783,
+      "mde_80pct_power": 3.0803275352200896,
+      "cka_gap_range": [
+        0.15337210585168437,
+        0.6148590352670601
+      ],
+      "n_pairs": 7,
+      "G": 4,
+      "spearman": {
+        "rho": -0.7500000000000002,
+        "p": 0.05218140045705776,
+        "n": 7
+      },
+      "INTERPRETATION": "design still under-powered for a 1 pp/unit effect"
+    },
+    "C_equivalence": {
+      "margin_1.0": {
+        "estimate": -0.923587170936537,
+        "se": 0.2715291051804671,
+        "df": 3,
+        "margin": 1.0,
+        "p_lower": 0.39834272356914613,
+        "p_upper": 0.002892323842598545,
+        "p_tost": 0.39834272356914613,
+        "equivalent": false,
+        "ci90_low": -1.5625938385527074,
+        "ci90_high": -0.28458050332036655,
+        "G": 4,
+        "n": 7
+      },
+      "margin_0.5": {
+        "estimate": -0.923587170936537,
+        "se": 0.2715291051804671,
+        "df": 3,
+        "margin": 0.5,
+        "p_lower": 0.8916680692923493,
+        "p_upper": 0.006754508156598187,
+        "p_tost": 0.8916680692923493,
+        "equivalent": false,
+        "ci90_low": -1.5625938385527074,
+        "ci90_high": -0.28458050332036655,
+        "G": 4,
+        "n": 7
+      },
+      "margin_0.25": {
+        "estimate": -0.923587170936537,
+        "se": 0.2715291051804671,
+        "df": 3,
+        "margin": 0.25,
+        "p_lower": 0.9553933792040761,
+        "p_upper": 0.011412931150252766,
+        "p_tost": 0.9553933792040761,
+        "equivalent": false,
+        "ci90_low": -1.5625938385527074,
+        "ci90_high": -0.28458050332036655,
+        "G": 4,
+        "n": 7
+      },
+      "largest_margin_cleared": null,
+      "G": 4,
+      "NOTE": "equivalence NOT established; report as failure to reject only"
+    },
+    "D_selection_regret": {
+      "per_rule": {
+        "cka_diversity": {
+          "mean_regret_pp": 1.4212482001034108,
+          "median_regret_pp": 0.844645667311066,
+          "p90_regret_pp": 3.292158887964135,
+          "max_regret_pp": 4.255333462272643,
+          "top1_agreement_with_oracle": 0.0,
+          "zero_regret_fraction": 0.0,
+          "n_pools": 6
+        },
+        "disagreement_with_base": {
+          "mean_regret_pp": 1.583160320324798,
+          "median_regret_pp": 1.3303820279752274,
+          "p90_regret_pp": 3.292158887964135,
+          "max_regret_pp": 4.255333462272643,
+          "top1_agreement_with_oracle": 0.0,
+          "zero_regret_fraction": 0.0,
+          "n_pools": 6
+        },
+        "competence": {
+          "mean_regret_pp": 0.4061616313225263,
+          "median_regret_pp": 0.11354451536363545,
+          "p90_regret_pp": 1.1049403786039436,
+          "max_regret_pp": 1.6161307572078871,
+          "top1_agreement_with_oracle": 0.3333333333333333,
+          "zero_regret_fraction": 0.3333333333333333,
+          "n_pools": 6
+        },
+        "oracle_headroom": {
+          "mean_regret_pp": 0.24659105286599095,
+          "median_regret_pp": 0.03186748372935434,
+          "p90_regret_pp": 0.7079056748686186,
+          "max_regret_pp": 1.228752344032492,
+          "top1_agreement_with_oracle": 0.3333333333333333,
+          "zero_regret_fraction": 0.3333333333333333,
+          "n_pools": 6
+        }
+      },
+      "per_pool": {
+        "emotion": {
+          "oracle_choice": "minilm_l3",
+          "oracle_utility": 3.9125,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "glove_avg",
+          "competence": "bge_small",
+          "oracle_headroom": "glove_avg"
+        },
+        "ag_news": {
+          "oracle_choice": "e5_base",
+          "oracle_utility": 0.8199999999999988,
+          "cka_diversity": "minilm_l3",
+          "disagreement_with_base": "minilm_l3",
+          "competence": "e5_base",
+          "oracle_headroom": "e5_base"
+        },
+        "banking77": {
+          "oracle_choice": "minilm_l3",
+          "oracle_utility": 0.24014509757381858,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "glove_avg",
+          "competence": "e5_base",
+          "oracle_headroom": "mpnet_base"
+        },
+        "trec_coarse": {
+          "oracle_choice": "mpnet_base",
+          "oracle_utility": 0.568555066894271,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "glove_avg",
+          "competence": "mpnet_base",
+          "oracle_headroom": "bge_small"
+        },
+        "newsgroups20": {
+          "oracle_choice": "mpnet_base",
+          "oracle_utility": 2.741975581972068,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "minilm_l3",
+          "competence": "bge_base",
+          "oracle_headroom": "mpnet_base"
+        },
+        "sst5": {
+          "oracle_choice": "bge_base",
+          "oracle_utility": 1.9545785297015499,
+          "cka_diversity": "glove_avg",
+          "disagreement_with_base": "glove_avg",
+          "competence": "e5_base",
+          "oracle_headroom": "e5_base"
+        }
+      },
+      "skipped_pools": [],
+      "n_pools_scored": 6,
+      "HEADLINE": "following CKA diversity costs 1.42 pp on average vs. the oracle and picks the right teacher 0% of the time; prediction disagreement costs 1.58 pp and is right 0%"
+    },
+    "E_mechanism_on_real": {
+      "utility_on_disagreement_controlling_competence": {
+        "coef_pp_per_unit": 11.323424211256935,
+        "se": 7.233079837264351,
+        "t": 1.5655052157615348,
+        "p": 0.17823959282361126,
+        "df": 5,
+        "ci": [
+          -7.269799434122074,
+          29.916647856635944
+        ],
+        "term": "disagreement"
+      },
+      "competence_coef_in_that_model": {
+        "coef_pp_per_unit": 0.10325026306689127,
+        "se": 0.07219695587891806,
+        "t": 1.4301193424284107,
+        "p": 0.21207861894616775,
+        "df": 5,
+        "ci": [
+          -0.0823379203036919,
+          0.2888384464374744
+        ],
+        "term": "indiv_acc"
+      },
+      "utility_on_cka_controlling_competence": {
+        "coef_pp_per_unit": 1.2418529581052768,
+        "se": 2.885301006314264,
+        "t": 0.43040672546385117,
+        "p": 0.6848207876382355,
+        "df": 5,
+        "ci": [
+          -6.175049399069349,
+          8.658755315279903
+        ],
+        "term": "cka"
+      },
+      "joint_model": {
+        "cka": {
+          "coef_pp_per_unit": 2.782866062907104,
+          "se": 2.3119407625327906,
+          "t": 1.203692632616764,
+          "p": 0.2825817068823091,
+          "df": 5,
+          "ci": [
+            -3.1601668663268567,
+            8.725898992141065
+          ],
+          "term": "cka"
+        },
+        "disagreement": {
+          "coef_pp_per_unit": 13.469298533597993,
+          "se": 5.555839480864127,
+          "t": 2.424349835878096,
+          "p": 0.05979572832443035,
+          "df": 5,
+          "ci": [
+            -0.8124415176224211,
+            27.751038584818406
+          ],
+          "term": "disagreement"
+        },
+        "indiv_acc": {
+          "coef_pp_per_unit": 0.11161152673473573,
+          "se": 0.0626370005477105,
+          "t": 1.7818785343931247,
+          "p": 0.13486822181332098,
+          "df": 5,
+          "ci": [
+            -0.04940200911195075,
+            0.2726250625814222
+          ],
+          "term": "indiv_acc"
+        }
+      },
+      "marginal_spearmans": {
+        "cka_vs_utility": {
+          "rho": 0.006077303297949924,
+          "p": 0.9695304997212453,
+          "n": 42
+        },
+        "disagreement_vs_utility": {
+          "rho": 0.3556437889960295,
+          "p": 0.020809690239363816,
+          "n": 42
+        },
+        "competence_vs_utility": {
+          "rho": -0.3360343570213111,
+          "p": 0.029574946641066593,
+          "n": 42
+        },
+        "cka_vs_disagreement": {
+          "rho": -0.5491451260027551,
+          "p": 0.00016583579142319442,
+          "n": 42
+        }
+      },
+      "n_candidates": 42,
+      "G": 6
+    },
+    "F_matched_band": {
+      "band": [
+        0.55,
+        0.75
+      ],
+      "n_in_band": 14,
+      "split": "relative",
+      "cut": 82.17168011738812,
+      "acc_thresholds": [
+        82.17168011738812,
+        82.17168011738812
+      ],
+      "mean_utility_weak_pp": 1.5995729102561522,
+      "mean_utility_strong_pp": 0.3114390345629975,
+      "n_weak": 7,
+      "n_strong": 7,
+      "mannwhitney": {
+        "U": 7.0,
+        "p": 0.026223776223776224,
+        "n_a": 7,
+        "n_b": 7
+      },
+      "NOTE": "thresholds must be declared before looking at utilities"
+    },
+    "pools": [
+      "emotion",
+      "ag_news",
+      "banking77",
+      "trec_coarse",
+      "newsgroups20",
+      "sst5"
+    ]
+  },
+  "image": {
+    "n_matched_pairs_all": 58,
+    "n_matched_pairs_primary": 14,
+    "G_pools": 14,
+    "A_matched_null_all_pairs": {
+      "n_pairs": 58,
+      "G": 14,
+      "cluster_robust": {
+        "estimate_pp": 0.0033444679236245556,
+        "se": 0.06930816986579834,
+        "t": 0.04825503155112104,
+        "df": 13,
+        "p": 0.9622464707253662,
+        "ci_low": -0.14638672989112184,
+        "ci_high": 0.15307566573837095,
+        "n": 58,
+        "G": 14,
+        "reference": "t(G-1) = t(13)"
+      },
+      "mixed_effects": {
+        "estimate": -0.04877871333034429,
+        "se": 0.11664347223193479,
+        "t": -0.41818639652077844,
+        "df": 13,
+        "p": 0.6826363023011286,
+        "ci_low": -0.30077161472099667,
+        "ci_high": 0.2032141880603081,
+        "sigma2_between": 0.15961256080667183,
+        "sigma2_within": 0.07833037298252575,
+        "icc": 0.6708018526327766,
+        "G": 14,
+        "n": 58,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": 0.0033444679236245586,
+        "sd": 0.6874247580838722,
+        "n": 290,
+        "t": 0.0828515932690648,
+        "p_t": 0.9340268999627382,
+        "p_wilcoxon": 0.4299564524528793,
+        "wins": 124,
+        "losses": 112,
+        "ties": 54,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "A_matched_null_primary_only": {
+      "n_pairs": 14,
+      "G": 14,
+      "cluster_robust": {
+        "estimate_pp": -0.0841327574593173,
+        "se": 0.19599348573306274,
+        "t": -0.4292630295575415,
+        "df": 13,
+        "p": 0.6747603434492571,
+        "ci_low": -0.5075509409075647,
+        "ci_high": 0.33928542598893013,
+        "n": 14,
+        "G": 14,
+        "reference": "t(G-1) = t(13)"
+      },
+      "mixed_effects": {
+        "estimate": -0.08413275745931723,
+        "se": 1.951802681794928e-09,
+        "t": -43105155.16965403,
+        "df": 13,
+        "p": 2.129986108212384e-93,
+        "ci_low": -0.08413276167593056,
+        "ci_high": -0.08413275324270389,
+        "sigma2_between": 0.26889412514857386,
+        "sigma2_within": 0.26889412514857386,
+        "icc": 0.5,
+        "G": 14,
+        "n": 14,
+        "method": "statsmodels MixedLM (REML)"
+      },
+      "fold_level_naive": {
+        "mean": -0.08413275745931728,
+        "sd": 0.9090224036672052,
+        "n": 70,
+        "t": -0.7743540181663932,
+        "p_t": 0.44136681171862924,
+        "p_wilcoxon": 0.7685642044820529,
+        "wins": 37,
+        "losses": 27,
+        "ties": 6,
+        "WARNING": "folds within a pool share training data; quote the cluster-robust figure"
+      }
+    },
+    "B_dose_response": {
+      "slope_pp_per_unit_cka": -0.42904916220344597,
+      "se": 0.677143710779126,
+      "t": -0.6336161074430997,
+      "df": 13,
+      "p": 0.537320272048267,
+      "ci_low": -1.8919292108903711,
+      "ci_high": 1.033830886483479,
+      "mde_80pct_power": 1.8960023901815528,
+      "cka_gap_range": [
+        0.15001407005234202,
+        0.6103041346821623
+      ],
+      "n_pairs": 58,
+      "G": 14,
+      "spearman": {
+        "rho": 0.04571885749988853,
+        "p": 0.733266813362215,
+        "n": 58
+      },
+      "INTERPRETATION": "design still under-powered for a 1 pp/unit effect"
+    },
+    "C_equivalence": {
+      "margin_1.0": {
+        "estimate": 0.0033444679236245556,
+        "se": 0.06930816986579834,
+        "df": 13,
+        "margin": 1.0,
+        "p_lower": 1.0689779434392887e-09,
+        "p_upper": 1.1605416439537391e-09,
+        "p_tost": 1.1605416439537391e-09,
+        "equivalent": true,
+        "ci90_low": -0.11939568470644361,
+        "ci90_high": 0.12608462055369274,
+        "G": 14,
+        "n": 58
+      },
+      "margin_0.5": {
+        "estimate": 0.0033444679236245556,
+        "se": 0.06930816986579834,
+        "df": 13,
+        "margin": 0.5,
+        "p_lower": 3.1707674523786147e-06,
+        "p_upper": 3.6524015475882e-06,
+        "p_tost": 3.6524015475882e-06,
+        "equivalent": true,
+        "ci90_low": -0.11939568470644361,
+        "ci90_high": 0.12608462055369274,
+        "G": 14,
+        "n": 58
+      },
+      "margin_0.25": {
+        "estimate": 0.0033444679236245556,
+        "se": 0.06930816986579834,
+        "df": 13,
+        "margin": 0.25,
+        "p_lower": 0.0014537836624626684,
+        "p_upper": 0.0017484134085376892,
+        "p_tost": 0.0017484134085376892,
+        "equivalent": true,
+        "ci90_low": -0.11939568470644361,
+        "ci90_high": 0.12608462055369274,
+        "G": 14,
+        "n": 58
+      },
+      "largest_margin_cleared": 1.0,
+      "G": 14,
+      "NOTE": "equivalence established"
+    },
+    "D_selection_regret": {
+      "per_rule": {
+        "cka_diversity": {
+          "mean_regret_pp": 1.9002062999049574,
+          "median_regret_pp": 0.6848404255319209,
+          "p90_regret_pp": 6.1253738308340955,
+          "max_regret_pp": 8.87839863851858,
+          "top1_agreement_with_oracle": 0.14285714285714285,
+          "zero_regret_fraction": 0.21428571428571427,
+          "n_pools": 14
+        },
+        "disagreement_with_base": {
+          "mean_regret_pp": 2.0705286840148944,
+          "median_regret_pp": 0.9998404255319173,
+          "p90_regret_pp": 6.1253738308340955,
+          "max_regret_pp": 9.05776841309075,
+          "top1_agreement_with_oracle": 0.07142857142857142,
+          "zero_regret_fraction": 0.07142857142857142,
+          "n_pools": 14
+        },
+        "competence": {
+          "mean_regret_pp": 0.20989084078044404,
+          "median_regret_pp": 0.0,
+          "p90_regret_pp": 0.3395431873339622,
+          "max_regret_pp": 2.15973094533814,
+          "top1_agreement_with_oracle": 0.5714285714285714,
+          "zero_regret_fraction": 0.5714285714285714,
+          "n_pools": 14
+        },
+        "oracle_headroom": {
+          "mean_regret_pp": 0.3014323744884759,
+          "median_regret_pp": 0.09749999999999658,
+          "p90_regret_pp": 0.7592519555713956,
+          "max_regret_pp": 1.5927119485750012,
+          "top1_agreement_with_oracle": 0.21428571428571427,
+          "zero_regret_fraction": 0.2857142857142857,
+          "n_pools": 14
+        }
+      },
+      "per_pool": {
+        "bracs": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 2.061101139722197,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "kaiko_vitb16"
+        },
+        "sicapv2": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 0.7036190991091942,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "hibou_b"
+        },
+        "mhist": {
+          "oracle_choice": "resnet50_in1k",
+          "oracle_utility": 1.6494352627474655,
+          "cka_diversity": "resnet50_in1k",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "h_optimus_0",
+          "oracle_headroom": "resnet50_in1k"
+        },
+        "crc_val_7k": {
+          "oracle_choice": "lunit_vits16",
+          "oracle_utility": 0.0,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "h_optimus_0",
+          "oracle_headroom": "uni2_h"
+        },
+        "nct_crc_100k": {
+          "oracle_choice": "phikon",
+          "oracle_utility": 0.04500000000000455,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni",
+          "oracle_headroom": "ctranspath"
+        },
+        "pcam": {
+          "oracle_choice": "uni2_h",
+          "oracle_utility": 1.7965495382870955,
+          "cka_diversity": "virchow2",
+          "disagreement_with_base": "resnet50_in1k",
+          "competence": "uni2_h",
+          "oracle_headroom": "lunit_vits16"
+        },
+        "dtd": {
+          "oracle_choice": "siglip_b16",
+          "oracle_utility": 0.6914893617021335,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "siglip_b16",
+          "oracle_headroom": "convnext_l"
+        },
+        "aircraft": {
+          "oracle_choice": "openclip_h14",
+          "oracle_utility": 5.608907258082669,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "resnet50",
+          "competence": "dinov2_b",
+          "oracle_headroom": "eva02_clip"
+        },
+        "eurosat": {
+          "oracle_choice": "eva02_clip",
+          "oracle_utility": 0.44499999999999884,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "resnet50",
+          "competence": "eva02_clip",
+          "oracle_headroom": "dinov2_b"
+        },
+        "pets": {
+          "oracle_choice": "convnext_l",
+          "oracle_utility": 0.4891304347826093,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "dinov2_b",
+          "oracle_headroom": "clip_b32"
+        },
+        "food101": {
+          "oracle_choice": "openclip_h14",
+          "oracle_utility": 0.5400000000000006,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "openclip_h14",
+          "oracle_headroom": "siglip_b16"
+        },
+        "cifar100": {
+          "oracle_choice": "dinov2_l",
+          "oracle_utility": 0.8499999999999972,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "dinov2_l",
+          "oracle_headroom": "dinov2_l"
+        },
+        "gtsrb": {
+          "oracle_choice": "vit_mae",
+          "oracle_utility": 0.3200000000000017,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "dinov2_b",
+          "competence": "eva02_clip",
+          "oracle_headroom": "convnext_l"
+        },
+        "country211": {
+          "oracle_choice": "eva02_clip",
+          "oracle_utility": 4.514999999999999,
+          "cka_diversity": "vit_mae",
+          "disagreement_with_base": "vit_mae",
+          "competence": "eva02_clip",
+          "oracle_headroom": "eva02_clip"
+        }
+      },
+      "skipped_pools": [],
+      "n_pools_scored": 14,
+      "HEADLINE": "following CKA diversity costs 1.90 pp on average vs. the oracle and picks the right teacher 14% of the time; prediction disagreement costs 2.07 pp and is right 7%"
+    },
+    "E_mechanism_on_real": {
+      "utility_on_disagreement_controlling_competence": {
+        "coef_pp_per_unit": 6.63817003586644,
+        "se": 6.3824504372933815,
+        "t": 1.0400660531696195,
+        "p": 0.31726718514647917,
+        "df": 13,
+        "ci": [
+          -7.1502758402780655,
+          20.426615912010945
+        ],
+        "term": "disagreement"
+      },
+      "competence_coef_in_that_model": {
+        "coef_pp_per_unit": 0.08151365037500152,
+        "se": 0.06239482018538049,
+        "t": 1.3064169450736023,
+        "p": 0.214052304514928,
+        "df": 13,
+        "ci": [
+          -0.053282163479015404,
+          0.21630946422901845
+        ],
+        "term": "indiv_acc"
+      },
+      "utility_on_cka_controlling_competence": {
+        "coef_pp_per_unit": 0.577527958551803,
+        "se": 0.8266327674859816,
+        "t": 0.698651180146445,
+        "p": 0.4970791091251121,
+        "df": 13,
+        "ci": [
+          -1.208303562728536,
+          2.363359479832142
+        ],
+        "term": "cka"
+      },
+      "joint_model": {
+        "cka": {
+          "coef_pp_per_unit": 1.4158210521661267,
+          "se": 1.3491450860583971,
+          "t": 1.0494209012779545,
+          "p": 0.3131029157308415,
+          "df": 13,
+          "ci": [
+            -1.49882970477283,
+            4.330471809105084
+          ],
+          "term": "cka"
+        },
+        "disagreement": {
+          "coef_pp_per_unit": 10.426216799128213,
+          "se": 9.287306450026819,
+          "t": 1.12263085699063,
+          "p": 0.28190069388459316,
+          "df": 13,
+          "ci": [
+            -9.637788958457921,
+            30.490222556714347
+          ],
+          "term": "disagreement"
+        },
+        "indiv_acc": {
+          "coef_pp_per_unit": 0.11094219506512104,
+          "se": 0.08652677556421172,
+          "t": 1.2821718403546725,
+          "p": 0.22217583020583176,
+          "df": 13,
+          "ci": [
+            -0.07598753880843861,
+            0.2978719289386807
+          ],
+          "term": "indiv_acc"
+        }
+      },
+      "marginal_spearmans": {
+        "cka_vs_utility": {
+          "rho": 0.11936099103052453,
+          "p": 0.18669738285029697,
+          "n": 124
+        },
+        "disagreement_vs_utility": {
+          "rho": -0.12320036761023886,
+          "p": 0.17281748236796712,
+          "n": 124
+        },
+        "competence_vs_utility": {
+          "rho": 0.15597053563508625,
+          "p": 0.08366110149865741,
+          "n": 124
+        },
+        "cka_vs_disagreement": {
+          "rho": -0.6472297885656528,
+          "p": 4.582386017217432e-16,
+          "n": 124
+        }
+      },
+      "n_candidates": 124,
+      "G": 14
+    },
+    "F_matched_band": {
+      "band": [
+        0.55,
+        0.75
+      ],
+      "n_in_band": 35,
+      "split": "relative",
+      "cut": 91.015,
+      "acc_thresholds": [
+        91.015,
+        91.015
+      ],
+      "mean_utility_weak_pp": -0.035513718070355686,
+      "mean_utility_strong_pp": 0.18131542577064713,
+      "n_weak": 17,
+      "n_strong": 17,
+      "mannwhitney": {
+        "U": 205.0,
+        "p": 0.03877073678127161,
+        "n_a": 17,
+        "n_b": 17
+      },
+      "NOTE": "thresholds must be declared before looking at utilities"
+    },
+    "pools": [
+      "bracs",
+      "sicapv2",
+      "mhist",
+      "crc_val_7k",
+      "nct_crc_100k",
+      "pcam",
+      "dtd",
+      "aircraft",
+      "eurosat",
+      "pets",
+      "food101",
+      "cifar100",
+      "gtsrb",
+      "country211"
+    ]
+  }
+}

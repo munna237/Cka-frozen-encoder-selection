@@ -1,0 +1,13 @@
+dataset,encoder,v2_file,n_v2,n_v3,labels_identical,cka_v2_v3,status
+bracs,uni,HetFuseKD/cached_features_bracs/uni/trainval_features.npy,3969,3969,True,0.9421143127017912,close to v2
+bracs,phikon_v2,HetFuseKD/cached_features_bracs/phikon_v2/trainval_features.npy,3969,3969,True,0.942507526140691,close to v2
+bracs,ctranspath,HetFuseKD/expanded/bracs/ctranspath_fixed/trainval_features.npy,3969,3969,True,0.9986795368241329,reproduces v2
+bracs,resnet50_in1k,HetFuseKD/cached_features_bracs/resnet50_imagenet/trainval_features.npy,3969,3969,True,0.605322100750326,DIFFERS FROM v2 - investigate before analysis
+sicapv2,uni,HetFuseKD/cached_features_sicapv2/uni/all_features.npy,12081,12081,True,0.9999997110184194,reproduces v2
+sicapv2,phikon_v2,HetFuseKD/cached_features_sicapv2/phikon_v2/all_features.npy,12081,12081,True,0.9999997822170926,reproduces v2
+sicapv2,ctranspath,HetFuseKD/expanded/sicapv2/ctranspath_fixed/features.npy,12081,12081,,0.9999999999463235,reproduces v2
+sicapv2,resnet50_in1k,HetFuseKD/cached_features_sicapv2/resnet50_imagenet/all_features.npy,12081,12081,True,0.6508188491038623,DIFFERS FROM v2 - investigate before analysis
+mhist,uni,HetFuseKD/cached_features_mhist/uni/all_features.npy,3152,3152,True,0.9999996795564525,reproduces v2
+mhist,phikon_v2,HetFuseKD/cached_features_mhist/phikon_v2/all_features.npy,3152,3152,True,0.9999998161959812,reproduces v2
+mhist,ctranspath,HetFuseKD/expanded/mhist/ctranspath_fixed/features.npy,3152,3152,,0.999999999941022,reproduces v2
+mhist,resnet50_in1k,HetFuseKD/cached_features_mhist/resnet50_imagenet/all_features.npy,3152,3152,True,0.7419891909396412,DIFFERS FROM v2 - investigate before analysis
