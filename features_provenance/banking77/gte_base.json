@@ -1,0 +1,25 @@
+{
+ "dataset": "banking77",
+ "encoder": "gte_base",
+ "manifest_hash": "f92813917418edcb49e5d1d7c9e263ff767f4dcb731adb9fd1ac6049b30c66d5",
+ "shape": [
+  9993,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "gte_base",
+  "kind": "st",
+  "id": "thenlper/gte-base",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 9993,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.0000050930124251,
+  "eff_rank": 96.10061246619509,
+  "eff_rank_frac": 0.1251310058153582,
+  "dead_dims_frac": 0.0
+ }
+}

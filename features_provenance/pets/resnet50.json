@@ -1,0 +1,42 @@
+{
+ "dataset": "pets",
+ "encoder": "resnet50",
+ "manifest_hash": "da4a44f75e87c8b29d2e687fe9d4b9f21320bbdce1a040265c4ad3fef6c7e80d",
+ "shape": [
+  3680,
+  2048
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "resnet50",
+  "kind": "timm",
+  "id": "resnet50.a1_in1k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 23508032,
+  "weight_checksum": "68e757034f79406b"
+ },
+ "stats": {
+  "n": 3680,
+  "dim": 2048,
+  "finite": true,
+  "mean_norm": 5.8031116815080255,
+  "eff_rank": 196.93950147950278,
+  "eff_rank_frac": 0.09616186595678847,
+  "dead_dims_frac": 0.00048828125
+ },
+ "minutes": 0.1,
+ "saved": "2026-10-28 04:51:45"
+}

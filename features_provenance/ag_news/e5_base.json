@@ -1,0 +1,25 @@
+{
+ "dataset": "ag_news",
+ "encoder": "e5_base",
+ "manifest_hash": "2b5f7c9205658cda7347a07e353cb678ba2692746799ca8ca130ad149f1bcf37",
+ "shape": [
+  20000,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "e5_base",
+  "kind": "st",
+  "id": "intfloat/e5-base-v2",
+  "prefix": "query: "
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.0000000003568073,
+  "eff_rank": 265.4514411018212,
+  "eff_rank_frac": 0.3456398972679964,
+  "dead_dims_frac": 0.0
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "dataset": "newsgroups20",
+ "encoder": "e5_base",
+ "manifest_hash": "fd53e3ddf66cca0d49549d4714d3b5349202635f7b16f2103f9925d4b8dd4bc9",
+ "shape": [
+  11014,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "e5_base",
+  "kind": "st",
+  "id": "intfloat/e5-base-v2",
+  "prefix": "query: "
+ },
+ "stats": {
+  "n": 11014,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.9999999996836306,
+  "eff_rank": 293.20362302883433,
+  "eff_rank_frac": 0.3817755508187947,
+  "dead_dims_frac": 0.0
+ }
+}

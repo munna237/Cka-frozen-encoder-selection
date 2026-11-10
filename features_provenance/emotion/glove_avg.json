@@ -1,0 +1,25 @@
+{
+ "dataset": "emotion",
+ "encoder": "glove_avg",
+ "manifest_hash": "a938a564a1b92ee7e4728c6311c145dbdf0ea61043e41378172fc9187baa82ac",
+ "shape": [
+  16000,
+  300
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "glove_avg",
+  "kind": "st",
+  "id": "sentence-transformers/average_word_embeddings_glove.6B.300d",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 16000,
+  "dim": 300,
+  "finite": true,
+  "mean_norm": 3.522086126913367,
+  "eff_rank": 100.97776905665366,
+  "eff_rank_frac": 0.33659256352217887,
+  "dead_dims_frac": 0.0
+ }
+}

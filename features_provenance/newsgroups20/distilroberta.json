@@ -1,0 +1,25 @@
+{
+ "dataset": "newsgroups20",
+ "encoder": "distilroberta",
+ "manifest_hash": "fd53e3ddf66cca0d49549d4714d3b5349202635f7b16f2103f9925d4b8dd4bc9",
+ "shape": [
+  11014,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "distilroberta",
+  "kind": "st",
+  "id": "sentence-transformers/all-distilroberta-v1",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 11014,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.999999999944578,
+  "eff_rank": 253.34049527878204,
+  "eff_rank_frac": 0.32987043656091414,
+  "dead_dims_frac": 0.0013020833333333333
+ }
+}

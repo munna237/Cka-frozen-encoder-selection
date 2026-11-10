@@ -1,0 +1,25 @@
+{
+ "dataset": "banking77",
+ "encoder": "mpnet_base",
+ "manifest_hash": "f92813917418edcb49e5d1d7c9e263ff767f4dcb731adb9fd1ac6049b30c66d5",
+ "shape": [
+  9993,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "mpnet_base",
+  "kind": "st",
+  "id": "sentence-transformers/all-mpnet-base-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 9993,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.9999999997442212,
+  "eff_rank": 82.15434748688102,
+  "eff_rank_frac": 0.106971806623543,
+  "dead_dims_frac": 0.0026041666666666665
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "dataset": "pcam",
+ "encoder": "virchow2",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  2560
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "virchow2",
+  "kind": "timm",
+  "id": "hf-hub:paige-ai/Virchow2",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "cls+meanpatch",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 5,
+  "n_params": 631239424,
+  "weight_checksum": "72b6bb6855b4c5bb"
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 2560,
+  "finite": true,
+  "mean_norm": 47.13619587041344,
+  "eff_rank": 65.33098207587429,
+  "eff_rank_frac": 0.025519914873388394,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 4.4,
+ "saved": "2026-10-26 04:09:05"
+}

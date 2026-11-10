@@ -1,0 +1,42 @@
+{
+ "dataset": "pcam",
+ "encoder": "h_optimus_0",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "h_optimus_0",
+  "kind": "timm",
+  "id": "hf-hub:bioptimus/H-optimus-0",
+  "mean": [
+   0.707223,
+   0.578729,
+   0.703617
+  ],
+  "std": [
+   0.211883,
+   0.230117,
+   0.177517
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 5,
+  "n_params": 1134774272,
+  "weight_checksum": "15e9beb9dd68443d"
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 30.977853924917014,
+  "eff_rank": 171.3029480667978,
+  "eff_rank_frac": 0.11152535681432148,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 7.1,
+ "saved": "2026-10-26 04:16:12"
+}

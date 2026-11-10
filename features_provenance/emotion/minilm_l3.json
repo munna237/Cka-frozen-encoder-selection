@@ -1,0 +1,25 @@
+{
+ "dataset": "emotion",
+ "encoder": "minilm_l3",
+ "manifest_hash": "a938a564a1b92ee7e4728c6311c145dbdf0ea61043e41378172fc9187baa82ac",
+ "shape": [
+  16000,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l3",
+  "kind": "st",
+  "id": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 16000,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 4.061593796255327,
+  "eff_rank": 132.7725721831936,
+  "eff_rank_frac": 0.3457619067270667,
+  "dead_dims_frac": 0.0
+ }
+}

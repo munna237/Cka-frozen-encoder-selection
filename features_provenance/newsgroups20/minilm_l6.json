@@ -1,0 +1,25 @@
+{
+ "dataset": "newsgroups20",
+ "encoder": "minilm_l6",
+ "manifest_hash": "fd53e3ddf66cca0d49549d4714d3b5349202635f7b16f2103f9925d4b8dd4bc9",
+ "shape": [
+  11014,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l6",
+  "kind": "st",
+  "id": "sentence-transformers/all-MiniLM-L6-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 11014,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 0.999999999932297,
+  "eff_rank": 198.89833848450093,
+  "eff_rank_frac": 0.5179644231367212,
+  "dead_dims_frac": 0.005208333333333333
+ }
+}

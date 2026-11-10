@@ -1,0 +1,42 @@
+{
+ "dataset": "pcam",
+ "encoder": "lunit_vits16",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  384
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "lunit_vits16",
+  "kind": "timm",
+  "id": "hf-hub:1aurent/vit_small_patch16_224.lunit_dino",
+  "mean": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "std": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 21665664,
+  "weight_checksum": "b74878d7db2d88b5"
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 42.4581661262207,
+  "eff_rank": 35.305680387532576,
+  "eff_rank_frac": 0.09194187600919941,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.2,
+ "saved": "2026-10-26 04:21:39"
+}

@@ -1,0 +1,42 @@
+{
+ "dataset": "pcam",
+ "encoder": "resnet50_in1k",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  2048
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "resnet50_in1k",
+  "kind": "timm",
+  "id": "resnet50.tv_in1k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 23508032,
+  "weight_checksum": "2125d202facb68e0"
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 2048,
+  "finite": true,
+  "mean_norm": 24.481799539756366,
+  "eff_rank": 43.172678791170185,
+  "eff_rank_frac": 0.021080409566001067,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.3,
+ "saved": "2026-10-26 03:59:44"
+}

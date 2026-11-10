@@ -1,0 +1,25 @@
+{
+ "dataset": "emotion",
+ "encoder": "mpnet_base",
+ "manifest_hash": "a938a564a1b92ee7e4728c6311c145dbdf0ea61043e41378172fc9187baa82ac",
+ "shape": [
+  16000,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "mpnet_base",
+  "kind": "st",
+  "id": "sentence-transformers/all-mpnet-base-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 16000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.9999999998546804,
+  "eff_rank": 195.48013862177174,
+  "eff_rank_frac": 0.25453143049709864,
+  "dead_dims_frac": 0.0026041666666666665
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "dataset": "ag_news",
+ "encoder": "minilm_l3",
+ "manifest_hash": "2b5f7c9205658cda7347a07e353cb678ba2692746799ca8ca130ad149f1bcf37",
+ "shape": [
+  20000,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l3",
+  "kind": "st",
+  "id": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 3.20610293703706,
+  "eff_rank": 150.385057160645,
+  "eff_rank_frac": 0.391627753022513,
+  "dead_dims_frac": 0.0
+ }
+}

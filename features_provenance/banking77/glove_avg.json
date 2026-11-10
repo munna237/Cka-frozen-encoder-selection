@@ -1,0 +1,25 @@
+{
+ "dataset": "banking77",
+ "encoder": "glove_avg",
+ "manifest_hash": "f92813917418edcb49e5d1d7c9e263ff767f4dcb731adb9fd1ac6049b30c66d5",
+ "shape": [
+  9993,
+  300
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "glove_avg",
+  "kind": "st",
+  "id": "sentence-transformers/average_word_embeddings_glove.6B.300d",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 9993,
+  "dim": 300,
+  "finite": true,
+  "mean_norm": 4.188257385126149,
+  "eff_rank": 63.17098188137449,
+  "eff_rank_frac": 0.21056993960458162,
+  "dead_dims_frac": 0.0
+ }
+}

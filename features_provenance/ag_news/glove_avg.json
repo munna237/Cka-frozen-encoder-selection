@@ -1,0 +1,25 @@
+{
+ "dataset": "ag_news",
+ "encoder": "glove_avg",
+ "manifest_hash": "2b5f7c9205658cda7347a07e353cb678ba2692746799ca8ca130ad149f1bcf37",
+ "shape": [
+  20000,
+  300
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "glove_avg",
+  "kind": "st",
+  "id": "sentence-transformers/average_word_embeddings_glove.6B.300d",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 300,
+  "finite": true,
+  "mean_norm": 3.128236179036319,
+  "eff_rank": 82.6555475420778,
+  "eff_rank_frac": 0.275518491806926,
+  "dead_dims_frac": 0.0
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "dataset": "emotion",
+ "encoder": "bge_base",
+ "manifest_hash": "a938a564a1b92ee7e4728c6311c145dbdf0ea61043e41378172fc9187baa82ac",
+ "shape": [
+  16000,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "bge_base",
+  "kind": "st",
+  "id": "BAAI/bge-base-en-v1.5",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 16000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.0000000001422455,
+  "eff_rank": 185.9404001884804,
+  "eff_rank_frac": 0.24210989607875052,
+  "dead_dims_frac": 0.0
+ }
+}

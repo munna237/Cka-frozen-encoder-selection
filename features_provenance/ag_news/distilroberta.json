@@ -1,0 +1,25 @@
+{
+ "dataset": "ag_news",
+ "encoder": "distilroberta",
+ "manifest_hash": "2b5f7c9205658cda7347a07e353cb678ba2692746799ca8ca130ad149f1bcf37",
+ "shape": [
+  20000,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "distilroberta",
+  "kind": "st",
+  "id": "sentence-transformers/all-distilroberta-v1",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.9999999999524607,
+  "eff_rank": 230.56470468385325,
+  "eff_rank_frac": 0.30021445922376727,
+  "dead_dims_frac": 0.0013020833333333333
+ }
+}

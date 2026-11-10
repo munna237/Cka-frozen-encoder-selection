@@ -1,0 +1,25 @@
+{
+ "dataset": "ag_news",
+ "encoder": "minilm_l6",
+ "manifest_hash": "2b5f7c9205658cda7347a07e353cb678ba2692746799ca8ca130ad149f1bcf37",
+ "shape": [
+  20000,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l6",
+  "kind": "st",
+  "id": "sentence-transformers/all-MiniLM-L6-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 1.0000000002180993,
+  "eff_rank": 178.7138047756231,
+  "eff_rank_frac": 0.4654005332698518,
+  "dead_dims_frac": 0.0078125
+ }
+}

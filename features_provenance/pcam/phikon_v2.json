@@ -1,0 +1,41 @@
+{
+ "dataset": "pcam",
+ "encoder": "phikon_v2",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "phikon_v2",
+  "kind": "hf",
+  "id": "owkin/phikon-v2",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "cls",
+  "transformers_version": "5.20.2",
+  "n_params": 303351808,
+  "weight_checksum": "08ca0a8e38ecc614"
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 8.54464625604653,
+  "eff_rank": 87.29029524851424,
+  "eff_rank_frac": 0.08524442895362719,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 1.7,
+ "saved": "2026-10-26 03:58:21"
+}

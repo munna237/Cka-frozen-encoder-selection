@@ -1,0 +1,25 @@
+{
+ "dataset": "newsgroups20",
+ "encoder": "glove_avg",
+ "manifest_hash": "fd53e3ddf66cca0d49549d4714d3b5349202635f7b16f2103f9925d4b8dd4bc9",
+ "shape": [
+  11014,
+  300
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "glove_avg",
+  "kind": "st",
+  "id": "sentence-transformers/average_word_embeddings_glove.6B.300d",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 11014,
+  "dim": 300,
+  "finite": true,
+  "mean_norm": 2.660943311812294,
+  "eff_rank": 95.68725744485762,
+  "eff_rank_frac": 0.31895752481619205,
+  "dead_dims_frac": 0.0
+ }
+}

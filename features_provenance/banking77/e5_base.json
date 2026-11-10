@@ -1,0 +1,25 @@
+{
+ "dataset": "banking77",
+ "encoder": "e5_base",
+ "manifest_hash": "f92813917418edcb49e5d1d7c9e263ff767f4dcb731adb9fd1ac6049b30c66d5",
+ "shape": [
+  9993,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "e5_base",
+  "kind": "st",
+  "id": "intfloat/e5-base-v2",
+  "prefix": "query: "
+ },
+ "stats": {
+  "n": 9993,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.0000000004758707,
+  "eff_rank": 104.8944640194123,
+  "eff_rank_frac": 0.13658133335860975,
+  "dead_dims_frac": 0.0
+ }
+}

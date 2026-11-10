@@ -1,0 +1,42 @@
+{
+ "dataset": "pets",
+ "encoder": "vit_mae",
+ "manifest_hash": "da4a44f75e87c8b29d2e687fe9d4b9f21320bbdce1a040265c4ad3fef6c7e80d",
+ "shape": [
+  3680,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "vit_mae",
+  "kind": "timm",
+  "id": "vit_base_patch16_224.mae",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 85798656,
+  "weight_checksum": "a5e098f6c27e415e"
+ },
+ "stats": {
+  "n": 3680,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 16.630223256844314,
+  "eff_rank": 3.9809980300733177,
+  "eff_rank_frac": 0.005183591184991299,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.1,
+ "saved": "2026-10-28 04:51:53"
+}

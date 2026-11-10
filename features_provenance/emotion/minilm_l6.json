@@ -1,0 +1,25 @@
+{
+ "dataset": "emotion",
+ "encoder": "minilm_l6",
+ "manifest_hash": "a938a564a1b92ee7e4728c6311c145dbdf0ea61043e41378172fc9187baa82ac",
+ "shape": [
+  16000,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l6",
+  "kind": "st",
+  "id": "sentence-transformers/all-MiniLM-L6-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 16000,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 0.9999999997969475,
+  "eff_rank": 172.5288830343211,
+  "eff_rank_frac": 0.4492939662352112,
+  "dead_dims_frac": 0.0078125
+ }
+}

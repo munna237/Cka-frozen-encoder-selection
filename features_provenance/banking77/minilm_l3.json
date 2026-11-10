@@ -1,0 +1,25 @@
+{
+ "dataset": "banking77",
+ "encoder": "minilm_l3",
+ "manifest_hash": "f92813917418edcb49e5d1d7c9e263ff767f4dcb731adb9fd1ac6049b30c66d5",
+ "shape": [
+  9993,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "minilm_l3",
+  "kind": "st",
+  "id": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 9993,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 4.341035505556227,
+  "eff_rank": 72.27640588226228,
+  "eff_rank_frac": 0.18821980698505802,
+  "dead_dims_frac": 0.0
+ }
+}

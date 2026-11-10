@@ -1,0 +1,25 @@
+{
+ "dataset": "emotion",
+ "encoder": "distilroberta",
+ "manifest_hash": "a938a564a1b92ee7e4728c6311c145dbdf0ea61043e41378172fc9187baa82ac",
+ "shape": [
+  16000,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "distilroberta",
+  "kind": "st",
+  "id": "sentence-transformers/all-distilroberta-v1",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 16000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.9999999998688692,
+  "eff_rank": 201.43561018497587,
+  "eff_rank_frac": 0.2622859507616873,
+  "dead_dims_frac": 0.0013020833333333333
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "dataset": "ag_news",
+ "encoder": "bge_small",
+ "manifest_hash": "2b5f7c9205658cda7347a07e353cb678ba2692746799ca8ca130ad149f1bcf37",
+ "shape": [
+  20000,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "bge_small",
+  "kind": "st",
+  "id": "BAAI/bge-small-en-v1.5",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 0.9999999997020131,
+  "eff_rank": 193.477514907159,
+  "eff_rank_frac": 0.5038476950707266,
+  "dead_dims_frac": 0.0
+ }
+}

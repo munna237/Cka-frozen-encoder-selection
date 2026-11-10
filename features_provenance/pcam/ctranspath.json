@@ -1,0 +1,46 @@
+{
+ "dataset": "pcam",
+ "encoder": "ctranspath",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  768
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "ctranspath",
+  "kind": "ctranspath",
+  "id": "<DRIVE>/HetFuseKD/model_weights/ctranspath.pth",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "avg (timm 0.5.4 head)",
+  "load_report": {
+   "timm": "0.5.4",
+   "torch": "2.11.0+cu130",
+   "ckpt_entries": 200,
+   "missing": [],
+   "unexpected": [],
+   "patch_embed_tensors_in_ckpt": 16
+  }
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 3.70358444574522,
+  "eff_rank": 36.482326010500145,
+  "eff_rank_frac": 0.0475030286595054,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 1.1,
+ "saved": "2026-10-26 03:59:26"
+}

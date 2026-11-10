@@ -1,0 +1,42 @@
+{
+ "dataset": "pets",
+ "encoder": "openclip_h14",
+ "manifest_hash": "da4a44f75e87c8b29d2e687fe9d4b9f21320bbdce1a040265c4ad3fef6c7e80d",
+ "shape": [
+  3680,
+  1280
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "openclip_h14",
+  "kind": "timm",
+  "id": "vit_huge_patch14_clip_224.laion2b",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 630766080,
+  "weight_checksum": "5d5048b584120137"
+ },
+ "stats": {
+  "n": 3680,
+  "dim": 1280,
+  "finite": true,
+  "mean_norm": 38.71327054777998,
+  "eff_rank": 126.94830900944343,
+  "eff_rank_frac": 0.09917836641362768,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.8,
+ "saved": "2026-10-28 04:53:05"
+}

@@ -1,0 +1,42 @@
+{
+ "dataset": "pcam",
+ "encoder": "uni",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "uni",
+  "kind": "timm",
+  "id": "hf-hub:MahmoodLab/uni",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 303350784,
+  "weight_checksum": "6f4d8399ad9f37c3"
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 38.70203805940087,
+  "eff_rank": 189.32640854209498,
+  "eff_rank_frac": 0.18488907084188963,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 1.7,
+ "saved": "2026-10-26 03:56:41"
+}

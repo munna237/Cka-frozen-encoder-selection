@@ -1,0 +1,25 @@
+{
+ "dataset": "newsgroups20",
+ "encoder": "bge_base",
+ "manifest_hash": "fd53e3ddf66cca0d49549d4714d3b5349202635f7b16f2103f9925d4b8dd4bc9",
+ "shape": [
+  11014,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "bge_base",
+  "kind": "st",
+  "id": "BAAI/bge-base-en-v1.5",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 11014,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.0000000000342042,
+  "eff_rank": 208.63909608012,
+  "eff_rank_frac": 0.27166548968765625,
+  "dead_dims_frac": 0.0
+ }
+}

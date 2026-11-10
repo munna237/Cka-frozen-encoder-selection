@@ -1,0 +1,42 @@
+{
+ "dataset": "pcam",
+ "encoder": "prov_gigapath",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "prov_gigapath",
+  "kind": "timm",
+  "id": "hf-hub:prov-gigapath/prov-gigapath",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 1134953984,
+  "weight_checksum": "e4da1654f12cdc72"
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 30.69869005438647,
+  "eff_rank": 235.46189265134035,
+  "eff_rank_frac": 0.15329550302821637,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 5.2,
+ "saved": "2026-10-26 04:21:27"
+}

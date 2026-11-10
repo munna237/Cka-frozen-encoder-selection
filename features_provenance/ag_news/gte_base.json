@@ -1,0 +1,25 @@
+{
+ "dataset": "ag_news",
+ "encoder": "gte_base",
+ "manifest_hash": "2b5f7c9205658cda7347a07e353cb678ba2692746799ca8ca130ad149f1bcf37",
+ "shape": [
+  20000,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "gte_base",
+  "kind": "st",
+  "id": "thenlper/gte-base",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 1.0000057254480559,
+  "eff_rank": 252.25214975349664,
+  "eff_rank_frac": 0.3284533199915321,
+  "dead_dims_frac": 0.0
+ }
+}

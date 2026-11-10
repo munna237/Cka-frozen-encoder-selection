@@ -1,0 +1,42 @@
+{
+ "dataset": "pets",
+ "encoder": "convnext_l",
+ "manifest_hash": "da4a44f75e87c8b29d2e687fe9d4b9f21320bbdce1a040265c4ad3fef6c7e80d",
+ "shape": [
+  3680,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "convnext_l",
+  "kind": "timm",
+  "id": "convnext_large.fb_in22k",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 0,
+  "n_params": 196230336,
+  "weight_checksum": "a56c5b1ef1e73ae2"
+ },
+ "stats": {
+  "n": 3680,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 14.109907732248677,
+  "eff_rank": 269.95865551004186,
+  "eff_rank_frac": 0.17575433301435017,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.3,
+ "saved": "2026-10-28 04:51:40"
+}

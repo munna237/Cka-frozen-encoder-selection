@@ -1,0 +1,25 @@
+{
+ "dataset": "banking77",
+ "encoder": "bge_small",
+ "manifest_hash": "f92813917418edcb49e5d1d7c9e263ff767f4dcb731adb9fd1ac6049b30c66d5",
+ "shape": [
+  9993,
+  384
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "bge_small",
+  "kind": "st",
+  "id": "BAAI/bge-small-en-v1.5",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 9993,
+  "dim": 384,
+  "finite": true,
+  "mean_norm": 1.0000000000332376,
+  "eff_rank": 67.09004697888105,
+  "eff_rank_frac": 0.17471366400750274,
+  "dead_dims_frac": 0.0
+ }
+}

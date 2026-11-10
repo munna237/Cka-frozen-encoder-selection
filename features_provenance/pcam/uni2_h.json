@@ -1,0 +1,42 @@
+{
+ "dataset": "pcam",
+ "encoder": "uni2_h",
+ "manifest_hash": "ed7169eb482818aee50bc86e7bdb2c659f9e2576a3439e92822f16665bd2caf1",
+ "shape": [
+  19611,
+  1536
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "uni2_h",
+  "kind": "timm",
+  "id": "hf-hub:MahmoodLab/UNI2-h",
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 9,
+  "n_params": 681394176,
+  "weight_checksum": "eaf7243bbb2c53d0"
+ },
+ "stats": {
+  "n": 19611,
+  "dim": 1536,
+  "finite": true,
+  "mean_norm": 15.113216576094015,
+  "eff_rank": 238.71391865414463,
+  "eff_rank_frac": 0.1554127074571254,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 4.4,
+ "saved": "2026-10-26 04:04:43"
+}

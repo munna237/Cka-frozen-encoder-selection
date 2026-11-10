@@ -1,0 +1,25 @@
+{
+ "dataset": "emotion",
+ "encoder": "e5_base",
+ "manifest_hash": "a938a564a1b92ee7e4728c6311c145dbdf0ea61043e41378172fc9187baa82ac",
+ "shape": [
+  16000,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "e5_base",
+  "kind": "st",
+  "id": "intfloat/e5-base-v2",
+  "prefix": "query: "
+ },
+ "stats": {
+  "n": 16000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.9999999998647588,
+  "eff_rank": 210.82973848351023,
+  "eff_rank_frac": 0.27451788865040394,
+  "dead_dims_frac": 0.0
+ }
+}

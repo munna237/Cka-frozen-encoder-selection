@@ -1,0 +1,42 @@
+{
+ "dataset": "pets",
+ "encoder": "eva02_clip",
+ "manifest_hash": "da4a44f75e87c8b29d2e687fe9d4b9f21320bbdce1a040265c4ad3fef6c7e80d",
+ "shape": [
+  3680,
+  1024
+ ],
+ "dtype": "float32",
+ "complete": true,
+ "encoder_info": {
+  "name": "eva02_clip",
+  "kind": "timm",
+  "id": "eva02_large_patch14_clip_224.merged2b",
+  "mean": [
+   0.48145466,
+   0.4578275,
+   0.40821073
+  ],
+  "std": [
+   0.26862954,
+   0.26130258,
+   0.27577711
+  ],
+  "pool": "default",
+  "timm_version": "1.0.30",
+  "num_prefix_tokens": 1,
+  "n_params": 303317952,
+  "weight_checksum": "c0ca5a90579a1733"
+ },
+ "stats": {
+  "n": 3680,
+  "dim": 1024,
+  "finite": true,
+  "mean_norm": 33.23668935071864,
+  "eff_rank": 75.85053587778985,
+  "eff_rank_frac": 0.07407278894315415,
+  "dead_dims_frac": 0.0
+ },
+ "minutes": 0.8,
+ "saved": "2026-10-28 04:51:00"
+}

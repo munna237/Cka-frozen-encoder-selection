@@ -1,0 +1,25 @@
+{
+ "dataset": "ag_news",
+ "encoder": "mpnet_base",
+ "manifest_hash": "2b5f7c9205658cda7347a07e353cb678ba2692746799ca8ca130ad149f1bcf37",
+ "shape": [
+  20000,
+  768
+ ],
+ "complete": true,
+ "encoder_info": {
+  "name": "mpnet_base",
+  "kind": "st",
+  "id": "sentence-transformers/all-mpnet-base-v2",
+  "prefix": ""
+ },
+ "stats": {
+  "n": 20000,
+  "dim": 768,
+  "finite": true,
+  "mean_norm": 0.9999999999333672,
+  "eff_rank": 224.39768071202835,
+  "eff_rank_frac": 0.2921844800937869,
+  "dead_dims_frac": 0.0026041666666666665
+ }
+}
