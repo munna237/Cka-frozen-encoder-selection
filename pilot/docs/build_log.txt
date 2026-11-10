@@ -1,0 +1,32 @@
+==========================================================================
+1. PER-FOLD LOGITS (clean only)
+==========================================================================
+  bracs: 3 teacher logit files, n=3969
+  sicapv2: 3 teacher logit files, n=12081
+  mhist: 3 teacher logit files, n=3152
+
+==========================================================================
+2. FEATURE SUBSETS FOR CKA VERIFICATION
+==========================================================================
+  bracs: 4 teachers x 2000 rows (float16)
+  sicapv2: 4 teachers x 2000 rows (float16)
+  mhist: 4 teachers x 2000 rows (float16)
+
+==========================================================================
+3. FOLD INDICES
+==========================================================================
+  bracs: 12 files
+  sicapv2: 1 files
+  mhist: 1 files
+
+==========================================================================
+4. BRACS HELD-OUT TEST SET
+==========================================================================
+  4/4 teachers have test logits
+
+==========================================================================
+5. DELIBERATELY EXCLUDED
+==========================================================================
+  12 contaminated logit files excluded
+  5 stale result files excluded
+  separate-project result directories excluded
