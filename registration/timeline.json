@@ -1,0 +1,24 @@
+{
+ "registration_utc": "2026-10-25T13:57:01+00:00",
+ "registration_file_mtime_utc": "2026-10-25T13:57:01+00:00",
+ "feature_files": 206,
+ "feature_files_with_timestamp": 152,
+ "first_feature_saved_utc": "2026-10-25T14:16:50+00:00",
+ "last_feature_saved_utc": "2026-10-29T00:40:13+00:00",
+ "feature_files_bounded_by_manifest_build_time": 54,
+ "feature_files_without_any_time": 0,
+ "earliest_manifest_built_utc": "2026-10-25T14:00:33+00:00",
+ "extracted_before_registration": [],
+ "extraction_runs_utc": [
+  "2026-10-26T04:22:12+00:00",
+  "2026-10-28T03:13:02+00:00",
+  "2026-10-28T06:52:47+00:00",
+  "2026-10-29T00:40:13+00:00"
+ ],
+ "extraction_runs_before_registration": [],
+ "analysis_battery_generated_utc": "2026-10-29T06:03:27+00:00",
+ "clock_note": "provenance and battery timestamps were written by time.strftime on Colab, whose clock is UTC by default; the registration time is recorded in UTC",
+ "registration_drive_created_utc": "2026-10-25T13:57:01.199Z",
+ "registration_drive_md5_matches_shipped_file": true,
+ "all_features_after_registration": true
+}

@@ -1,0 +1,124 @@
+{
+ "params": {
+  "unit_of_inference": "pool (= one dataset with all available encoders of its domain)",
+  "k_folds": 5,
+  "seed": 0,
+  "grouped_folds_where_groups_exist": true,
+  "probe": "StandardScaler (train fold) + L2 logistic regression, C=1.0",
+  "probe_backend": "torch",
+  "anchor_rule": "highest individual held-out accuracy",
+  "base_rule": "anchor + median-CKA member (CKA ordering), fixed before pairing",
+  "comp_tol_pp": 1.5,
+  "cka_min_gap": 0.15,
+  "cka_sd_floor": 3.0,
+  "n_cap_cka": 10000,
+  "primary_fusion_rule": "mean_logits",
+  "secondary_fusion_rules": [
+   "mean_probs",
+   "class_conditional"
+  ],
+  "primary_estimand": "A: cluster-robust (by pool) mean of D over the ONE primary matched pair per pool (max CKA gap), t(G-1) reference",
+  "equivalence_margins_pp": [
+   1.0,
+   0.5,
+   0.25
+  ],
+  "dose_response": "D on CKA gap over all matched pairs, cluster-robust by pool; interpret slope only if MDE(80%) <= 0.5 pp per unit CKA",
+  "regret_criteria": [
+   "cka_diversity",
+   "disagreement_with_base",
+   "competence",
+   "oracle_headroom"
+  ],
+  "regret_note": "only cka_diversity is label-free; disagreement uses probe predictions",
+  "mechanism": "utility ~ disagreement + acc ; utility ~ cka + acc ; joint; cluster-robust",
+  "analyses": [
+   "all pools",
+   "pathology",
+   "vision",
+   "text",
+   "image pools (pathology+vision)"
+  ],
+  "min_encoders_per_pool": 5
+ },
+ "datasets": {
+  "pathology": [
+   "bracs",
+   "sicapv2",
+   "mhist",
+   "crc_val_7k",
+   "nct_crc_100k",
+   "pcam"
+  ],
+  "vision": [
+   "dtd",
+   "aircraft",
+   "eurosat",
+   "pets",
+   "food101",
+   "cifar100",
+   "gtsrb",
+   "country211"
+  ],
+  "text": [
+   "emotion",
+   "ag_news",
+   "banking77",
+   "trec_coarse",
+   "newsgroups20",
+   "sst5"
+  ]
+ },
+ "encoders": {
+  "pathology": [
+   "uni",
+   "phikon_v2",
+   "ctranspath",
+   "resnet50_in1k",
+   "phikon",
+   "uni2_h",
+   "virchow2",
+   "h_optimus_0",
+   "prov_gigapath",
+   "hibou_b",
+   "lunit_vits16",
+   "kaiko_vitb16"
+  ],
+  "vision": [
+   "dinov2_l",
+   "eva02_clip",
+   "swin_l",
+   "convnext_l",
+   "resnet50",
+   "vit_mae",
+   "clip_b32",
+   "siglip_b16",
+   "dinov2_b",
+   "openclip_h14"
+  ],
+  "text": [
+   "minilm_l6",
+   "mpnet_base",
+   "distilroberta",
+   "bge_small",
+   "bge_base",
+   "gte_base",
+   "e5_base",
+   "minilm_l3",
+   "glove_avg"
+  ]
+ },
+ "file_sha256": {
+  "config.py": "4a55a2e3082210739f55ce764f98c6fa82133603491de244062b6e22b0369dac",
+  "cka.py": "26b10610ad308b7d33feb169974faabd20436f8865c00825abb6bef09cbb243d",
+  "folds.py": "06b0c18c3288023469b5201cd0c7586e95c5fec81324853427a4c9a3a8885fb9",
+  "fusion.py": "2d95faa51e7f04b78c11519be9558036795566b1c648c62ec65c3634401c243a",
+  "pairs.py": "dab52ca13e0a6a7658a88b012f8281701db86a7a50d53637ee5bbc9e4d27bcb5",
+  "inference.py": "5422403c328624e78f43b5cf747d078cbfa7f62bc6ee0bbb79ca8a6515bab103",
+  "analysis.py": "993b22fad7bfb236b549aa8dffc1c212d55184ae251f5cc17faaaec9ab947873",
+  "run_pipeline.py": "56c24b5e115c11613cece3ad2216930499b361814a7a3d5826912dd5e0b986d4",
+  "analyse_all.py": "0712e22bf0eadc210926a0c69873c248624a84cba22a97cdf247051d84c692b3"
+ },
+ "registered_utc": "2026-10-25T13:57:01+00:00",
+ "registration_hash": "ab54c50ceb8ef727088cb6a06af5fd582ea4453d7c53776cd55b4678ab698310"
+}
