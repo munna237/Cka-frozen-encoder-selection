@@ -1,0 +1,352 @@
+[
+  {
+    "status": "PASS",
+    "check": "bracs/indiv_acc/uni",
+    "claimed": 75.21,
+    "got": 75.20786092214664,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/indiv_acc/phikon_v2",
+    "claimed": 75.26,
+    "got": 75.25825144872765,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/indiv_acc/ctranspath",
+    "claimed": 74.63,
+    "got": 74.6283698664651,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/indiv_acc/resnet50_imagenet",
+    "claimed": 63.47,
+    "got": 63.46686822877299,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/param_count",
+    "claimed": 31,
+    "got": 31,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/cka/phikon_v2",
+    "claimed": 0.828,
+    "got": 0.8310145860620255,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/cka/ctranspath",
+    "claimed": 0.569,
+    "got": 0.5677186900000277,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/cka/resnet50_imagenet",
+    "claimed": 0.441,
+    "got": 0.45394150486105156,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/fusion_acc",
+    "claimed": 78.81,
+    "got": 78.81078357268834,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/fusion_ece",
+    "claimed": 0.027,
+    "got": 0.026644808474306957,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/indiv_acc/uni",
+    "claimed": 89.97,
+    "got": 89.96771790414701,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/indiv_acc/phikon_v2",
+    "claimed": 89.19,
+    "got": 89.18963661948514,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/indiv_acc/ctranspath",
+    "claimed": 89.87,
+    "got": 89.8683883784455,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/indiv_acc/resnet50_imagenet",
+    "claimed": 76.23,
+    "got": 76.22713351543746,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/param_count",
+    "claimed": 19,
+    "got": 19,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/cka/phikon_v2",
+    "claimed": 0.69,
+    "got": 0.6959351305487907,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/cka/ctranspath",
+    "claimed": 0.739,
+    "got": 0.743998584919667,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/cka/resnet50_imagenet",
+    "claimed": 0.46,
+    "got": 0.46645524099897023,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/fusion_acc",
+    "claimed": 93.11,
+    "got": 93.11315288469497,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/fusion_ece",
+    "claimed": 0.003,
+    "got": 0.00344114149689465,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/indiv_acc/uni",
+    "claimed": 84.3,
+    "got": 84.29568527918782,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/indiv_acc/phikon_v2",
+    "claimed": 81.95,
+    "got": 81.94796954314721,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/indiv_acc/ctranspath",
+    "claimed": 83.31,
+    "got": 83.31218274111674,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/indiv_acc/resnet50_imagenet",
+    "claimed": 77.47,
+    "got": 77.4746192893401,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/param_count",
+    "claimed": 11,
+    "got": 11,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/cka/phikon_v2",
+    "claimed": 0.691,
+    "got": 0.6902938058585041,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/cka/ctranspath",
+    "claimed": 0.679,
+    "got": 0.6797349016452773,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/cka/resnet50_imagenet",
+    "claimed": 0.505,
+    "got": 0.5068560973396913,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/fusion_acc",
+    "claimed": 86.52,
+    "got": 86.51649746192894,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/fusion_ece",
+    "claimed": 0.01,
+    "got": 0.00955408793003722,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/base_uni_r50",
+    "claimed": 76.67,
+    "got": 76.66918619299572,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/add_phikon",
+    "claimed": 78.86,
+    "got": 78.86117409926933,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/add_ctranspath",
+    "claimed": 78.08,
+    "got": 78.0801209372638,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "bracs/oracle",
+    "claimed": 88.49,
+    "got": 88.48576467624086,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/base_uni_r50",
+    "claimed": 91.25,
+    "got": 91.25072427779158,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/add_phikon",
+    "claimed": 93.1,
+    "got": 93.09659796374473,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "sicapv2/add_ctranspath",
+    "claimed": 93.29,
+    "got": 93.28697955467263,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/base_uni_r50",
+    "claimed": 85.25,
+    "got": 85.24746192893402,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/add_phikon",
+    "claimed": 86.55,
+    "got": 86.5482233502538,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "mhist/add_ctranspath",
+    "claimed": 86.77,
+    "got": 86.77030456852792,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "pooled_null/mean_diff",
+    "claimed": 0.25,
+    "got": 0.24987128816925594,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "pooled_null/wins",
+    "claimed": 8,
+    "got": 8,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "pooled_null/p",
+    "claimed": 0.32,
+    "got": 0.3247613076617412,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "heldout/uni_acc",
+    "claimed": 62.11,
+    "got": 62.10526315789474,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "heldout/uni_ece",
+    "claimed": 0.1034,
+    "got": 0.10336002270903502,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "heldout/fused_acc",
+    "claimed": 57.37,
+    "got": 57.36842105263158,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "heldout/fused_ece",
+    "claimed": 0.1992,
+    "got": 0.1991574690530175,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "heldout/gain",
+    "claimed": -4.74,
+    "got": -4.7368421052631575,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "heldout/logit_average",
+    "claimed": 61.23,
+    "got": 61.228070175438596,
+    "note": ""
+  },
+  {
+    "status": "PASS",
+    "check": "heldout/prob_average",
+    "claimed": 62.46,
+    "got": 62.4561403508772,
+    "note": ""
+  }
+]

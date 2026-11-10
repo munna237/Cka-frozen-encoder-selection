@@ -1,0 +1,29 @@
+# Exact environment for reproducing the reported numbers.
+#
+# scikit-learn is pinned to 1.6.1 deliberately. Per-teacher logits are produced
+# by multinomial logistic probes; the `multi_class` parameter was deprecated in
+# scikit-learn 1.5 and removed in 1.7. On the binary benchmark (MHIST) the
+# multinomial and standard binary parameterisations differ, so a later version
+# silently produces different logits for that dataset. We verified that 1.6.1
+# with multi_class='multinomial' reproduces the released MHIST logits exactly.
+#
+# On the multiclass benchmarks, regeneration reproduces accuracy to within one
+# sample on BRACS (1/3969) and two on SICAPv2 (2/12081). This is lbfgs
+# convergence variation across library builds, not a difference in protocol.
+# verify_claims.py therefore uses a tolerance of 0.05 percentage points.
+
+scikit-learn==1.6.1
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.2
+torch==2.3.1
+matplotlib==3.8.4
+openpyxl==3.1.2
+
+# Only needed to re-extract CTransPath features from the public checkpoint.
+# CTransPath requires this exact timm version: its checkpoint carries a
+# convolutional stem in place of the standard patch embedding, and loading it
+# into an unmodified Swin silently discards those weights. See
+# code/extract_ctranspath.py, which asserts a complete load before extracting.
+#
+# timm==0.5.4

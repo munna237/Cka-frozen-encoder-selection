@@ -1,0 +1,734 @@
+{
+ "datasets": {
+  "bracs": {
+   "logits": {
+    "teachers": {
+     "uni": {
+      "file": "uni_logits.npy",
+      "sha256": "fbb427553695f663"
+     },
+     "phikon_v2": {
+      "file": "phikon_v2_logits.npy",
+      "sha256": "29827c2d30f06bba"
+     },
+     "resnet50_imagenet": {
+      "file": "resnet50_imagenet_logits.npy",
+      "sha256": "a3d76f50f8226194"
+     },
+     "ctranspath": {
+      "file": "ctranspath_logits.npy",
+      "source": "corrected ConvStem extraction, scikit-learn 1.6.1 multinomial"
+     }
+    },
+    "labels": {
+     "file": "labels.npy",
+     "n": 3969,
+     "sha256": "21d84c4f34ee90c4"
+    }
+   },
+   "features_cka": {
+    "n_subset": 2000,
+    "teachers": {
+     "uni": {
+      "file": "uni_features_subset.npy",
+      "shape": [
+       2000,
+       1024
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     },
+     "phikon_v2": {
+      "file": "phikon_v2_features_subset.npy",
+      "shape": [
+       2000,
+       1024
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     },
+     "ctranspath": {
+      "file": "ctranspath_features_subset.npy",
+      "shape": [
+       2000,
+       768
+      ],
+      "dtype": "float16",
+      "source": "refit"
+     },
+     "resnet50_imagenet": {
+      "file": "resnet50_imagenet_features_subset.npy",
+      "shape": [
+       2000,
+       2048
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     }
+    }
+   },
+   "heldout": {
+    "teachers_present": 4
+   }
+  },
+  "sicapv2": {
+   "logits": {
+    "teachers": {
+     "uni": {
+      "file": "uni_logits.npy",
+      "sha256": "50bc230b0c2e113f"
+     },
+     "phikon_v2": {
+      "file": "phikon_v2_logits.npy",
+      "sha256": "3121e701550840ef"
+     },
+     "resnet50_imagenet": {
+      "file": "resnet50_imagenet_logits.npy",
+      "sha256": "dd0edbf2b7a9613d"
+     },
+     "ctranspath": {
+      "file": "ctranspath_logits.npy",
+      "source": "corrected ConvStem extraction, scikit-learn 1.6.1 multinomial"
+     }
+    },
+    "labels": {
+     "file": "labels.npy",
+     "n": 12081,
+     "sha256": "d160a0353aad7459"
+    }
+   },
+   "features_cka": {
+    "n_subset": 2000,
+    "teachers": {
+     "uni": {
+      "file": "uni_features_subset.npy",
+      "shape": [
+       2000,
+       1024
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     },
+     "phikon_v2": {
+      "file": "phikon_v2_features_subset.npy",
+      "shape": [
+       2000,
+       1024
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     },
+     "ctranspath": {
+      "file": "ctranspath_features_subset.npy",
+      "shape": [
+       2000,
+       768
+      ],
+      "dtype": "float16",
+      "source": "refit"
+     },
+     "resnet50_imagenet": {
+      "file": "resnet50_imagenet_features_subset.npy",
+      "shape": [
+       2000,
+       2048
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     }
+    }
+   }
+  },
+  "mhist": {
+   "logits": {
+    "teachers": {
+     "uni": {
+      "file": "uni_logits.npy",
+      "sha256": "a0acad625a71ea9e"
+     },
+     "phikon_v2": {
+      "file": "phikon_v2_logits.npy",
+      "sha256": "5f6a626674d76704"
+     },
+     "resnet50_imagenet": {
+      "file": "resnet50_imagenet_logits.npy",
+      "sha256": "eff95a1f00a1a198"
+     },
+     "ctranspath": {
+      "file": "ctranspath_logits.npy",
+      "source": "corrected ConvStem extraction, scikit-learn 1.6.1 multinomial"
+     }
+    },
+    "labels": {
+     "file": "labels.npy",
+     "n": 3152,
+     "sha256": "5c900aac5ac96449"
+    }
+   },
+   "features_cka": {
+    "n_subset": 2000,
+    "teachers": {
+     "uni": {
+      "file": "uni_features_subset.npy",
+      "shape": [
+       2000,
+       1024
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     },
+     "phikon_v2": {
+      "file": "phikon_v2_features_subset.npy",
+      "shape": [
+       2000,
+       1024
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     },
+     "ctranspath": {
+      "file": "ctranspath_features_subset.npy",
+      "shape": [
+       2000,
+       768
+      ],
+      "dtype": "float16",
+      "source": "refit"
+     },
+     "resnet50_imagenet": {
+      "file": "resnet50_imagenet_features_subset.npy",
+      "shape": [
+       2000,
+       2048
+      ],
+      "dtype": "float16",
+      "source": "cached"
+     }
+    }
+   }
+  }
+ },
+ "excluded": [
+  {
+   "path": "cached_features_bracs/uni/trainval_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_bracs/phikon_v2/trainval_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_bracs/ctranspath/trainval_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_bracs/resnet50_imagenet/trainval_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_sicapv2/uni/all_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_sicapv2/phikon_v2/all_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_sicapv2/ctranspath/all_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_sicapv2/resnet50_imagenet/all_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_mhist/uni/all_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_mhist/phikon_v2/all_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_mhist/ctranspath/all_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "cached_features_mhist/resnet50_imagenet/all_logits.npy",
+   "reason": "contaminated: probe fit and scored on all data"
+  },
+  {
+   "path": "tmlr_number_lock.json",
+   "reason": "superseded frozen result file; values disagree with the revised manuscript"
+  },
+  {
+   "path": "tmlr_text_freeze.json",
+   "reason": "superseded frozen result file; values disagree with the revised manuscript"
+  },
+  {
+   "path": "tmlr_final_confirmations.json",
+   "reason": "superseded frozen result file; values disagree with the revised manuscript"
+  },
+  {
+   "path": "clean_results_consolidated.json",
+   "reason": "superseded frozen result file; values disagree with the revised manuscript"
+  },
+  {
+   "path": "results_bracs_test_new.json",
+   "reason": "superseded frozen result file; values disagree with the revised manuscript"
+  },
+  {
+   "path": "results_adaptive_final/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_bracs/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_bracs_v2/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_bracs_v3/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_baselines/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_disentifuse_bracs/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_ecafuse_bracs/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_mhist_final/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_sicapv2/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_sicapv2_final/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  },
+  {
+   "path": "results_threshold_study/",
+   "reason": "belongs to a separate, unrelated distillation project sharing this working folder"
+  }
+ ],
+ "notes": [
+  "No single reproduce.py is shipped: verify_claims.py asserts every reported number against a fresh recomputation, and each section is regenerated by its own script in code/.",
+  "CTransPath logits are included for all three datasets and were regenerated with the corrected ConvStem extraction under scikit-learn 1.6.1.",
+  "The paper reports the fixed-base general-vision results (code/general_vision_fixedbase.py); general_vision.py is retained for comparison.",
+  "CKA values reported in the paper are full-sample computations. The shipped 2,000-row subsets reproduce them to within the subsampling standard deviation of 0.003-0.006; see results/cka_uncertainty.json.",
+  "CTransPath logits are included for all three datasets, regenerated with the corrected ConvStem extraction under scikit-learn 1.6.1.",
+  "The paper reports the fixed-base general-vision results (code/general_vision_fixedbase.py); general_vision.py is retained because the difference between the two designs is itself reported in Section 6.",
+  "Three values from earlier drafts (held-out fusion 63.68%, pooled gain +2.99, dose-response slope +0.278) were taken from stored files rather than recomputed; they are superseded by 57.37%, +2.97 and +0.094 respectively, and are now covered by the verification harness. See README.",
+  "v5: packaging and documentation fixes only; no reported number changed. See the 'Changes in this revision of the archive (v5)' table in README.md."
+ ],
+ "inventory": [
+  {
+   "path": "MANIFEST.json",
+   "bytes": 17764,
+   "sha256": "13ae501e5ed12951"
+  },
+  {
+   "path": "README.md",
+   "bytes": 12703,
+   "sha256": "e3b3f613bd5d9a8f"
+  },
+  {
+   "path": "requirements.txt",
+   "bytes": 1328,
+   "sha256": "90436c8e595f6005"
+  },
+  {
+   "path": "verification_report.json",
+   "bytes": 3992,
+   "sha256": "40e738e3fd36bb36"
+  },
+  {
+   "path": "code/cka_uncertainty.py",
+   "bytes": 3029,
+   "sha256": "21cbb566bb3f2393"
+  },
+  {
+   "path": "code/compute_cka.py",
+   "bytes": 6930,
+   "sha256": "1b936db3a54034dc"
+  },
+  {
+   "path": "code/core.py",
+   "bytes": 7151,
+   "sha256": "1ac2ebcce436ece0"
+  },
+  {
+   "path": "code/extract_ctranspath.py",
+   "bytes": 8314,
+   "sha256": "b6cf3d9f9e0adafc"
+  },
+  {
+   "path": "code/fusion_baselines.py",
+   "bytes": 9896,
+   "sha256": "02556c621577f9ca"
+  },
+  {
+   "path": "code/general_vision.py",
+   "bytes": 13008,
+   "sha256": "b26d8fe2e5acd2ae"
+  },
+  {
+   "path": "code/general_vision_extract.py",
+   "bytes": 4285,
+   "sha256": "b95d524c87c441e0"
+  },
+  {
+   "path": "code/general_vision_fixedbase.py",
+   "bytes": 5326,
+   "sha256": "0a54d6a30b72bdb6"
+  },
+  {
+   "path": "code/shift_evaluation.py",
+   "bytes": 8933,
+   "sha256": "d546298d8faa2f2a"
+  },
+  {
+   "path": "code/synthetic_study.py",
+   "bytes": 9512,
+   "sha256": "11f9a90c0b4f9eb4"
+  },
+  {
+   "path": "code/verify_claims.py",
+   "bytes": 17489,
+   "sha256": "a493c6accad3185f"
+  },
+  {
+   "path": "code/verify_ordering.py",
+   "bytes": 4757,
+   "sha256": "e9c4085938bfacca"
+  },
+  {
+   "path": "features_cka/bracs/ctranspath_features_subset.npy",
+   "bytes": 3072128,
+   "sha256": "839d53c6336f03e9"
+  },
+  {
+   "path": "features_cka/bracs/phikon_v2_features_subset.npy",
+   "bytes": 4096128,
+   "sha256": "726c114e476f3a18"
+  },
+  {
+   "path": "features_cka/bracs/resnet50_imagenet_features_subset.npy",
+   "bytes": 8192128,
+   "sha256": "d10b6057a0ccb7ec"
+  },
+  {
+   "path": "features_cka/bracs/subset_indices.npy",
+   "bytes": 16128,
+   "sha256": "9f62d2d8f39fbf93"
+  },
+  {
+   "path": "features_cka/bracs/uni_features_subset.npy",
+   "bytes": 4096128,
+   "sha256": "c9347c594117b9f2"
+  },
+  {
+   "path": "features_cka/sicapv2/ctranspath_features_subset.npy",
+   "bytes": 3072128,
+   "sha256": "c375da471c3ad814"
+  },
+  {
+   "path": "features_cka/sicapv2/phikon_v2_features_subset.npy",
+   "bytes": 4096128,
+   "sha256": "6752cf04e4f668da"
+  },
+  {
+   "path": "features_cka/sicapv2/resnet50_imagenet_features_subset.npy",
+   "bytes": 8192128,
+   "sha256": "461321a168de36d8"
+  },
+  {
+   "path": "features_cka/sicapv2/subset_indices.npy",
+   "bytes": 16128,
+   "sha256": "1e9486685a7685f6"
+  },
+  {
+   "path": "features_cka/sicapv2/uni_features_subset.npy",
+   "bytes": 4096128,
+   "sha256": "fc1024ecabc27630"
+  },
+  {
+   "path": "features_cka/mhist/ctranspath_features_subset.npy",
+   "bytes": 3072128,
+   "sha256": "909bdd086e0b4e43"
+  },
+  {
+   "path": "features_cka/mhist/phikon_v2_features_subset.npy",
+   "bytes": 4096128,
+   "sha256": "63c4402f3b564b3e"
+  },
+  {
+   "path": "features_cka/mhist/resnet50_imagenet_features_subset.npy",
+   "bytes": 8192128,
+   "sha256": "7884ff2638e93fbd"
+  },
+  {
+   "path": "features_cka/mhist/subset_indices.npy",
+   "bytes": 16128,
+   "sha256": "f819bc8df8a7eb9f"
+  },
+  {
+   "path": "features_cka/mhist/uni_features_subset.npy",
+   "bytes": 4096128,
+   "sha256": "07903d50b83ec198"
+  },
+  {
+   "path": "logits/bracs_heldout/ctranspath_test_logits.npy",
+   "bytes": 32048,
+   "sha256": "6f9b9375e30d7673"
+  },
+  {
+   "path": "logits/bracs_heldout/phikon_v2_test_logits.npy",
+   "bytes": 16088,
+   "sha256": "dd1daea4e558972b"
+  },
+  {
+   "path": "logits/bracs_heldout/resnet50_imagenet_test_logits.npy",
+   "bytes": 16088,
+   "sha256": "cc8a5a43655178b4"
+  },
+  {
+   "path": "logits/bracs_heldout/test_labels.npy",
+   "bytes": 4688,
+   "sha256": "2388e650a839bcc2"
+  },
+  {
+   "path": "logits/bracs_heldout/uni_test_logits.npy",
+   "bytes": 16088,
+   "sha256": "da75d3e300e62c36"
+  },
+  {
+   "path": "logits/bracs/ctranspath_logits.npy",
+   "bytes": 111260,
+   "sha256": "40a8def62daf41bc"
+  },
+  {
+   "path": "logits/bracs/labels.npy",
+   "bytes": 31880,
+   "sha256": "21d84c4f34ee90c4"
+  },
+  {
+   "path": "logits/bracs/phikon_v2_logits.npy",
+   "bytes": 111260,
+   "sha256": "29827c2d30f06bba"
+  },
+  {
+   "path": "logits/bracs/resnet50_imagenet_logits.npy",
+   "bytes": 111260,
+   "sha256": "a3d76f50f8226194"
+  },
+  {
+   "path": "logits/bracs/uni_logits.npy",
+   "bytes": 111260,
+   "sha256": "fbb427553695f663"
+  },
+  {
+   "path": "logits/sicapv2/ctranspath_logits.npy",
+   "bytes": 193424,
+   "sha256": "dc5feb6c55039b44"
+  },
+  {
+   "path": "logits/sicapv2/labels.npy",
+   "bytes": 96776,
+   "sha256": "d160a0353aad7459"
+  },
+  {
+   "path": "logits/sicapv2/phikon_v2_logits.npy",
+   "bytes": 193424,
+   "sha256": "3121e701550840ef"
+  },
+  {
+   "path": "logits/sicapv2/resnet50_imagenet_logits.npy",
+   "bytes": 193424,
+   "sha256": "dd0edbf2b7a9613d"
+  },
+  {
+   "path": "logits/sicapv2/uni_logits.npy",
+   "bytes": 193424,
+   "sha256": "50bc230b0c2e113f"
+  },
+  {
+   "path": "logits/mhist/ctranspath_logits.npy",
+   "bytes": 25344,
+   "sha256": "73e04b193d8803db"
+  },
+  {
+   "path": "logits/mhist/labels.npy",
+   "bytes": 25344,
+   "sha256": "5c900aac5ac96449"
+  },
+  {
+   "path": "logits/mhist/phikon_v2_logits.npy",
+   "bytes": 25344,
+   "sha256": "5f6a626674d76704"
+  },
+  {
+   "path": "logits/mhist/resnet50_imagenet_logits.npy",
+   "bytes": 25344,
+   "sha256": "eff95a1f00a1a198"
+  },
+  {
+   "path": "logits/mhist/uni_logits.npy",
+   "bytes": 25344,
+   "sha256": "a0acad625a71ea9e"
+  },
+  {
+   "path": "results/cka_matrix_corrected.json",
+   "bytes": 2403,
+   "sha256": "cfd84b7bfc81dc11"
+  },
+  {
+   "path": "results/cka_uncertainty.json",
+   "bytes": 2068,
+   "sha256": "c2949c18ccf0de20"
+  },
+  {
+   "path": "results/criteria_results.csv",
+   "bytes": 83406,
+   "sha256": "17c3ff83c992b969"
+  },
+  {
+   "path": "results/dissoc_results.csv",
+   "bytes": 17490,
+   "sha256": "54d818f242962348"
+  },
+  {
+   "path": "results/dose_response.csv",
+   "bytes": 224,
+   "sha256": "230f93f77402cee2"
+  },
+  {
+   "path": "results/gain_decomposition.json",
+   "bytes": 789,
+   "sha256": "ffed278c8528fed2"
+  },
+  {
+   "path": "results/general_vision_fixedbase.json",
+   "bytes": 2927,
+   "sha256": "6938ab9f33a6f8c7"
+  },
+  {
+   "path": "results/general_vision_results.json",
+   "bytes": 6409,
+   "sha256": "6154fece1faf09e8"
+  },
+  {
+   "path": "results/heldout_bracs.json",
+   "bytes": 1050,
+   "sha256": "5f445c519a9a52ee"
+  },
+  {
+   "path": "results/pooled_folds.csv",
+   "bytes": 656,
+   "sha256": "e65a281c39bb7c21"
+  },
+  {
+   "path": "results/robustness_of_null.json",
+   "bytes": 3245,
+   "sha256": "83dbdda4d005e684"
+  },
+  {
+   "path": "results/table5_final.json",
+   "bytes": 729,
+   "sha256": "f46c9ef49e5c7e12"
+  },
+  {
+   "path": "docs/build_log.txt",
+   "bytes": 1345,
+   "sha256": "d718c7847530a02c"
+  },
+  {
+   "path": "splits/splits_bracs/5fold_cv_splits.json",
+   "bytes": 113760,
+   "sha256": "9b127f4ac896337f"
+  },
+  {
+   "path": "splits/splits_bracs/cv_info.json",
+   "bytes": 56,
+   "sha256": "18c847c390f19d19"
+  },
+  {
+   "path": "splits/splits_bracs/fold_0_train_idx.npy",
+   "bytes": 25528,
+   "sha256": "e7cde117f6b895fc"
+  },
+  {
+   "path": "splits/splits_bracs/fold_0_val_idx.npy",
+   "bytes": 6480,
+   "sha256": "7a343ee2bc8fb1b3"
+  },
+  {
+   "path": "splits/splits_bracs/fold_1_train_idx.npy",
+   "bytes": 25528,
+   "sha256": "b4a1ce20e221cdfe"
+  },
+  {
+   "path": "splits/splits_bracs/fold_1_val_idx.npy",
+   "bytes": 6480,
+   "sha256": "299dfc0cf20c3f1b"
+  },
+  {
+   "path": "splits/splits_bracs/fold_2_train_idx.npy",
+   "bytes": 25528,
+   "sha256": "72a033547ebfc60e"
+  },
+  {
+   "path": "splits/splits_bracs/fold_2_val_idx.npy",
+   "bytes": 6480,
+   "sha256": "83c8cc39075e01be"
+  },
+  {
+   "path": "splits/splits_bracs/fold_3_train_idx.npy",
+   "bytes": 25528,
+   "sha256": "78013ee2d9104110"
+  },
+  {
+   "path": "splits/splits_bracs/fold_3_val_idx.npy",
+   "bytes": 6480,
+   "sha256": "407afe5abb4f243b"
+  },
+  {
+   "path": "splits/splits_bracs/fold_4_train_idx.npy",
+   "bytes": 25536,
+   "sha256": "df72c83ee7e00259"
+  },
+  {
+   "path": "splits/splits_bracs/fold_4_val_idx.npy",
+   "bytes": 6472,
+   "sha256": "212cd0eb723e6c40"
+  },
+  {
+   "path": "splits/splits_sicapv2/5fold.json",
+   "bytes": 367525,
+   "sha256": "45918ace9f4eceb2"
+  },
+  {
+   "path": "splits/splits_mhist/5fold.json",
+   "bytes": 89250,
+   "sha256": "8a7a720865213625"
+  }
+ ],
+ "n_files": 78,
+ "total_bytes": 60964821,
+ "verification": {
+  "harness": "code/verify_claims.py",
+  "note": "Extended to assert the held-out fused accuracy, ECE and gain, which earlier versions listed in CLAIMS but never read."
+ },
+ "archive_version": "v5"
+}
