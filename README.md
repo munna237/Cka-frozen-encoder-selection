@@ -60,6 +60,8 @@ manifests/             row order, labels, groups and hashes of every dataset (da
 features_provenance/   per (dataset, encoder): source, checksum, preprocessing, load report, extraction time
 logs/                  extraction run logs
 pilot/                 the four-encoder pilot and the controlled study, with its own verification harness
+figures/               Figure 2 of the paper (PNG, PDF) and an interactive, rotatable 3D version of Fig. 2(a)
+                       (figure2a_interactive_3d.html: download it and open it in a browser)
 docs/                  REPRODUCE.md, PAPER_MAP.md, DATA.md
 ```
 
