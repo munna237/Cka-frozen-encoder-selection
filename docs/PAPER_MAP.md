@@ -28,4 +28,4 @@ Section and table numbers refer to the IEEE Access version; "S" tables are in it
 | VI-E, Supplementary Table S5 | fully nested selection | `results/reviewer/reviewer2_analyses.md` (S3) |
 | VI-E | gated rule, probe C, multiplicity, consistency | `results/reviewer/reviewer2_analyses.md` (S2, S4, S5, S6) |
 | VII, Fig. 2, Table 11 | controlled study | `pilot/code/synthetic_study.py`, `pilot/results/`; Fig. 2 itself: `code/make_figure2_heatmap.py` → `figures/figure3_synthetic_heatmap.{png,pdf}`; interactive 3D version of Fig. 2(a): `code/make_figure2_3d.py` → `figures/figure2a_interactive_3d.html` |
-| Fig. 1 | overview | `results/pools/*.json`, `results/reviewer/` (values) |
+| Fig. 1 | overview | `code/make_figure1.py` → `figures/figure1_overview.{pdf,png}`, from `results/battery.json` and `results/reviewer/` (S7, R5) |
