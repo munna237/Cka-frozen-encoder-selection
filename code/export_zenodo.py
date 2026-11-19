@@ -235,23 +235,44 @@ class Zenodo:
     def uploaded(self, dep):
         return {f["filename"]: f.get("checksum") for f in dep.get("files", [])}
 
-    def upload(self, dep, path, verbose=True):
+    def upload(self, dep, path, verbose=True, attempts=3, wait=20, local_md5=None):
         """Stream one file into the draft's bucket; Zenodo returns its MD5, which is
-        compared with the local file's."""
+        compared with the local file's. A network error, a 5xx answer (e.g. a 504
+        gateway time-out) or a checksum mismatch is retried up to `attempts` times;
+        re-sending a file to the same name replaces it."""
         name = os.path.basename(path)
-        t0 = time.time()
-        with open(path, "rb") as fh:
-            r = self.s.put(f"{dep['links']['bucket']}/{name}", data=fh,
-                           headers={"Content-Type": "application/octet-stream"})
+        local = local_md5 or md5_file(path)
+        last = None
+        for attempt in range(1, attempts + 1):
+            t0 = time.time()
+            try:
+                with open(path, "rb") as fh:
+                    r = self.s.put(f"{dep['links']['bucket']}/{name}", data=fh,
+                                   headers={"Content-Type": "application/octet-stream"}, timeout=(60, None))
+                if r.status_code >= 500:
+                    raise RuntimeError(f"HTTP {r.status_code}")
+                r.raise_for_status()
+                remote = r.json().get("checksum", "")
+                if remote.replace("md5:", "") != local:
+                    raise RuntimeError("checksum MISMATCH")
+                mins = (time.time() - t0) / 60
+                size = os.path.getsize(path)
+                if verbose:
+                    print(f"  uploaded {name} ({size / 1e9:.2f} GB, {mins:.1f} min, "
+                          f"{size / 1e6 / max(mins * 60, 1e-9):.2f} MB/s) checksum OK", flush=True)
+                return remote
+            except Exception as e:      # noqa: BLE001 - every failure is retried, then re-raised
+                last = e
+                if verbose:
+                    print(f"  {name}: attempt {attempt}/{attempts} failed ({str(e)[:120]})", flush=True)
+                if attempt < attempts:
+                    time.sleep(wait * attempt)
+        raise RuntimeError(f"{name} did not upload after {attempts} attempts: {last}")
+
+    def open_drafts(self):
+        r = self.s.get(f"{self.base}/deposit/depositions", params={"size": 50})
         r.raise_for_status()
-        remote = r.json().get("checksum", "")
-        ok = remote.replace("md5:", "") == md5_file(path)
-        if verbose:
-            print(f"  uploaded {name} ({os.path.getsize(path) / 1e9:.2f} GB, "
-                  f"{(time.time() - t0) / 60:.1f} min) checksum {'OK' if ok else 'MISMATCH'}", flush=True)
-        if not ok:
-            raise RuntimeError(f"Zenodo checksum mismatch for {name}")
-        return remote
+        return [d for d in r.json() if not d.get("submitted")]
 
     def set_metadata(self, dep_id, metadata):
         r = self.s.put(f"{self.base}/deposit/depositions/{dep_id}", json={"metadata": metadata})
@@ -260,28 +281,139 @@ class Zenodo:
         return r.json()
 
 
-def upload_all(out_dir, token, metadata, sandbox=False, dep_id=None, verbose=True):
-    """Upload every file in out_dir (except sidecars) to a draft. Re-running with
-    the same dep_id skips files already uploaded with a matching checksum."""
-    zc = Zenodo(token, sandbox=sandbox)
-    dep = zc.get(dep_id) if dep_id else zc.create_draft()
-    have = zc.uploaded(dep)
+def mirror(src_dir, dst_dir, verbose=True):
+    """Copy the export folder (archives, manifest, sidecars, README, code snapshot)
+    to a second location, e.g. Google Drive, so that a runtime reset does not
+    force a rebuild. Each copy is checked against the MD5 of its source; a file
+    already present with the same size and MD5 is skipped."""
+    import shutil
+    os.makedirs(dst_dir, exist_ok=True)
+    for p in sorted(glob.glob(os.path.join(src_dir, "*"))):
+        if not os.path.isfile(p) or p.endswith(".part"):
+            continue
+        q = os.path.join(dst_dir, os.path.basename(p))
+        want = md5_file(p)
+        if os.path.exists(q) and os.path.getsize(q) == os.path.getsize(p) and md5_file(q) == want:
+            if verbose:
+                print(f"  {os.path.basename(p)}: already on the mirror - skipped", flush=True)
+            continue
+        t0 = time.time()
+        shutil.copyfile(p, q + ".part")
+        os.replace(q + ".part", q)
+        if md5_file(q) != want:
+            raise RuntimeError(f"copy of {os.path.basename(p)} to {dst_dir} is corrupt")
+        if verbose:
+            print(f"  {os.path.basename(p)}: copied ({os.path.getsize(q) / 1e9:.2f} GB, "
+                  f"{(time.time() - t0) / 60:.1f} min)", flush=True)
+
+
+def _upload_files(out_dir):
     files = sorted(p for p in glob.glob(os.path.join(out_dir, "*"))
-                   if os.path.isfile(p) and not p.endswith((".members.json", ".part")))
+                   if os.path.isfile(p) and not p.endswith((".members.json", ".part", ".state.json")))
     if len(files) > 100:
         raise RuntimeError(f"{len(files)} files: Zenodo allows at most 100 per record")
-    for p in files:
+    return files
+
+
+def _doi(dep):
+    return ((dep.get("metadata") or {}).get("prereserve_doi") or {}).get("doi")
+
+
+def upload_all(out_dir, token, metadata, sandbox=False, dep_id=None, verbose=True,
+               state_path=None, n_parallel=1, new_draft=False):
+    """Upload every file in out_dir (except sidecars) to a Zenodo DRAFT and set its
+    metadata. Never publishes.
+
+    Which draft: `dep_id` if given; otherwise the draft recorded in `state_path`
+    (written as soon as a draft is created, so a disconnect never loses it);
+    otherwise an open draft with the same title. If none of these exists but the
+    account has other open drafts, it stops and lists them rather than create a
+    second draft with a second DOI, unless `new_draft=True`.
+
+    Re-running skips files already in the draft with a matching checksum. Each
+    file is retried on failure (Zenodo.upload); with n_parallel > 1 several files
+    upload at once, each over its own connection."""
+    zc = Zenodo(token, sandbox=sandbox)
+    md = dict(metadata); md["prereserve_doi"] = True
+    dep = None
+    if dep_id:
+        dep = zc.get(dep_id)
+    elif state_path and os.path.exists(state_path):
+        st = json.load(open(state_path))
+        if st.get("sandbox") == bool(sandbox):
+            d = zc.get(st["id"])
+            if not d.get("submitted"):
+                dep = d
+                if verbose:
+                    print(f"reusing draft {dep['id']} recorded in {state_path}", flush=True)
+    if dep is None and not new_draft:
+        drafts = zc.open_drafts()
+        same = [d for d in drafts if (d.get("title") or (d.get("metadata") or {}).get("title")) == md.get("title")]
+        if same:
+            dep = zc.get(same[0]["id"])
+            if verbose:
+                print(f"reusing open draft {dep['id']} with the same title", flush=True)
+        elif drafts:
+            lines = "\n".join(f"  {d['id']}  {d.get('title') or '(no title yet)'}  "
+                              f"{len(d.get('files', []))} files  created {d.get('created', '')[:16]}" for d in drafts)
+            raise RuntimeError("This account already has open drafts:\n" + lines +
+                               "\nSet DEPOSITION_ID to the one to continue, or NEW_DRAFT = True to start another.")
+    if dep is None:
+        dep = zc.create_draft()
+    if dep.get("submitted"):
+        raise RuntimeError(f"deposition {dep['id']} is already published; its files cannot change")
+    dep = zc.set_metadata(dep["id"], md)            # title + reserved DOI visible from the start
+    doi = _doi(dep)
+    url = f"{zc.web}/deposit/{dep['id']}"
+    if state_path:
+        os.makedirs(os.path.dirname(os.path.abspath(state_path)), exist_ok=True)
+        with open(state_path, "w") as fh:
+            json.dump({"id": dep["id"], "doi": doi, "url": url, "sandbox": bool(sandbox),
+                       "saved_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}, fh, indent=1)
+    if verbose:
+        print(f"draft {dep['id']}  reserved DOI {doi}\n  {url}" + (f"\n  saved to {state_path}" if state_path else ""),
+              flush=True)
+
+    have = zc.uploaded(dep)
+    todo, md5s = [], {}
+    for p in _upload_files(out_dir):
         name = os.path.basename(p)
-        if name in have and have[name] and have[name].replace("md5:", "") == md5_file(p):
+        local = md5s[name] = md5_file(p)
+        if have.get(name) and have[name].replace("md5:", "") == local:
             if verbose:
                 print(f"  {name}: already in the draft - skipped", flush=True)
-            continue
-        zc.upload(dep, p, verbose=verbose)
-    md = dict(metadata); md["prereserve_doi"] = True
-    out = zc.set_metadata(dep["id"], md)
-    doi = ((out.get("metadata") or {}).get("prereserve_doi") or {}).get("doi")
-    url = f"{zc.web}/deposit/{dep['id']}"
+        else:
+            todo.append((p, local))
+    gb = sum(os.path.getsize(p) for p, _ in todo) / 1e9
     if verbose:
-        print(f"\nDRAFT ready (not published): {url}")
-        print(f"Reserved DOI: {doi}")
+        print(f"{len(todo)} files to upload ({gb:.2f} GB), {max(1, n_parallel)} at a time", flush=True)
+    t0, failed = time.time(), []
+    if n_parallel <= 1:
+        for p, local in todo:
+            try:
+                zc.upload(dep, p, verbose=verbose, local_md5=local)
+            except Exception as e:      # noqa: BLE001
+                failed.append(os.path.basename(p)); print(f"  FAILED {os.path.basename(p)}: {e}", flush=True)
+    else:
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        with ThreadPoolExecutor(max_workers=n_parallel) as ex:
+            futs = {ex.submit(Zenodo(token, sandbox=sandbox).upload, dep, p, verbose, 3, 20, local): p
+                    for p, local in todo}
+            for f in as_completed(futs):
+                try:
+                    f.result()
+                except Exception as e:  # noqa: BLE001
+                    failed.append(os.path.basename(futs[f])); print(f"  FAILED {os.path.basename(futs[f])}: {e}", flush=True)
+    mins = (time.time() - t0) / 60
+    if failed:
+        raise RuntimeError(f"{len(failed)} file(s) failed: {failed}. Re-run: finished files are skipped "
+                           f"and the same draft ({dep['id']}) is reused.")
+    final = zc.uploaded(zc.get(dep["id"]))
+    missing = [n for n, m in md5s.items() if (final.get(n) or "").replace("md5:", "") != m]
+    if missing:
+        raise RuntimeError(f"not in the draft with a matching checksum: {missing}; re-run")
+    if verbose:
+        print(f"\nall {len(final)} files in the draft, checksums match "
+              f"({gb * 1000 / max(mins * 60, 1e-9):.2f} MB/s over {mins:.1f} min for this run)")
+        print(f"DRAFT ready (not published): {url}\nReserved DOI: {doi}")
     return {"id": dep["id"], "url": url, "doi": doi}
