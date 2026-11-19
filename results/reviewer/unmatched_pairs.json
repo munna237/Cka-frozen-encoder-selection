@@ -1,0 +1,315 @@
+{
+ "note": "EXPLORATORY (post-registration; not part of the registered analysis)",
+ "definition": "pairs of category 'unmatched' in results/pools/*.json: CKA gap >= 0.15 and beyond 3 median subsampling SDs, competence gap > 1.5 points",
+ "per_pool": [
+  {
+   "pool": "bracs",
+   "domain": "pathology",
+   "pairs": 13,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 7.46361222551699,
+   "mean_D": 1.0148147083898786
+  },
+  {
+   "pool": "sicapv2",
+   "domain": "pathology",
+   "pairs": 8,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 9.891565267775848,
+   "mean_D": 1.582488672362432
+  },
+  {
+   "pool": "mhist",
+   "domain": "pathology",
+   "pairs": 4,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 3.616751269035543,
+   "mean_D": -0.11877091037154416
+  },
+  {
+   "pool": "crc_val_7k",
+   "domain": "pathology",
+   "pairs": 0
+  },
+  {
+   "pool": "nct_crc_100k",
+   "domain": "pathology",
+   "pairs": 8,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 3.154375,
+   "mean_D": 0.06062500000000455
+  },
+  {
+   "pool": "pcam",
+   "domain": "pathology",
+   "pairs": 16,
+   "frac_higher_cka_more_accurate": 0.6875,
+   "mean_signed_gap": 3.9923384835041587,
+   "mean_D": 0.5927119265278955
+  },
+  {
+   "pool": "dtd",
+   "domain": "vision",
+   "pairs": 13,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 11.423895253682486,
+   "mean_D": 0.7364975450081865
+  },
+  {
+   "pool": "aircraft",
+   "domain": "vision",
+   "pairs": 15,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 22.087582483503297,
+   "mean_D": 4.9549099324211765
+  },
+  {
+   "pool": "eurosat",
+   "domain": "vision",
+   "pairs": 2,
+   "frac_higher_cka_more_accurate": 0.5,
+   "mean_signed_gap": 0.5324999999999989,
+   "mean_D": 0.11999999999999887
+  },
+  {
+   "pool": "pets",
+   "domain": "vision",
+   "pairs": 12,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 7.090126811594202,
+   "mean_D": 0.32608695652174285
+  },
+  {
+   "pool": "food101",
+   "domain": "vision",
+   "pairs": 17,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 25.871470588235294,
+   "mean_D": 1.2914705882352933
+  },
+  {
+   "pool": "cifar100",
+   "domain": "vision",
+   "pairs": 11,
+   "frac_higher_cka_more_accurate": 0.9090909090909091,
+   "mean_signed_gap": 17.39363636363636,
+   "mean_D": 0.38045454545454827
+  },
+  {
+   "pool": "gtsrb",
+   "domain": "vision",
+   "pairs": 11,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 2.4209090909090945,
+   "mean_D": -0.08909090909090893
+  },
+  {
+   "pool": "country211",
+   "domain": "vision",
+   "pairs": 16,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 11.97,
+   "mean_D": 3.4606250000000003
+  },
+  {
+   "pool": "emotion",
+   "domain": "text",
+   "pairs": 10,
+   "frac_higher_cka_more_accurate": 0.8,
+   "mean_signed_gap": 1.9706250000000025,
+   "mean_D": -0.8218749999999997
+  },
+  {
+   "pool": "ag_news",
+   "domain": "text",
+   "pairs": 1,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 1.7049999999999983,
+   "mean_D": 0.09500000000000171
+  },
+  {
+   "pool": "banking77",
+   "domain": "text",
+   "pairs": 8,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 8.267036925848094,
+   "mean_D": -0.015001244365928562
+  },
+  {
+   "pool": "trec_coarse",
+   "domain": "text",
+   "pairs": 10,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 17.962215700660302,
+   "mean_D": 2.103843792833778
+  },
+  {
+   "pool": "newsgroups20",
+   "domain": "text",
+   "pairs": 11,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 8.77643329976724,
+   "mean_D": 0.7048790966807115
+  },
+  {
+   "pool": "sst5",
+   "domain": "text",
+   "pairs": 12,
+   "frac_higher_cka_more_accurate": 1.0,
+   "mean_signed_gap": 5.622854244694133,
+   "mean_D": 1.5429986995421672
+  }
+ ],
+ "subsets": {
+  "all": {
+   "pairs": 198,
+   "pools": 19,
+   "frac_higher_cka_more_accurate": 0.9545454545454546,
+   "mean_signed_gap": 10.738330903145686,
+   "D": {
+    "estimate": 1.227228791676855,
+    "ci": [
+     0.401115126281122,
+     2.053342457072588
+    ],
+    "p": 0.005901561407494531
+   },
+   "D_at_zero_gap": {
+    "estimate": -0.056483648016827495,
+    "ci": [
+     -0.8157833597382858,
+     0.7028160637046308
+    ],
+    "p": 0.8775472598442835
+   },
+   "slope_per_gap_point": {
+    "estimate": 0.11954487631943185,
+    "ci": [
+     0.006063771492872835,
+     0.23302598114599088
+    ],
+    "p": 0.040041571738089234
+   }
+  },
+  "pathology": {
+   "pairs": 49,
+   "pools": 5,
+   "frac_higher_cka_more_accurate": 0.8979591836734694,
+   "mean_signed_gap": 5.7089571813497235,
+   "D": {
+    "estimate": 0.721343015733226,
+    "ci": [
+     0.07070419554182139,
+     1.3719818359246307
+    ],
+    "p": 0.036997841435651234
+   },
+   "D_at_zero_gap": {
+    "estimate": -0.27991199071572875,
+    "ci": [
+     -0.592225470157393,
+     0.03240148872593546
+    ],
+    "p": 0.0676002390098379
+   },
+   "slope_per_gap_point": {
+    "estimate": 0.17538316975294568,
+    "ci": [
+     0.1573791338909205,
+     0.19338720561497086
+    ],
+    "p": 1.1111559336122623e-05
+   }
+  },
+  "vision": {
+   "pairs": 97,
+   "pools": 8,
+   "frac_higher_cka_more_accurate": 0.979381443298969,
+   "mean_signed_gap": 14.590370075150023,
+   "D": {
+    "estimate": 1.7379501087596394,
+    "ci": [
+     0.041059800580223405,
+     3.434840416939055
+    ],
+    "p": 0.045967747330765946
+   },
+   "D_at_zero_gap": {
+    "estimate": 0.14786320246622253,
+    "ci": [
+     -1.2183773716769852,
+     1.5141037766094303
+    ],
+    "p": 0.8053742308818016
+   },
+   "slope_per_gap_point": {
+    "estimate": 0.10898194481040742,
+    "ci": [
+     -0.051118056913576584,
+     0.26908194653439144
+    ],
+    "p": 0.1515145557369447
+   }
+  },
+  "text": {
+   "pairs": 52,
+   "pools": 6,
+   "frac_higher_cka_more_accurate": 0.9615384615384616,
+   "mean_signed_gap": 8.292013839368405,
+   "D": {
+    "estimate": 0.7512371621423883,
+    "ci": [
+     -0.529055820419839,
+     2.0315301447046155
+    ],
+    "p": 0.19183755179206977
+   },
+   "D_at_zero_gap": {
+    "estimate": -0.40289711439594683,
+    "ci": [
+     -1.7443314619513715,
+     0.9385372331594779
+    ],
+    "p": 0.47496425162133327
+   },
+   "slope_per_gap_point": {
+    "estimate": 0.1391862458138688,
+    "ci": [
+     0.0751396620948744,
+     0.2032328295328632
+    ],
+    "p": 0.0025352334716943915
+   }
+  },
+  "image": {
+   "pairs": 146,
+   "pools": 13,
+   "frac_higher_cka_more_accurate": 0.952054794520548,
+   "mean_signed_gap": 11.60962191216225,
+   "D": {
+    "estimate": 1.3967600569905003,
+    "ci": [
+     0.30691962728626243,
+     2.486600486694738
+    ],
+    "p": 0.016271739607526727
+   },
+   "D_at_zero_gap": {
+    "estimate": 0.06995602716574785,
+    "ci": [
+     -0.7985360371156628,
+     0.9384480914471586
+    ],
+    "p": 0.863612721551107
+   },
+   "slope_per_gap_point": {
+    "estimate": 0.11428486128689494,
+    "ci": [
+     -0.02032439296643085,
+     0.24889411554022073
+    ],
+    "p": 0.0891050495179573
+   }
+  }
+ }
+}
