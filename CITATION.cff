@@ -25,6 +25,10 @@ authors:
     given-names: Arvid
     affiliation: North South University
 repository-code: "https://github.com/munna237/cka-frozen-encoder-selection"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24377082"
+    description: "Frozen features and held-out logits (Zenodo)"
 license: MIT
 preferred-citation:
   type: article

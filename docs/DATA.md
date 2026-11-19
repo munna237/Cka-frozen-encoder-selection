@@ -7,7 +7,7 @@
 - **`features_provenance/`:** for every (dataset, encoder) pair, the encoder source, weight checksum,
   preprocessing, pooling, load report, feature statistics and extraction time.
 
-## On Zenodo (DOI `10.5281/zenodo.<record>`; CC BY-NC 4.0)
+## On Zenodo (DOI [`10.5281/zenodo.24377082`](https://doi.org/10.5281/zenodo.24377082); CC BY-NC 4.0)
 - **`features_<dataset>.zip`:** `<dataset>/<encoder>.npy` (float32, rows in manifest order) and its provenance
   `.json`.
 - **`heldout_logits.zip`:** `pools/<dataset>_logits.npz`, the per-fold held-out probe logits of every encoder, with
@@ -20,7 +20,14 @@ H-optimus-0, Prov-GigaPath, Hibou-B), 36 of the 206 dataset–encoder pairs. The
 outputs, so they are left out as a precaution. The per-pool records here still cover them, so every registered number
 is verifiable; regenerating their features needs each model from its authors.
 
-`code/fetch_features.py` downloads, verifies and unpacks the record. `notebooks/09_export_features_to_zenodo.ipynb`
+`code/fetch_features.py` downloads, verifies and unpacks the record:
+
+```bash
+python code/fetch_features.py --record 24377082 --root ~/cka_study            # everything
+python code/fetch_features.py --record 24377082 --root ~/cka_study --only dtd # one dataset + the logits
+```
+
+`notebooks/09_export_features_to_zenodo.ipynb`
 created it from the project folder on Google Drive.
 
 ## Sources

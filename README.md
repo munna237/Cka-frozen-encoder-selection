@@ -10,7 +10,7 @@ The study tests whether representational similarity, measured by linear CKA on f
 pretrained encoders are worth combining. It uses 20 pools (pathology, general vision, text), 31 frozen encoders and
 166 candidate additions, with an analysis plan hash-locked before any feature of the 20 pools was extracted.
 
-**Frozen features and held-out logits:** Zenodo, DOI `10.5281/zenodo.<record>`, CC BY-NC 4.0 (see [`docs/DATA.md`](docs/DATA.md)).
+**Frozen features and held-out logits:** Zenodo, DOI [`10.5281/zenodo.24377082`](https://doi.org/10.5281/zenodo.24377082), CC BY-NC 4.0 (see [`docs/DATA.md`](docs/DATA.md)).
 The six gated pathology encoders' features and logits are not redistributed; see below.
 
 ---
