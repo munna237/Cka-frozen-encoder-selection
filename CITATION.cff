@@ -12,13 +12,19 @@ authors:
   - family-names: Tulona
     given-names: Reefka Fabliha
     affiliation: East West University
+  - family-names: Jawad
+    given-names: Md Asef
+    affiliation: North South University
   - family-names: Antu
     given-names: Nahid Hossain
     affiliation: North South University
   - family-names: Ul Mulk
     given-names: Md Mansur
     affiliation: North South University
-repository-code: "https://github.com/<user>/cka-frozen-encoder-selection"
+  - family-names: Chowdhury
+    given-names: Arvid
+    affiliation: North South University
+repository-code: "https://github.com/munna237/cka-frozen-encoder-selection"
 license: MIT
 preferred-citation:
   type: article
@@ -30,10 +36,14 @@ preferred-citation:
       given-names: Acramul Haque
     - family-names: Tulona
       given-names: Reefka Fabliha
+    - family-names: Jawad
+      given-names: Md Asef
     - family-names: Antu
       given-names: Nahid Hossain
     - family-names: Ul Mulk
       given-names: Md Mansur
+    - family-names: Chowdhury
+      given-names: Arvid
   journal: "IEEE Access"
   status: submitted
   year: 2026

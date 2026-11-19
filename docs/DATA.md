@@ -7,12 +7,18 @@
 - **`features_provenance/`:** for every (dataset, encoder) pair, the encoder source, weight checksum,
   preprocessing, pooling, load report, feature statistics and extraction time.
 
-## On Zenodo (DOI `10.5281/zenodo.<record>`)
+## On Zenodo (DOI `10.5281/zenodo.<record>`; CC BY-NC 4.0)
 - **`features_<dataset>.zip`:** `<dataset>/<encoder>.npy` (float32, rows in manifest order) and its provenance
   `.json`.
 - **`heldout_logits.zip`:** `pools/<dataset>_logits.npz`, the per-fold held-out probe logits of every encoder, with
   labels and fold masks.
-- **`zenodo_manifest.json`:** the SHA-256 of every archive and of every file inside it.
+- **`cka-frozen-encoder-selection-code.zip`:** a snapshot of this repository at the time of deposit.
+- **`zenodo_manifest.json`:** the SHA-256 of every archive and of every file inside it, and the list of excluded encoders.
+
+**Not on Zenodo:** the features and held-out logits of the six gated pathology encoders (UNI, UNI2-h, Virchow2,
+H-optimus-0, Prov-GigaPath, Hibou-B), 36 of the 206 dataset–encoder pairs. Their licences may restrict redistributing
+outputs, so they are left out as a precaution. The per-pool records here still cover them, so every registered number
+is verifiable; regenerating their features needs each model from its authors.
 
 `code/fetch_features.py` downloads, verifies and unpacks the record. `notebooks/09_export_features_to_zenodo.ipynb`
 created it from the project folder on Google Drive.

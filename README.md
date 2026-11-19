@@ -2,7 +2,7 @@
 
 Code, registration, per-pool records and verification gate for:
 
-> M. M. H. Munna, A. H. Kabir, R. F. Tulona, N. H. Antu, and M. M. Ul Mulk,
+> M. M. H. Munna, A. H. Kabir, R. F. Tulona, M. A. Jawad, N. H. Antu, M. M. Ul Mulk, and A. Chowdhury,
 > *Evaluating Centered Kernel Alignment for Frozen-Encoder Selection in Logit-Level Fusion:
 > A Pre-Specified Multi-Domain Study*, submitted to IEEE Access, 2026.
 
@@ -10,7 +10,8 @@ The study tests whether representational similarity, measured by linear CKA on f
 pretrained encoders are worth combining. It uses 20 pools (pathology, general vision, text), 31 frozen encoders and
 166 candidate additions, with an analysis plan hash-locked before any feature of the 20 pools was extracted.
 
-**Frozen features and held-out logits:** Zenodo, DOI `10.5281/zenodo.<record>` (≈10 GB; see [`docs/DATA.md`](docs/DATA.md)).
+**Frozen features and held-out logits:** Zenodo, DOI `10.5281/zenodo.<record>`, CC BY-NC 4.0 (see [`docs/DATA.md`](docs/DATA.md)).
+The six gated pathology encoders' features and logits are not redistributed; see below.
 
 ---
 
@@ -32,8 +33,8 @@ This needs no GPU and no features. It checks five things:
 
 | Goal | What you need | How |
 |---|---|---|
-| Registered results (Tables 13, 15, 16) | this repository | `python code/verify_v3.py --root .` |
-| Exploratory analyses (Section VI-E, Tables 17–21) | features + logits from Zenodo | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) §2 |
+| Registered results (Tables 7, 8, 9) | this repository | `python code/verify_v3.py --root .` |
+| Exploratory analyses (Section VI-E; Table 10, Supplementary Tables S2–S5) | features + logits from Zenodo (vision, text); pathology also needs the gated encoders | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) §2 |
 | Everything from raw public data | GPU, the datasets, licences for gated models | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) §3 |
 | The pilot and the controlled study (Sections V, VII) | `pilot/` | [`pilot/README.md`](pilot/README.md) |
 
@@ -78,10 +79,18 @@ The analysis plan, its parameters and the SHA-256 of every analysis file were fi
 `registration/drive_metadata.json` holds the storage service's own creation time and checksum for the registration
 file. No independent registry was used. The pilot's results were known at registration and are reported in Section V.
 
+## Gated encoders
+
+UNI, UNI2-h, Virchow2, H-optimus-0, Prov-GigaPath and Hibou-B are distributed under gated licences that may
+restrict redistributing their outputs. As a precaution, their features and held-out logits are **not** on Zenodo.
+Everything in this repository (records, registration, verification gate) covers all 31 encoders. To rerun the
+exploratory analyses on the pathology pools, obtain these models from their authors and regenerate their features
+(notebook 01) and logits (notebook 04); see [`docs/REPRODUCE.md`](docs/REPRODUCE.md).
+
 ## Licence
 
 - **Code:** MIT (see [`LICENSE`](LICENSE)).
-- **Records, results and manifests:** CC BY 4.0.
+- **Records, results and manifests:** CC BY 4.0. **Zenodo features and logits:** CC BY-NC 4.0.
 - **Datasets and pretrained encoders:** governed by their creators' licences. Several encoders are gated and must
   be obtained from their authors under their terms.
 

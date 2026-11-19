@@ -7,7 +7,7 @@ pip install -r requirements.txt
 python code/verify_v3.py --root .
 ```
 
-The gate recomputes estimands A–E (paper Section VI-A to VI-C; Tables 13, 15 and 16) from `results/pools/*.json`
+The gate recomputes estimands A–E (paper Sections VI-A to VI-C; Tables 7, 8 and 9) from `results/pools/*.json`
 and compares every field with `results/battery.json`. It also confirms that the analysis code matches the
 registration. Exit code 0 means all 55 checks passed.
 
@@ -26,9 +26,14 @@ export V3_DRIVE=~/cka_study
 held-out logits, registration, manifests, per-pool records and a copy of `code/`. Then run:
 
 - `notebooks/07_reviewer_analyses.ipynb`: competence gaps, calipers, strong candidates, dependence, cross-fitted
-  regret, hybrid rules, Algorithm 1, other similarity measures, other outcome metrics (Section VI-E; Tables 17–19).
+  regret, hybrid rules, Algorithm 1, other similarity measures, other outcome metrics (Section VI-E; Table 10, Supplementary Tables S2–S3).
 - `notebooks/08_reviewer_round2.ipynb`: pilot-dataset exclusion, gated rule tests, fully nested selection, probe
-  C, multiplicity, encoder validation (Section VI-E, Section IV-C; Tables 20–21).
+  C, multiplicity, encoder validation (Sections VI-E and IV-C; Supplementary Tables S4–S5).
+
+**Gated encoders.** The Zenodo record leaves out the features and logits of the six gated pathology encoders
+(UNI, UNI2-h, Virchow2, H-optimus-0, Prov-GigaPath, Hibou-B). Notebooks 07 and 08 need every encoder's logits in a
+pool, so after downloading they run on the vision and text pools as they are; for the pathology pools, first obtain
+these models from their authors and regenerate their features (notebook 01) and logits (notebook 04).
 
 The notebooks were written for Colab with Google Drive. Outside Colab, skip the `drive.mount` cell; the code reads
 `V3_DRIVE`. Both notebooks first assert that the saved logits reproduce every registered utility and regret.

@@ -72,15 +72,28 @@ def summary(feats, logits):
 
 
 # ---------------------------------------------------------------- build
-def build(out_dir, feats, logits, include_logits=True, verbose=True):
+def build(out_dir, feats, logits, include_logits=True, exclude_logits_of=(), verbose=True):
     """Write one archive per dataset (+ logits) and the manifest. Resumable: an
     archive that already exists and verifies against its sidecar is skipped."""
     os.makedirs(out_dir, exist_ok=True)
-    manifest = {"created_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "archives": {}}
+    manifest = {"created_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "archives": {},
+                "encoders_excluded": sorted(exclude_logits_of)}
     jobs = [(f"features_{ds}.zip", [(x["npy"], f"{ds}/{x['encoder']}.npy") for x in items]
              + [(x["json"], f"{ds}/{x['encoder']}.json") for x in items if x["json"]])
             for ds, items in sorted(feats.items())]
     if include_logits and logits:
+        if exclude_logits_of:
+            import numpy as np
+            tmp = os.path.join(out_dir, "_filtered_logits")
+            os.makedirs(tmp, exist_ok=True)
+            kept = []
+            for p in logits:
+                z = np.load(p)
+                keep = {k: z[k] for k in z.files if not (k.startswith("Z_") and k[2:] in exclude_logits_of)}
+                q = os.path.join(tmp, os.path.basename(p))
+                np.savez_compressed(q, **keep)
+                kept.append(q)
+            logits = kept
         jobs.append(("heldout_logits.zip", [(p, f"pools/{os.path.basename(p)}") for p in logits]))
     for name, members in jobs:
         path = os.path.join(out_dir, name)
@@ -112,6 +125,20 @@ def build(out_dir, feats, logits, include_logits=True, verbose=True):
     return manifest
 
 
+def add_file(out_dir, path, name=None):
+    """Copy a file into the export folder unchanged and record its checksums."""
+    import shutil
+    dst = os.path.join(out_dir, name or os.path.basename(path))
+    shutil.copy2(path, dst)
+    mp = os.path.join(out_dir, "zenodo_manifest.json")
+    man = json.load(open(mp))
+    man.setdefault("other_files", {})[os.path.basename(dst)] = {
+        "sha256": sha256_file(dst), "md5": md5_file(dst), "bytes": os.path.getsize(dst)}
+    with open(mp, "w") as fh:
+        json.dump(man, fh, indent=1)
+    return dst
+
+
 def verify(out_dir, verbose=True):
     """Re-open every archive and re-hash every member against the manifest."""
     man = json.load(open(os.path.join(out_dir, "zenodo_manifest.json")))
@@ -138,7 +165,7 @@ def verify(out_dir, verbose=True):
     return bad
 
 
-def write_readme(out_dir, title, github_url, paper_title, summary_dict):
+def write_readme(out_dir, title, github_url, paper_title, summary_dict, excluded=(), code_snapshot=None):
     lines = [f"# {title}", "",
              f"Frozen-encoder features and per-fold held-out logits for the study *{paper_title}*.",
              "", f"Code, registration, per-pool records and the verification gate: {github_url}", "",
@@ -149,7 +176,16 @@ def write_readme(out_dir, title, github_url, paper_title, summary_dict):
              "(encoder source, preprocessing, pooling, load report, feature statistics, extraction time).",
              "- `heldout_logits.zip`: `pools/<dataset>_logits.npz`, the per-fold held-out probe logits of every "
              "encoder, with labels and fold masks, as used by the analysis.",
-             "- `zenodo_manifest.json`: SHA-256 of every archive and of every file inside it.", "",
+             "- `zenodo_manifest.json`: SHA-256 of every archive and of every file inside it.", ""]
+    if code_snapshot:
+        lines[-1:-1] = [f"- `{code_snapshot}`: snapshot of the code repository at the time of deposit."]
+    if excluded:
+        lines += ["## Encoders not included", "",
+                  "As a precaution, features and held-out logits of the following encoders are not redistributed: "
+                  "they are distributed under gated licences that may restrict redistributing their outputs: " + ", ".join(f"`{e}`" for e in excluded)
+                  + ". They are regenerated from the released code after obtaining each model from its authors "
+                  "(notebook 01).", ""]
+    lines += [
              "## Use", "",
              "`python code/fetch_features.py --record <this record's id> --root <dir>` in the GitHub repository "
              "downloads, verifies and unpacks everything into the layout the notebooks expect.", "",
@@ -164,6 +200,17 @@ def write_readme(out_dir, title, github_url, paper_title, summary_dict):
 
 
 # ---------------------------------------------------------------- Zenodo
+def detect_site(token):
+    """Return 'zenodo' or 'sandbox' for the site that accepts this token, or None."""
+    import requests
+    for site, base in (("zenodo", "https://zenodo.org/api"), ("sandbox", "https://sandbox.zenodo.org/api")):
+        r = requests.get(f"{base}/deposit/depositions", params={"size": 1},
+                         headers={"Authorization": f"Bearer {token}"}, timeout=60)
+        if r.status_code == 200:
+            return site
+    return None
+
+
 class Zenodo:
     """Minimal client for the Zenodo deposit REST API. Creates and fills a DRAFT;
     it never publishes (publishing on Zenodo is irreversible)."""
@@ -176,7 +223,7 @@ class Zenodo:
         self.s.headers["Authorization"] = f"Bearer {token}"
 
     def create_draft(self):
-        r = self.s.post(f"{self.base}/deposit/depositions", json={})
+        r = self.s.post(f"{self.base}/deposit/depositions", json={"metadata": {"prereserve_doi": True}})
         r.raise_for_status()
         return r.json()
 
@@ -230,8 +277,11 @@ def upload_all(out_dir, token, metadata, sandbox=False, dep_id=None, verbose=Tru
                 print(f"  {name}: already in the draft - skipped", flush=True)
             continue
         zc.upload(dep, p, verbose=verbose)
-    zc.set_metadata(dep["id"], metadata)
+    md = dict(metadata); md["prereserve_doi"] = True
+    out = zc.set_metadata(dep["id"], md)
+    doi = ((out.get("metadata") or {}).get("prereserve_doi") or {}).get("doi")
     url = f"{zc.web}/deposit/{dep['id']}"
     if verbose:
         print(f"\nDRAFT ready (not published): {url}")
-    return {"id": dep["id"], "url": url}
+        print(f"Reserved DOI: {doi}")
+    return {"id": dep["id"], "url": url, "doi": doi}
