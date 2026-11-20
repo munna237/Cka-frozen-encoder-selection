@@ -26,6 +26,7 @@ Section and table numbers refer to the IEEE Access version; "S" tables are in it
 | VI-E, Table 10 | other similarity measures | `results/reviewer/reviewer_analyses.md` (R7) |
 | VI-E, Supplementary Table S3 | cross-fitted regret, hybrid rules | `results/reviewer/reviewer_analyses.md` (R5) |
 | VI-E2, Table 9, Supplementary Tables S12–S13 | matched vs. unmatched pairs across the 20 pools | `code/unmatched_pairs.py` → `results/reviewer/unmatched_pairs.{json,md}` (reproduces R9 of `reviewer_analyses.json`, adds per-pool rows and intervals) |
+| VI-E, Supplementary Table S15 | secondary fusion rules; equal pool weighting; leave-one-pool-out TOST | `code/secondary_and_weighting.py` → `results/reviewer/secondary_and_weighting.{json,md}` |
 | VI-E, Supplementary Table S4 | without the pilot's datasets | `results/reviewer/reviewer2_analyses.md` (S1) |
 | VI-E, Supplementary Table S5 | fully nested selection | `results/reviewer/reviewer2_analyses.md` (S3) |
 | VI-E | gated rule, probe C, multiplicity, consistency | `results/reviewer/reviewer2_analyses.md` (S2, S4, S5, S6) |
