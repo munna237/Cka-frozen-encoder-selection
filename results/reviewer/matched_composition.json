@@ -1,0 +1,54 @@
+{
+ "note": "EXPLORATORY (post-registration; not part of the registered analysis)",
+ "pairs": 65,
+ "subsets": {
+  "all": {
+   "pairs": 65,
+   "both_weaker_than_base": 39,
+   "one_weaker": 9,
+   "neither_weaker": 17,
+   "pair_mean_minus_base_median": -0.5549999999999997,
+   "pair_mean_minus_base_iqr": [
+    -1.6000000000000085,
+    0.020891364902496434
+   ],
+   "stronger_member_below_anchor_median": 0.7749999999999915
+  },
+  "pathology": {
+   "pairs": 35,
+   "both_weaker_than_base": 13,
+   "one_weaker": 9,
+   "neither_weaker": 13,
+   "pair_mean_minus_base_median": -0.08249999999999602,
+   "pair_mean_minus_base_iqr": [
+    -0.38499999999999446,
+    0.04874651810584396
+   ],
+   "stronger_member_below_anchor_median": 0.07499999999998863
+  },
+  "vision": {
+   "pairs": 23,
+   "both_weaker_than_base": 23,
+   "one_weaker": 0,
+   "neither_weaker": 0,
+   "pair_mean_minus_base_median": -1.812500000000007,
+   "pair_mean_minus_base_iqr": [
+    -3.2579787234042463,
+    -1.1087500000000006
+   ],
+   "stronger_member_below_anchor_median": 1.6049999999999898
+  },
+  "text": {
+   "pairs": 7,
+   "both_weaker_than_base": 3,
+   "one_weaker": 0,
+   "neither_weaker": 4,
+   "pair_mean_minus_base_median": 7.824999999999996,
+   "pair_mean_minus_base_iqr": [
+    -2.6094147682652356,
+    8.795312499999998
+   ],
+   "stronger_member_below_anchor_median": 1.3562500000000028
+  }
+ }
+}

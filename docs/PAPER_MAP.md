@@ -16,17 +16,18 @@ Section and table numbers refer to the IEEE Access version; "S" tables are in it
 | IV-D | pilot feature continuity, ResNet-50 provenance | `results/v2_consistency.csv`, `results/resnet50_provenance_mhist.csv` |
 | IV-E | probe solver; secondary-rule iteration cap | `tests/test_core.py`, `results/fusion_fit_log.csv` |
 | V, Tables 4–6; Supplementary Tables S6–S11 | pilot and general-vision extension | `pilot/` (own README and `verify_claims.py`) |
-| VI-A, Table 7 | estimands A and C | `results/battery.json`, `results/paper_tables.md` |
+| VI-A, Table 6 | estimands A and C | `results/battery.json`, `results/paper_tables.md` |
 | VI-A, Supplementary Table S1 | every pool, primary pairs | `results/pools/*.json`, `results/reviewer/reviewer2_analyses.md` (S7) |
-| VI-B, Table 8 | estimand D (selection regret) | `results/battery.json` |
-| VI-C, Table 9 | estimands B and E | `results/battery.json` |
+| VI-A | composition of the matched pairs relative to the base | `code/matched_composition.py` → `results/reviewer/matched_composition.json` |
+| VI-B, Table 7 | estimand D (selection regret) | `results/battery.json` |
+| VI-C, Table 8 | estimands B and E | `results/battery.json` |
 | VI-D | text pools | `results/paper_tables.md` (leave-one-pool-out) |
 | VI-E, Supplementary Table S2 | caliper sensitivity | `results/reviewer/reviewer_analyses.md` (R2) |
 | VI-E, Table 10 | other similarity measures | `results/reviewer/reviewer_analyses.md` (R7) |
 | VI-E, Supplementary Table S3 | cross-fitted regret, hybrid rules | `results/reviewer/reviewer_analyses.md` (R5) |
-| VI-E2, Supplementary Tables S12–S13 | unmatched pairs across the 20 pools | `code/unmatched_pairs.py` → `results/reviewer/unmatched_pairs.{json,md}` (reproduces R9 of `reviewer_analyses.json`, adds per-pool rows and intervals) |
+| VI-E2, Table 9, Supplementary Tables S12–S13 | matched vs. unmatched pairs across the 20 pools | `code/unmatched_pairs.py` → `results/reviewer/unmatched_pairs.{json,md}` (reproduces R9 of `reviewer_analyses.json`, adds per-pool rows and intervals) |
 | VI-E, Supplementary Table S4 | without the pilot's datasets | `results/reviewer/reviewer2_analyses.md` (S1) |
 | VI-E, Supplementary Table S5 | fully nested selection | `results/reviewer/reviewer2_analyses.md` (S3) |
 | VI-E | gated rule, probe C, multiplicity, consistency | `results/reviewer/reviewer2_analyses.md` (S2, S4, S5, S6) |
 | VII, Fig. 2, Table 11 | controlled study | `pilot/code/synthetic_study.py`, `pilot/results/`; Fig. 2 itself: `code/make_figure2_heatmap.py` → `figures/figure3_synthetic_heatmap.{png,pdf}`; interactive 3D version of Fig. 2(a): `code/make_figure2_3d.py` → `figures/figure2a_interactive_3d.html` |
-| Fig. 1 | overview | `code/make_figure1.py` → `figures/figure1_overview.{pdf,png}`, from `results/battery.json` and `results/reviewer/` (S7, R5) |
+| Fig. 1 | overview | `code/make_figure1.py` → `figures/figure1_overview.{pdf,png}`, from `results/battery.json` and `results/reviewer/` (S7, R5); panel (b) intervals: percentile bootstrap over pools, seed 0 |
